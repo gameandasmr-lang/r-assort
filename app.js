@@ -574,12 +574,70 @@
 
   function applyInputModes() {
     PAD_MODES.forEach(function (mode) {
-      var pad = inputModes[mode] === 'pad';
-      $('view-' + mode).classList.toggle('pad-mode', pad);
+      var chosen = inputModes[mode] || 'voice';
+      $('view-' + mode).classList.toggle('pad-mode', chosen === 'pad');
+      $('view-' + mode).classList.toggle('scan-mode', chosen === 'scan');
       document.querySelectorAll('#view-' + mode + ' [data-input]').forEach(function (b) {
-        b.classList.toggle('active', (b.dataset.input === 'pad') === pad);
+        b.classList.toggle('active', b.dataset.input === chosen);
       });
     });
+    syncCamera();
+  }
+
+  // --- Scan du code-barres ---------------------------------------------------
+
+  var SCAN_REPEAT_MS = 3000;   // le même code-barres devant la caméra n'est pas relu avant ce délai
+  var scanner = window.ReassortScanner && window.ReassortScanner.create(onBarcode, onScanError);
+  var scanMode = null;         // écran qui utilise la caméra en ce moment
+  var lastScan = { raw: null, at: 0 };
+
+  function currentTab() {
+    var active = document.querySelector('.tab.active');
+    return active ? active.dataset.tab : null;
+  }
+
+  // La caméra ne tourne que si un écran en mode scan est affiché et que l'app est visible.
+  function syncCamera() {
+    if (!scanner) return;
+    var tab = currentTab();
+    var want = document.visibilityState !== 'hidden' && PAD_MODES.indexOf(tab) >= 0 && inputModes[tab] === 'scan' ? tab : null;
+    if (want === scanMode) return;
+    scanMode = want;
+    if (!want) { scanner.stop(); return; }
+    setStatus(want, 'Je démarre la caméra…');
+    scanner.start($('scan-video-' + want)).then(function (ok) {
+      if (ok && scanMode === want) setStatus(want, want === 'pointage' ? 'Présente le code-barres, puis choisis la quantité.' : 'Présente le code-barres du carton.');
+    });
+  }
+
+  function onScanError(message) {
+    if (scanMode) setStatus(scanMode, message, true);
+    scanMode = null;
+  }
+
+  function onBarcode(raw) {
+    var mode = scanMode;
+    var now = Date.now();
+    if (!mode || (raw === lastScan.raw && now - lastScan.at < SCAN_REPEAT_MS)) return;
+    lastScan = { raw: raw, at: now };
+
+    var found = R.codeFromBarcode(raw, catalog);
+    if (!found) {
+      setStatus(mode, 'Code-barres non reconnu : ' + raw, true);
+      speak('Code-barres non reconnu.');
+      vibrate([80, 60, 80]);
+      return;
+    }
+    if (mode === 'deballage') {
+      setStatus(mode, 'Code-barres → ' + found.code);
+      handleQuestion([found.code]);
+    } else {
+      padDigits.pointage = found.code;
+      renderPad('pointage');
+      setStatus(mode, found.item ? found.item.name : 'Code ' + found.code + ' absent du catalogue');
+      speak(found.item ? found.item.name : 'Code ' + R.spokenCode(found.code) + ' inconnu.');
+      vibrate(40);
+    }
   }
 
   // Sur PC : les touches du clavier alimentent le pavé.
@@ -603,6 +661,7 @@
     document.querySelectorAll('.view').forEach(function (v) { v.classList.toggle('active', v.id === 'view-' + tab); });
     if (tab === 'test' && !testCode) newTestCode();
     try { localStorage.setItem(TAB_KEY, tab); } catch (e) { /* ignoré */ }
+    syncCamera();
   }
 
   document.addEventListener('click', function (event) {
@@ -730,6 +789,7 @@
     navigator.wakeLock.request('screen').catch(function () { /* refusé : tant pis */ });
   }
   document.addEventListener('visibilitychange', keepAwake);
+  document.addEventListener('visibilitychange', syncCamera);
 
   if (window.speechSynthesis) speechSynthesis.onvoiceschanged = frenchVoice;
 

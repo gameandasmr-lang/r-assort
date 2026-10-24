@@ -26,7 +26,9 @@
       <div class="input-switch">
         <button type="button" data-input="voice">🎤 Voix</button>
         <button type="button" data-input="pad">🔢 Pavé</button>
+        <button type="button" data-input="scan">📷 Scan</button>
       </div>
+      <div class="scan"><video id="scan-video-pointage" playsinline muted></video></div>
       <div class="pad" id="pad-pointage"></div>
       <button class="mic" data-mic="pointage" aria-label="Parler">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/></svg>
@@ -54,7 +56,9 @@
       <div class="input-switch">
         <button type="button" data-input="voice">🎤 Voix</button>
         <button type="button" data-input="pad">🔢 Pavé</button>
+        <button type="button" data-input="scan">📷 Scan</button>
       </div>
+      <div class="scan"><video id="scan-video-deballage" playsinline muted></video></div>
       <div class="pad" id="pad-deballage"></div>
       <button class="mic" data-mic="deballage" aria-label="Demander">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/></svg>
@@ -94,6 +98,7 @@
 
   <script src="catalog.js"></script>
   <script src="logic.js"></script>
+  <script src="scanner.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

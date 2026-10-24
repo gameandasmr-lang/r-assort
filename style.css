@@ -372,3 +372,31 @@ button.choice.secondary { color: var(--muted); font-weight: 400; text-align: cen
 
 .misses { padding-left: 18px; color: var(--muted); font-size: 14px; }
 .misses li { margin-bottom: 6px; }
+
+/* Scan du code-barres */
+.scan { display: none; }
+.scan-mode .scan {
+  display: block;
+  position: relative;
+  margin: 0 auto 8px;
+  max-width: 420px;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+.scan video { width: 100%; height: 100%; object-fit: cover; }
+/* viseur : une bande horizontale au centre, c'est là que le code doit passer */
+.scan::after {
+  content: '';
+  position: absolute;
+  left: 10%; right: 10%; top: 38%; bottom: 38%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.25);
+}
+.scan-mode .mic, .scan-mode .help { display: none; }
+.scan-mode .status { min-height: 0; margin: 8px 0; }
+.scan-mode .pad { display: block; }
+.scan-mode .pad-keys { display: none; }
+#view-deballage.scan-mode .pad { display: none; }

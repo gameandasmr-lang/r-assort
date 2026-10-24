@@ -264,13 +264,67 @@
 
   // --- Catalogue -----------------------------------------------------------
 
-  // rows : [[code, nom], ...]. Les dernières lignes remplacent les premières (catalogue perso).
+  // rows : [[code, nom, code-barres?, nom complet?], ...]. Les dernières lignes remplacent les premières
+  // (catalogue perso).
   function createCatalog(rows) {
     var byCode = {};
     (rows || []).forEach(function (row) {
-      byCode[row[0]] = { code: row[0], name: row[1], keys: nameKeys(row[1]) };
+      byCode[row[0]] = { code: row[0], name: row[1], ean: row[2] || null, keys: nameKeys(row[1]) };
     });
-    return { byCode: byCode, items: Object.keys(byCode).map(function (c) { return byCode[c]; }) };
+    var items = Object.keys(byCode).map(function (c) { return byCode[c]; });
+    var byEan = {};
+    items.forEach(function (item) { if (item.ean) byEan[item.ean] = item; });
+    return { byCode: byCode, byEan: byEan, items: items };
+  }
+
+  // --- Codes-barres ----------------------------------------------------------
+
+  // Clé de contrôle d'un code EAN (8, 12, 13 ou 14 chiffres) : détecte une lecture fausse de la caméra.
+  function validEan(digits) {
+    if (!/^\d+$/.test(digits) || [8, 12, 13, 14].indexOf(digits.length) < 0) return false;
+    var sum = 0;
+    for (var i = 0; i < digits.length - 1; i++) {
+      var fromRight = digits.length - 1 - i;
+      sum += Number(digits[i]) * (fromRight % 2 === 1 ? 3 : 1);
+    }
+    return (10 - sum % 10) % 10 === Number(digits[digits.length - 1]);
+  }
+
+  // EAN-13 que Picard fabrique lui-même : 327016 + référence sur 6 chiffres + clé (ex. 3270160894314 → 89431).
+  var PICARD_PREFIX = '327016';
+
+  function codeFromPicardEan(ean) {
+    if (ean.length !== 13 || ean.indexOf(PICARD_PREFIX) !== 0) return null;
+    return String(Number(ean.slice(6, 12)));
+  }
+
+  // Ce que la caméra a lu → { code, item, ean } ou null si ce n'est pas un code-barres exploitable.
+  //   - EAN du produit : cherché dans le catalogue, sinon déduit si c'est un EAN Picard ;
+  //   - carton (ITF-14 : un chiffre en plus devant) et GS1-128 (« 01 » + 14 chiffres) : on en extrait l'EAN.
+  // item vaut null quand le code est déduit mais absent du catalogue.
+  function codeFromBarcode(raw, catalog) {
+    var digits = String(raw || '').replace(/\D/g, '');
+    var tries = [];
+    function add(candidate) { if (candidate && tries.indexOf(candidate) < 0) tries.push(candidate); }
+    add(digits);
+    if (digits.length === 14) add(digits.slice(1, 14));
+    if (digits.length >= 16 && digits.indexOf('01') === 0) {
+      add(digits.slice(2, 16));
+      add(digits.slice(3, 16));
+    }
+    for (var i = 0; i < tries.length; i++) {
+      var ean = tries[i];
+      if (!validEan(ean)) continue;
+      var item = catalog && catalog.byEan[ean];
+      if (item) return { code: item.code, item: item, ean: ean };
+      var code = codeFromPicardEan(ean);
+      if (code) {
+        var padded = code.length < 4 ? ('0000' + code).slice(-4) : code;
+        var known = catalog && (catalog.byCode[code] || catalog.byCode[padded] || catalog.byCode['0' + code]);
+        return { code: known ? known.code : code, item: known || null, ean: ean };
+      }
+    }
+    return null;
   }
 
   // Codes du catalogue à une faute près (un chiffre changé, ajouté, oublié ou inversé).
@@ -508,6 +562,8 @@
     tokenize: tokenize,
     readDigits: readDigits,
     createCatalog: createCatalog,
+    codeFromBarcode: codeFromBarcode,
+    validEan: validEan,
     nearCodes: nearCodes,
     searchCatalog: searchCatalog,
     parsePointage: parsePointage,

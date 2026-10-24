@@ -34,7 +34,22 @@ w.prompt = () => promptAnswers.shift();
 w.confirm = () => true;
 w.alert = () => {};
 
-for (const f of ['catalog.js', 'logic.js', 'app.js']) w.eval(fs.readFileSync(path.join(APP, f), 'utf8'));
+// Caméra et lecteur de codes-barres simulés : nextBarcode est ce que « voit » la caméra.
+let nextBarcode = null;
+let cameraOn = false;
+w.navigator.mediaDevices = {
+  getUserMedia: () => {
+    cameraOn = true;
+    return Promise.resolve({ getTracks: () => [{ stop() { cameraOn = false; } }] });
+  }
+};
+w.BarcodeDetector = function () {
+  this.detect = () => Promise.resolve(nextBarcode ? [{ rawValue: nextBarcode }] : []);
+};
+w.HTMLMediaElement.prototype.play = () => Promise.resolve();
+Object.defineProperty(w.HTMLMediaElement.prototype, 'readyState', { get: () => 4 });
+
+for (const f of ['catalog.js', 'logic.js', 'scanner.js', 'app.js']) w.eval(fs.readFileSync(path.join(APP, f), 'utf8'));
 
 const $ = (s) => w.document.querySelector(s);
 const $$ = (s) => [...w.document.querySelectorAll(s)];
@@ -188,6 +203,73 @@ async function test(name, fn) {
     assert.strictEqual(JSON.parse(w.localStorage.getItem('reassort.saisie')).deballage, 'pad');
     $('#view-deballage [data-input="voice"]').click();
     assert.ok(!$('#view-deballage').classList.contains('pad-mode'));
+  });
+
+  const eanOf = (code) => w.CATALOG.find((row) => row[0] === code)[2];
+  async function scan(barcode) {
+    nextBarcode = barcode;
+    await new Promise((r) => setTimeout(r, 450));
+    nextBarcode = null;
+  }
+
+  await test('scan : la caméra ne tourne que dans un écran en mode scan', async () => {
+    $('[data-tab="deballage"]').click();
+    assert.strictEqual(cameraOn, false);
+    $('#view-deballage [data-input="scan"]').click();
+    await tick();
+    assert.ok($('#view-deballage').classList.contains('scan-mode'));
+    assert.strictEqual(cameraOn, true);
+    $('[data-tab="liste"]').click();
+    assert.strictEqual(cameraOn, false, 'caméra coupée hors de l\'écran');
+    $('[data-tab="deballage"]').click();
+    await tick();
+    assert.strictEqual(cameraOn, true);
+  });
+
+  await test('scan : déballage répond au code-barres, sans relire le même code', async () => {
+    spoken.length = 0;
+    await scan(eanOf('12866'));
+    assert.strictEqual(spoken.length, 1, 'une seule réponse malgré plusieurs lectures du même code');
+    assert.ok(last().startsWith('Poêlée sarladaise : oui'), last());
+    assert.ok($('#answer').textContent.includes('OUI'));
+  });
+
+  await test('scan : code-barres inconnu', async () => {
+    await scan('1234567890123');
+    assert.strictEqual(last(), 'Code-barres non reconnu.');
+    assert.ok($('#status-deballage').classList.contains('error'));
+  });
+
+  await test('scan : pointage, code-barres puis quantité', async () => {
+    $('[data-tab="pointage"]').click();
+    $('#view-pointage [data-input="scan"]').click();
+    await tick();
+    assert.strictEqual(cameraOn, true);
+    assert.ok($('#pad-pointage [data-action="pad-qty"]').disabled, 'quantités bloquées sans scan');
+    await scan(eanOf('89431'));
+    assert.strictEqual(last(), 'Pizza margherita 400g');
+    assert.ok($('#pad-preview-pointage').textContent.includes('Pizza margherita 400g'));
+    $('#pad-pointage [data-qty="3"]').click();
+    assert.strictEqual(last().startsWith('Pizza margherita 400g, 3 cartons'), true, last());
+    assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '', 'prêt pour le scan suivant');
+  });
+
+  await test('scan : caméra refusée → message clair', async () => {
+    const original = w.navigator.mediaDevices.getUserMedia;
+    w.navigator.mediaDevices.getUserMedia = () => Promise.reject({ name: 'NotAllowedError' });
+    $('#view-pointage [data-input="voice"]').click();
+    $('#view-pointage [data-input="scan"]').click();
+    await tick();
+    assert.ok($('#status-pointage').textContent.includes('Caméra refusée'));
+    assert.ok($('#status-pointage').classList.contains('error'));
+    w.navigator.mediaDevices.getUserMedia = original;
+  });
+
+  await test('scan : le choix est retenu, retour à la voix coupe la caméra', async () => {
+    assert.strictEqual(JSON.parse(w.localStorage.getItem('reassort.saisie')).deballage, 'scan');
+    $('#view-pointage [data-input="voice"]').click();
+    $('#view-deballage [data-input="voice"]').click();
+    assert.strictEqual(cameraOn, false);
   });
 
   await test('annuler et nouveau réassort', async () => {

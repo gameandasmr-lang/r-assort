@@ -26,7 +26,10 @@ tablette en tapant le code prend du temps. Le but : ne pas créer d'écart entre
 4. **Test** : un code au hasard s'affiche, on le lit, l'app compte les réussites et garde les ratés
    (ce qu'elle a entendu), pour améliorer la reconnaissance.
 
-Pointage et Déballage ont un sélecteur **🎤 Voix / 🔢 Pavé**. Au pavé : 5 chiffres puis la quantité
+Pointage et Déballage ont un sélecteur **🎤 Voix / 🔢 Pavé / 📷 Scan**. Au scan, la caméra arrière lit le
+code-barres (EAN du produit, ou de son carton) : au déballage la réponse OUI / NON / PAS NOTÉ vient tout de
+suite et le scan continue ; au pointage, l'article s'affiche puis on touche la quantité. La caméra ne tourne que
+dans un écran en mode scan. Au pavé : 5 chiffres puis la quantité
 au pointage ; au déballage la réponse vient dès le 5e chiffre.
 
 Les données restent sur le téléphone (stockage du navigateur). « Nouveau réassort » vide la liste.
@@ -43,7 +46,9 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
 
 ## Pistes pour la suite
 
-- **Scanner le code-barres avec la caméra** (mode « 📷 Scanner » à côté de Voix / Pavé) : le code article est dans l'EAN des articles Picard (`327016` + 6 chiffres de la référence + clé de contrôle), donc zéro erreur de reconnaissance. Chrome Android sait lire les codes-barres (`BarcodeDetector`). À vérifier : le code-barres d'un carton est-il celui du produit ? (photo d'une étiquette de carton à fournir). Reconnaître un article sans code-barres à partir de sa photo : bien plus dur (emballages semblables), service payant probable, en réserve.
+- **Tester le mode 📷 Scan en magasin** (écrit le 24/10, jamais essayé sur un vrai téléphone ni sur un vrai carton) : le code-barres d'un carton est-il celui du produit (EAN), ou un code logistique ? Si ce n'est ni l'un ni l'autre, noter ce que la caméra lit (message « Code-barres non reconnu : … ») et adapter `codeFromBarcode` dans `logic.js`. Le lecteur intégré à Chrome (`BarcodeDetector`) n'existe pas sur PC Windows : le scan se teste sur le Pixel.
+- **Vraie application Android (APK)**, si les demandes d'autorisation (micro, caméra) restent gênantes : le même code emballé avec Capacitor, permission demandée une seule fois, lecteur ML Kit de Google plus fiable. Contrepartie : Android Studio sur le PC, et un nouvel APK à chaque mise à jour (plus de simple `git push`). À décider après le test en magasin.
+- Reconnaître un article sans code-barres à partir de sa photo : bien plus dur (emballages semblables), service payant probable, en réserve.
 - Utiliser le **nom complet de la fiche** comme second nom de recherche à la voix.
 - **Corriger le catalogue** avec des photos d'étiquettes de rayon (code + nom) : les lire, comparer
   avec `catalog.js`, lister les différences, puis corriger (ajouter un fichier de corrections fusionné
@@ -86,7 +91,8 @@ ouverture (avec du réseau). Penser à changer le numéro de `CACHE` dans `sw.js
 ## Fichiers
 
 - `index.html`, `style.css` : l'interface.
-- `app.js` : onglets, micro (reconnaissance vocale de Chrome), voix, pavé, liste, test.
+- `app.js` : onglets, micro (reconnaissance vocale de Chrome), voix, pavé, scan, liste, test.
+- `scanner.js` : caméra et lecture des codes-barres (`BarcodeDetector`), sans rien savoir du catalogue.
 - `logic.js` : compréhension des phrases (codes dictés de toutes les façons, quantités, négations),
   recherche dans le catalogue et dans le pointage. Sans DOM, testable avec Node.
 - `catalog.js` : catalogue généré (code, nom). Ne pas modifier à la main.

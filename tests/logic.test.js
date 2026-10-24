@@ -185,6 +185,46 @@ test('codes proches', function () {
   assert.deepStrictEqual(R.nearCodes('8943', codes), ['89431', '89413']);  // un chiffre oublié
 });
 
+test('code-barres : l\'EAN du produit donne le code article', function () {
+  var r = R.codeFromBarcode('3270160894314', catalog);
+  assert.strictEqual(r.code, '89431');
+  assert.strictEqual(r.item.name, 'Pizza margherita 400g');
+});
+
+test('code-barres : carton (ITF-14) et GS1-128 contiennent l\'EAN du produit', function () {
+  assert.strictEqual(R.codeFromBarcode('03270160894314', catalog).code, '89431');
+  assert.strictEqual(R.codeFromBarcode('0103270160894314', catalog).code, '89431');
+  assert.strictEqual(R.codeFromBarcode('(01)03270160894314', catalog).code, '89431');
+});
+
+test('code-barres : lecture fausse (clé de contrôle) ou pas un EAN → refusé', function () {
+  assert.strictEqual(R.codeFromBarcode('3270160894315', catalog), null);
+  assert.strictEqual(R.codeFromBarcode('abc', catalog), null);
+  assert.strictEqual(R.codeFromBarcode('', catalog), null);
+  assert.strictEqual(R.validEan('3270160894314'), true);
+});
+
+test('code-barres : EAN Picard absent du catalogue → code déduit, sans article', function () {
+  // 327016 + 099998 + clé : référence 99998, inconnue du catalogue
+  var ean = '327016099998';
+  var sum = 0;
+  for (var i = 0; i < 12; i++) sum += Number(ean[i]) * (i % 2 ? 3 : 1);
+  ean += (10 - sum % 10) % 10;
+  var r = R.codeFromBarcode(ean, catalog);
+  assert.strictEqual(r.code, '99998');
+  assert.strictEqual(r.item, null);
+});
+
+test('code-barres : tous les articles du catalogue se retrouvent par leur EAN', function () {
+  var checked = 0;
+  catalog.items.forEach(function (item) {
+    if (!item.ean || !R.validEan(item.ean)) return;
+    checked++;
+    assert.strictEqual(R.codeFromBarcode(item.ean, catalog).code, item.code, item.code + ' ' + item.ean);
+  });
+  assert.ok(checked > 1400, checked + ' articles vérifiés');
+});
+
 test('rapidité de la recherche dans le catalogue', function () {
   var t = Date.now();
   for (var i = 0; i < 20; i++) R.parsePointage('poêlée de légumes du soleil deux cartons', catalog);

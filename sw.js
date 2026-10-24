@@ -1,6 +1,6 @@
 // Réseau d'abord (pour recevoir les mises à jour), cache en secours si pas de réseau.
-var CACHE = 'reassort-v5';
-var FILES = ['./', 'index.html', 'style.css', 'catalog.js', 'logic.js', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
+var CACHE = 'reassort-v6';
+var FILES = ['./', 'index.html', 'style.css', 'catalog.js', 'logic.js', 'scanner.js', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(caches.open(CACHE).then(function (cache) { return cache.addAll(FILES); }));
