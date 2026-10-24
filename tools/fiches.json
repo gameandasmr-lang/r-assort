@@ -1,0 +1,7749 @@
+{
+ "1121": {
+  "ref": "001121",
+  "name": "Petits pois doux extra-fins et jeunes carottes, France",
+  "ean": "3270160011216"
+ },
+ "1592": {
+  "ref": "001592",
+  "name": "Melon en billes, Maroc",
+  "ean": "3270160015924"
+ },
+ "1659": {
+  "ref": "001659",
+  "name": "Petits pois doux extra-fins, France",
+  "ean": "3270160016594"
+ },
+ "1915": {
+  "ref": "001915",
+  "name": "Haricots beurre extra-fins, France",
+  "ean": "3270160019151"
+ },
+ "1964": {
+  "ref": "001964",
+  "name": "Purée de marrons",
+  "ean": "3270160019649"
+ },
+ "2277": {
+  "ref": "002277",
+  "name": "Persil coupé"
+ },
+ "3150": {
+  "ref": "003150",
+  "name": "Aligot de l'Aubrac",
+  "ean": "3321271221046"
+ },
+ "3168": {
+  "ref": "003168",
+  "name": "Mangues en tranches, Philippines",
+  "ean": "3270160031689"
+ },
+ "3572": {
+  "ref": "003572",
+  "name": "Petits oignons blancs entiers, épluchés",
+  "ean": "3270160035724"
+ },
+ "4455": {
+  "ref": "004455",
+  "name": "50 escargots petits gris, moyens, sans tortillon"
+ },
+ "4976": {
+  "ref": "004976",
+  "name": "Filets de flétan du Groenland",
+  "ean": "3270160049769"
+ },
+ "5015": {
+  "ref": "005015",
+  "name": "Oignons émincés, France",
+  "ean": "3270160050154"
+ },
+ "5437": {
+  "ref": "005437",
+  "name": "Escalopes de dinde, 9 à 11 pièces",
+  "ean": "3270160054374"
+ },
+ "5676": {
+  "ref": "005676",
+  "name": "Pommes noisettes",
+  "ean": "3270160056767"
+ },
+ "5783": {
+  "ref": "005783",
+  "name": "Crevettes nordiques cuites décortiquées MSC",
+  "ean": "3270160057832"
+ },
+ "6104": {
+  "ref": "006104",
+  "name": "Échalote coupée"
+ },
+ "6245": {
+  "ref": "006245",
+  "name": "Pommes noisettes",
+  "ean": "3270160062454"
+ },
+ "6500": {
+  "ref": "006500",
+  "name": "Champignons de Paris émincés",
+  "ean": "3270160065004"
+ },
+ "6542": {
+  "ref": "006542",
+  "name": "Haricots verts extra-fins, France",
+  "ean": "3270160065424"
+ },
+ "6609": {
+  "ref": "006609",
+  "name": "Potage mélange de légumes, portionnable",
+  "ean": "3270160066094"
+ },
+ "6757": {
+  "ref": "006757",
+  "name": "Merguez (8 à 10 pièces)"
+ },
+ "7037": {
+  "ref": "007037",
+  "name": "Sauté de dinde, sans os, sans peau",
+  "ean": "3270160070374"
+ },
+ "8282": {
+  "ref": "008282",
+  "name": "Purée de pommes de terre",
+  "ean": "3270160082827"
+ },
+ "8431": {
+  "ref": "008431",
+  "name": "12 escargots moyens",
+  "ean": "3270160084319"
+ },
+ "8753": {
+  "ref": "008753",
+  "name": "Ail coupé"
+ },
+ "10002": {
+  "ref": "010002",
+  "name": "Salad bowl au falafel",
+  "ean": "3270160100026"
+ },
+ "10023": {
+  "ref": "010023",
+  "name": "Amandes enrobées de chocolat et sel",
+  "ean": "3270160100231"
+ },
+ "10025": {
+  "ref": "010025",
+  "name": "6 cônes citron",
+  "ean": "3270160100255"
+ },
+ "10026": {
+  "ref": "010026",
+  "name": "6 cônes vanille praliné",
+  "ean": "3270160100262"
+ },
+ "10030": {
+  "ref": "010030",
+  "name": "Gratin à la provençale",
+  "ean": "3270160100309"
+ },
+ "10033": {
+  "ref": "010033",
+  "name": "8 crêpes baghrir, crêpes mille trous",
+  "ean": "3270160100330"
+ },
+ "10034": {
+  "ref": "010034",
+  "name": "Assortiment de kemias 2 msemen, zaalouk, taktouka",
+  "ean": "3270160100347"
+ },
+ "10035": {
+  "ref": "010035",
+  "name": "Pad see ew nouilles de riz, légumes, tofu",
+  "ean": "3270160100354"
+ },
+ "10036": {
+  "ref": "010036",
+  "name": "2 khanom babin crêpes épaisses à la noix coco",
+  "ean": "3270160100361"
+ },
+ "10037": {
+  "ref": "010037",
+  "name": "Pois chiches à l'indienne, tomate, épinard",
+  "ean": "3270160100378"
+ },
+ "10038": {
+  "ref": "010038",
+  "name": "2 tatins de tajine légumes et abricot",
+  "ean": "3270160100385"
+ },
+ "10039": {
+  "ref": "010039",
+  "name": "Bol à la marocaine lentilles, carottes, houmous",
+  "ean": "3270160100392"
+ },
+ "10040": {
+  "ref": "010040",
+  "name": "Salade d'oranges, sauce au miel",
+  "ean": "3270160100408"
+ },
+ "10041": {
+  "ref": "010041",
+  "name": "Poulet à l'indienne dahl de lentilles corail, riz",
+  "ean": "3270160100415"
+ },
+ "10050": {
+  "ref": "010050",
+  "name": "Poulet façon amlou riz cuisiné sce amande et miel",
+  "ean": "3270160100507"
+ },
+ "10051": {
+  "ref": "010051",
+  "name": "Couscous tfaya légumes et semoule",
+  "ean": "3270160100514"
+ },
+ "10053": {
+  "ref": "010053",
+  "name": "Pâtisserie à l?orientale chebakia, cornes gazelle",
+  "ean": "3270160100538"
+ },
+ "10064": {
+  "ref": "010064",
+  "name": "Côtelettes d'agneau, 5 à 8 pièces",
+  "ean": "3270160100644"
+ },
+ "10067": {
+  "ref": "010067",
+  "name": "Bâtonnet fruits rouges, saveur violette",
+  "ean": "3270160100675"
+ },
+ "10068": {
+  "ref": "010068",
+  "name": "Epinards hachés bio, France",
+  "ean": "3270160100682"
+ },
+ "10069": {
+  "ref": "010069",
+  "name": "4 bâtonnets cacahuète Gruvi",
+  "ean": "8005840020784"
+ },
+ "10070": {
+  "ref": "010070",
+  "name": "4 bâtonnets pistache Gruvi",
+  "ean": "8005840008928"
+ },
+ "10073": {
+  "ref": "010073",
+  "name": "Mélange de moules ASC, crevettes, St-Jacques MSC",
+  "ean": "3270160100736"
+ },
+ "10074": {
+  "ref": "010074",
+  "name": "2 pancakes hyperprotéiné aux pépites de chocolat",
+  "ean": "3270160100743"
+ },
+ "10075": {
+  "ref": "010075",
+  "name": "L'étonnante marguerite, 6 parts",
+  "ean": "3270160100750"
+ },
+ "10076": {
+  "ref": "010076",
+  "name": "Patatas bravas pdt, sauce tomate, sauce aïoli",
+  "ean": "3270160100767"
+ },
+ "10077": {
+  "ref": "010077",
+  "name": "Churros de pommes de terre, sauce au chorizo",
+  "ean": "3270160100774"
+ },
+ "10078": {
+  "ref": "010078",
+  "name": "En-cas salé cake poulet, tomate, emmental",
+  "ean": "3270160100781"
+ },
+ "10080": {
+  "ref": "010080",
+  "name": "Salade gnocchetti poulet, légumineuses, légumes",
+  "ean": "3270160100804"
+ },
+ "10081": {
+  "ref": "010081",
+  "name": "4 portions panées de filet de colin-lieu MSC",
+  "ean": "3270160100811"
+ },
+ "10082": {
+  "ref": "010082",
+  "name": "Purée de potimarron bio",
+  "ean": "3270160100828"
+ },
+ "10083": {
+  "ref": "010083",
+  "name": "10 crêpes devant ! emmental, mozzarella",
+  "ean": "3270160100835"
+ },
+ "10085": {
+  "ref": "010085",
+  "name": "Parmentier carottes, patates douce",
+  "ean": "3270160100859"
+ },
+ "10086": {
+  "ref": "010086",
+  "name": "Raviolis tomate, ricotta",
+  "ean": "3270160100866"
+ },
+ "10087": {
+  "ref": "010087",
+  "name": "Farce pur porc crue, à cuire",
+  "ean": "3270160100873"
+ },
+ "10088": {
+  "ref": "010088",
+  "name": "10 gyoza aux crevettes, bouchées vapeur, sce ponzu",
+  "ean": "3270160100880"
+ },
+ "10090": {
+  "ref": "010090",
+  "name": "Asperges vertes, Chili",
+  "ean": "3270160100903"
+ },
+ "10091": {
+  "ref": "010091",
+  "name": "Lentilles à l'italienne, tomate, carotte, basilic",
+  "ean": "3270160100910"
+ },
+ "10096": {
+  "ref": "010096",
+  "name": "Bananes en rondelles, Vietnam",
+  "ean": "3270160100965"
+ },
+ "10097": {
+  "ref": "010097",
+  "name": "Fideua aux calmars et crevettes",
+  "ean": "3270160100972"
+ },
+ "10098": {
+  "ref": "010098",
+  "name": "Arroz negro con chorizo, riz noir au chorizo",
+  "ean": "3270160100989"
+ },
+ "10099": {
+  "ref": "010099",
+  "name": "6 cônes Extrême peanuts caramel",
+  "ean": "3274664278359"
+ },
+ "10100": {
+  "ref": "010100",
+  "name": "4 bâtonnets NUII café",
+  "ean": "5900130045153"
+ },
+ "10101": {
+  "ref": "010101",
+  "name": "6 pirulo fun box",
+  "ean": "8436615685004"
+ },
+ "10103": {
+  "ref": "010103",
+  "name": "4 bâtonnets donut cocoa, cookies parfum chocolat",
+  "ean": "8711327678057"
+ },
+ "10104": {
+  "ref": "010104",
+  "name": "4 bâtonnets Magnum La pêche",
+  "ean": "8721274812329"
+ },
+ "10105": {
+  "ref": "010105",
+  "name": "4 bâtonnets Solero Exotic",
+  "ean": "8721274815818"
+ },
+ "10107": {
+  "ref": "010107",
+  "name": "4 cônes Magnum chocolat blanc and cookies",
+  "ean": "8721274826432"
+ },
+ "10108": {
+  "ref": "010108",
+  "name": "16 mignardises apéritives légumes",
+  "ean": "3270160101085"
+ },
+ "10109": {
+  "ref": "010109",
+  "name": "Bâtonnets panés à la mozzarella",
+  "ean": "3270160101092"
+ },
+ "10111": {
+  "ref": "010111",
+  "name": "Les rois de la savane préfrits, 25 pièces environ",
+  "ean": "3270160101115"
+ },
+ "10112": {
+  "ref": "010112",
+  "name": "10 cookies apéritifs chèvre, poivrons, feta",
+  "ean": "3270160101122"
+ },
+ "10113": {
+  "ref": "010113",
+  "name": "Pimientos* de Padron *poivrons",
+  "ean": "3270160101139"
+ },
+ "10114": {
+  "ref": "010114",
+  "name": "La rose au chocolat au lait",
+  "ean": "3270160101146"
+ },
+ "10116": {
+  "ref": "010116",
+  "name": "Roses au chocolat au lait",
+  "ean": "3270160101160"
+ },
+ "10118": {
+  "ref": "010118",
+  "name": "Coquille St-Jacques Pecten France sauce Noilly",
+  "ean": "3270160101184"
+ },
+ "10119": {
+  "ref": "010119",
+  "name": "Galleta leche merengada, crème glacée au lait",
+  "ean": "3270160101191"
+ },
+ "10120": {
+  "ref": "010120",
+  "name": "4 coquilles colin saumon sauce crème ciboulette",
+  "ean": "3270160101207"
+ },
+ "10122": {
+  "ref": "010122",
+  "name": "Crevettes sauce paprika et au fromage blanc",
+  "ean": "3270160101221"
+ },
+ "10123": {
+  "ref": "010123",
+  "name": "Fleurettes de brocolis, Espagne",
+  "ean": "3270160101238"
+ },
+ "10124": {
+  "ref": "010124",
+  "name": "Boulettes végétariennes à la sauce cajun",
+  "ean": "3270160101245"
+ },
+ "10126": {
+  "ref": "010126",
+  "name": "Carciofi alla giudia quartiers d?artichauts",
+  "ean": "3270160101269"
+ },
+ "10127": {
+  "ref": "010127",
+  "name": "6 suppli al telefono boulettes de riz fourrées",
+  "ean": "3270160101276"
+ },
+ "10128": {
+  "ref": "010128",
+  "name": "Lasagne alla romana garnies de saucisse, béchamel",
+  "ean": "3270160101283"
+ },
+ "10129": {
+  "ref": "010129",
+  "name": "Risotto cacio e pepe risotto aux fromages, poivres",
+  "ean": "3270160101290"
+ },
+ "10130": {
+  "ref": "010130",
+  "name": "Mezze maniche zozzona pâtes enrobées",
+  "ean": "3270160101306"
+ },
+ "10131": {
+  "ref": "010131",
+  "name": "Haricots verts très fins bio, France ou Italie",
+  "ean": "3270160101313"
+ },
+ "10132": {
+  "ref": "010132",
+  "name": "Gramigna cacio e pepe sce base pecorino romano AOP",
+  "ean": "3270160101320"
+ },
+ "10134": {
+  "ref": "010134",
+  "name": "Gnocchi alla romana gratinés au beurre, au fromage",
+  "ean": "3270160101344"
+ },
+ "10135": {
+  "ref": "010135",
+  "name": "Lasagne ai carciofi, garnies d'artichauts, jambon",
+  "ean": "3270160101351"
+ },
+ "10136": {
+  "ref": "010136",
+  "name": "Spaghetti alla carbonara sauce guanciale, fromage",
+  "ean": "3270160101368"
+ },
+ "10142": {
+  "ref": "010142",
+  "name": "Crème glacée Vanille de Madagascar",
+  "ean": "8721274825091"
+ },
+ "10144": {
+  "ref": "010144",
+  "name": "Crème glacée Magnum amande",
+  "ean": "8721274813876"
+ },
+ "10145": {
+  "ref": "010145",
+  "name": "3 bâtonnets creamy Strawberry",
+  "ean": "3415587552014"
+ },
+ "10153": {
+  "ref": "010153",
+  "name": "AOP Coteaux d'Aix, Les Plongeuses - Dom.Audibert",
+  "ean": "3770010730576"
+ },
+ "10154": {
+  "ref": "010154",
+  "name": "Croquetas, assortiment de croquettes",
+  "ean": "3270160101542"
+ },
+ "10157": {
+  "ref": "010157",
+  "name": "Epinards en branches, France",
+  "ean": "3270160101573"
+ },
+ "10159": {
+  "ref": "010159",
+  "name": "2 portions d'églefin façon fish and chips MSC",
+  "ean": "3270160101597"
+ },
+ "10161": {
+  "ref": "010161",
+  "name": "Empanadillas tomate, thon, chorizo, fromage",
+  "ean": "3270160101610"
+ },
+ "10162": {
+  "ref": "010162",
+  "name": "Granizado de limon, granité au citron",
+  "ean": "3270160101627"
+ },
+ "10163": {
+  "ref": "010163",
+  "name": "Tortilla aux oignons",
+  "ean": "3270160101634"
+ },
+ "10164": {
+  "ref": "010164",
+  "name": "2 tartes fines inédites saumon fumé, oignon rouge",
+  "ean": "3270160101641"
+ },
+ "10167": {
+  "ref": "010167",
+  "name": "Barre protéinée cacahuètes, chocolat",
+  "ean": "3270160101672"
+ },
+ "10168": {
+  "ref": "010168",
+  "name": "8 mini citrouilles apéritives, potiron, marron",
+  "ean": "3270160101689"
+ },
+ "10169": {
+  "ref": "010169",
+  "name": "Trop bons les oursons ! 10 mini cakes tomate, mozz",
+  "ean": "3270160101696"
+ },
+ "10175": {
+  "ref": "010175",
+  "name": "12 bougies",
+  "ean": "3270160101757"
+ },
+ "10176": {
+  "ref": "010176",
+  "name": "Bière Volcelest IPA bio",
+  "ean": "3770001905228"
+ },
+ "10178": {
+  "ref": "010178",
+  "name": "Sangria Vina Zancara",
+  "ean": "8437008052120"
+ },
+ "10180": {
+  "ref": "010180",
+  "name": "Shake aux fruits et au skyr hyperprotéiné",
+  "ean": "3270160101801"
+ },
+ "10185": {
+  "ref": "010185",
+  "name": "Mini pizzas jambon fromage, tomate, mozzarella",
+  "ean": "3270160101856"
+ },
+ "10186": {
+  "ref": "010186",
+  "name": "Mini pizzas 3 fromages",
+  "ean": "3270160101863"
+ },
+ "10189": {
+  "ref": "010189",
+  "name": "Pommes de terre aux champignons façon sarladaise",
+  "ean": "3270160101894"
+ },
+ "10190": {
+  "ref": "010190",
+  "name": "8 mini hot dogs",
+  "ean": "3270160101900"
+ },
+ "10199": {
+  "ref": "010199",
+  "name": "Cubes de tomates à l'italienne, Italie",
+  "ean": "3270160101993"
+ },
+ "10202": {
+  "ref": "010202",
+  "name": "Gâteau cookie et cream, 4-6 parts",
+  "ean": "3270160102020"
+ },
+ "10204": {
+  "ref": "010204",
+  "name": "Pizza Regina Italia",
+  "ean": "3270160102044"
+ },
+ "10206": {
+  "ref": "010206",
+  "name": "Petits pois bio, France ou Italie",
+  "ean": "3270160102068"
+ },
+ "10212": {
+  "ref": "010212",
+  "name": "Cinnamon roll brioche à la canelle, 6 parts",
+  "ean": "3270160102129"
+ },
+ "10232": {
+  "ref": "010232",
+  "name": "Mini glacière isotherme rayures roses et verte",
+  "ean": "3270160102327"
+ },
+ "10248": {
+  "ref": "010248",
+  "name": "Choux-fleurs en fleurettes bio, France ou Italie",
+  "ean": "3270160102488"
+ },
+ "10260": {
+  "ref": "010260",
+  "name": "Glace façon banana Bread, Voya",
+  "ean": "3760448890096"
+ },
+ "10261": {
+  "ref": "010261",
+  "name": "Glace vanille façon bretzel, Voya",
+  "ean": "3760448890003"
+ },
+ "10262": {
+  "ref": "010262",
+  "name": "Glace façon cinamon roll, Voya",
+  "ean": "3760448890126"
+ },
+ "10272": {
+  "ref": "010272",
+  "name": "Jardinière de légumes bio, France ou Italie",
+  "ean": "3270160102723"
+ },
+ "10298": {
+  "ref": "010298",
+  "name": "Epinards en branches bio",
+  "ean": "3270160102983"
+ },
+ "10305": {
+  "ref": "010305",
+  "name": "Carottes en rondelles bio, France",
+  "ean": "3270160103058"
+ },
+ "10307": {
+  "ref": "010307",
+  "name": "Pinsa alle verdure mozzarella, tomate cerise",
+  "ean": "3270160103072"
+ },
+ "10310": {
+  "ref": "010310",
+  "name": "Collagène marin neutre MSC, ASKA Nutrition",
+  "ean": "724133316097"
+ },
+ "10311": {
+  "ref": "010311",
+  "name": "Collagène marin mangue MSC, ASKA Nutrition",
+  "ean": "724133316080"
+ },
+ "10313": {
+  "ref": "010313",
+  "name": "Courgettes en rondelles bio, Italie",
+  "ean": "3270160103133"
+ },
+ "10321": {
+  "ref": "010321",
+  "name": "Fleurettes de brocolis bio, France ou Espagne",
+  "ean": "3270160103218"
+ },
+ "10324": {
+  "ref": "010324",
+  "name": "Tiramisu pistache, 4-6 parts",
+  "ean": "3270160103249"
+ },
+ "10339": {
+  "ref": "010339",
+  "name": "Pois gourmands, Kenya",
+  "ean": "3270160103393"
+ },
+ "10371": {
+  "ref": "010371",
+  "name": "Fèves pelées, Egypte",
+  "ean": "3270160103713"
+ },
+ "10374": {
+  "ref": "010374",
+  "name": "Bière triple Volcelest bio",
+  "ean": "3770001905105"
+ },
+ "10438": {
+  "ref": "010438",
+  "name": "Bol vapeur brocolis-choux fleurs-carottes",
+  "ean": "3270160104383"
+ },
+ "10454": {
+  "ref": "010454",
+  "name": "Bol vapeur brocolis, pois croquants, courgettes grillées, tomates cerises",
+  "ean": "3270160104543"
+ },
+ "11304": {
+  "ref": "011304",
+  "name": "Gratin d'aubergines",
+  "ean": "3270160113040"
+ },
+ "11370": {
+  "ref": "011370",
+  "name": "Taboulé, portionnable",
+  "ean": "3270160113705"
+ },
+ "11438": {
+  "ref": "011438",
+  "name": "Ratatouille cuisinée",
+  "ean": "3270160114382"
+ },
+ "11479": {
+  "ref": "011479",
+  "name": "Epinards hachés cuisinés à la crème, portionnables",
+  "ean": "3270160114795"
+ },
+ "11487": {
+  "ref": "011487",
+  "name": "Riz basmati, cuit",
+  "ean": "3270160114870"
+ },
+ "11536": {
+  "ref": "011536",
+  "name": "Légumes à la basquaise",
+  "ean": "3270160115365"
+ },
+ "11635": {
+  "ref": "011635",
+  "name": "Légumes pour couscous",
+  "ean": "3270160116355"
+ },
+ "11700": {
+  "ref": "011700",
+  "name": "Gratin dauphinois, portionnable",
+  "ean": "3270160117000"
+ },
+ "11871": {
+  "ref": "011871",
+  "name": "8 palets de légumes courgettes jaune et verte, petit pois doux, carotte",
+  "ean": "3270160118717"
+ },
+ "11974": {
+  "ref": "011974",
+  "name": "Poêlée de légumes verts",
+  "ean": "3270160119745"
+ },
+ "12162": {
+  "ref": "012162",
+  "name": "Pommes duchesse",
+  "ean": "3270160121625"
+ },
+ "12270": {
+  "ref": "012270",
+  "name": "Pommes rissolées en cubes",
+  "ean": "3270160122707"
+ },
+ "12296": {
+  "ref": "012296",
+  "name": "Purée de pomme de terre bio",
+  "ean": "3270160122967"
+ },
+ "12543": {
+  "ref": "012543",
+  "name": "Pommes dauphine",
+  "ean": "3270160125432"
+ },
+ "12551": {
+  "ref": "012551",
+  "name": "Les Allumettes",
+  "ean": "3270160125517"
+ },
+ "12569": {
+  "ref": "012569",
+  "name": "Ail coupé",
+  "ean": "3270160125692"
+ },
+ "12577": {
+  "ref": "012577",
+  "name": "Coriandre coupée",
+  "ean": "3270160125777"
+ },
+ "12585": {
+  "ref": "012585",
+  "name": "Frites de pommes de terre",
+  "ean": "3270160125852"
+ },
+ "12593": {
+  "ref": "012593",
+  "name": "Mélange pour salades",
+  "ean": "3270160125937"
+ },
+ "12600": {
+  "ref": "012600",
+  "name": "Pommes rissolées XL en cubes",
+  "ean": "3270160126002"
+ },
+ "12618": {
+  "ref": "012618",
+  "name": "Échalote coupée",
+  "ean": "3270160126187"
+ },
+ "12642": {
+  "ref": "012642",
+  "name": "Persil plat coupé",
+  "ean": "3270160126422"
+ },
+ "12684": {
+  "ref": "012684",
+  "name": "Thym coupé",
+  "ean": "3270160126842"
+ },
+ "12709": {
+  "ref": "012709",
+  "name": "Ciboulette coupée",
+  "ean": "3270160127092"
+ },
+ "12733": {
+  "ref": "012733",
+  "name": "Basilic coupé",
+  "ean": "3270160127337"
+ },
+ "12759": {
+  "ref": "012759",
+  "name": "Aneth coupé",
+  "ean": "3270160127597"
+ },
+ "12791": {
+  "ref": "012791",
+  "name": "Estragon coupé",
+  "ean": "3270160127917"
+ },
+ "12808": {
+  "ref": "012808",
+  "name": "Menthe douce coupée",
+  "ean": "3270160128082"
+ },
+ "12832": {
+  "ref": "012832",
+  "name": "Jeunes cèpes coupés",
+  "ean": "3270160128327"
+ },
+ "12840": {
+  "ref": "012840",
+  "name": "Champignons de Paris émincés",
+  "ean": "3270160128402"
+ },
+ "12858": {
+  "ref": "012858",
+  "name": "Les frites",
+  "ean": "3270160128587"
+ },
+ "12866": {
+  "ref": "012866",
+  "name": "Poêlée à la sarladaise",
+  "ean": "3270160128662"
+ },
+ "12874": {
+  "ref": "012874",
+  "name": "Oignons en cubes",
+  "ean": "3270160128747"
+ },
+ "12898": {
+  "ref": "012898",
+  "name": "Les frites XL (découpe large)",
+  "ean": "3270160128983"
+ },
+ "12931": {
+  "ref": "012931",
+  "name": "Mélange tradition",
+  "ean": "3270160129317"
+ },
+ "12949": {
+  "ref": "012949",
+  "name": "Girolles",
+  "ean": "3270160129492"
+ },
+ "13261": {
+  "ref": "013261",
+  "name": "Salade de fruits rouges",
+  "ean": "3270160132614"
+ },
+ "13336": {
+  "ref": "013336",
+  "name": "Potage brighton",
+  "ean": "3270160133369"
+ },
+ "13378": {
+  "ref": "013378",
+  "name": "Potage minestrone, portionnable",
+  "ean": "3270160133789"
+ },
+ "13401": {
+  "ref": "013401",
+  "name": "Potage lyonnais, portionnable",
+  "ean": "3270160134014"
+ },
+ "13451": {
+  "ref": "013451",
+  "name": "Mirabelles de Lorraine en oreillons, France",
+  "ean": "3270160134519"
+ },
+ "13477": {
+  "ref": "013477",
+  "name": "Velouté glacé de concombre à la menthe",
+  "ean": "3270160134779"
+ },
+ "13485": {
+  "ref": "013485",
+  "name": "Potage cuisiné aux 9 légumes bio",
+  "ean": "3270160134854"
+ },
+ "13493": {
+  "ref": "013493",
+  "name": "Griottes dénoyautées, Pologne",
+  "ean": "3270160134939"
+ },
+ "13568": {
+  "ref": "013568",
+  "name": "Gingembre coupé",
+  "ean": "3270160135684"
+ },
+ "13576": {
+  "ref": "013576",
+  "name": "Figues en quartiers, Turquie",
+  "ean": "3270160135769"
+ },
+ "13617": {
+  "ref": "013617",
+  "name": "Ananas en morceaux, Costa Rica ou Philippines",
+  "ean": "3270160136179"
+ },
+ "13659": {
+  "ref": "013659",
+  "name": "Potage de légumes verts",
+  "ean": "3270160136599"
+ },
+ "13766": {
+  "ref": "013766",
+  "name": "Bouillabaisse",
+  "ean": "3270160137664"
+ },
+ "13873": {
+  "ref": "013873",
+  "name": "Soupe au pistou",
+  "ean": "3270160138739"
+ },
+ "13899": {
+  "ref": "013899",
+  "name": "Gaspacho (tomate, concombre, poivron, oignon)",
+  "ean": "3270160138999"
+ },
+ "13956": {
+  "ref": "013956",
+  "name": "Velouté châtaigne cèpe cuisiné à la crème fraîche",
+  "ean": "3270160139569"
+ },
+ "14187": {
+  "ref": "014187",
+  "name": "Carpaccio de bœuf et sa marinade à l'huile d'olive 5 % et au basilic",
+  "ean": "3270160141876"
+ },
+ "14525": {
+  "ref": "014525",
+  "name": "Sauté de veau",
+  "ean": "3270160145256"
+ },
+ "14608": {
+  "ref": "014608",
+  "name": "Gigot d'agneau"
+ },
+ "14723": {
+  "ref": "014723",
+  "name": "4 paupiettes de veau",
+  "ean": "3270160147236"
+ },
+ "14757": {
+  "ref": "014757",
+  "name": "4 escalopes de veau haché",
+  "ean": "3270160147571"
+ },
+ "14898": {
+  "ref": "014898",
+  "name": "4 entrecôtes",
+  "ean": "3270160148981"
+ },
+ "14997": {
+  "ref": "014997",
+  "name": "Boulettes au boeuf crues",
+  "ean": "3270160149971"
+ },
+ "15219": {
+  "ref": "015219",
+  "name": "Chipolatas, 8 à 10 pièces"
+ },
+ "15235": {
+  "ref": "015235",
+  "name": "4 pavés de cerf, tranchés main, Nouvelle-Zélande",
+  "ean": "3270160152353"
+ },
+ "15681": {
+  "ref": "015681",
+  "name": "8 mini-saucisses de veau à l'italienne",
+  "ean": "3270160156818"
+ },
+ "15706": {
+  "ref": "015706",
+  "name": "4 côtes de porc désossées marinées au thym,romarin",
+  "ean": "3270160157068"
+ },
+ "15782": {
+  "ref": "015782",
+  "name": "Pulled Pork effiloché de porc à la sauce barbecue",
+  "ean": "3270160157822"
+ },
+ "15813": {
+  "ref": "015813",
+  "name": "2 boudins noirs aux oignons",
+  "ean": "3270160158133"
+ },
+ "15822": {
+  "ref": "015822",
+  "name": "Sauté de porc tomates olives",
+  "ean": "3270160158225"
+ },
+ "15897": {
+  "ref": "015897",
+  "name": "2 boudins noirs aux pommes, cuits",
+  "ean": "3270160158973"
+ },
+ "15946": {
+  "ref": "015946",
+  "name": "2 boudins blancs au bloc de foie gras de canard (20%)",
+  "ean": "3270160159468"
+ },
+ "16083": {
+  "ref": "016083",
+  "name": "Dogador chien, viandes pour animaux",
+  "ean": "3230890009099"
+ },
+ "16432": {
+  "ref": "016432",
+  "name": "Bouchées de poulet tikka marinées, cuites",
+  "ean": "3270160164325"
+ },
+ "16599": {
+  "ref": "016599",
+  "name": "2 cailles farcies au bloc de foie gras de canard",
+  "ean": "3270160165995"
+ },
+ "16739": {
+  "ref": "016739",
+  "name": "Manchons de poulet rôtis cuits",
+  "ean": "3270160167395"
+ },
+ "16812": {
+  "ref": "016812",
+  "name": "4 escalopes de dinde à la viennoise",
+  "ean": "3270160168125"
+ },
+ "16872": {
+  "ref": "016872",
+  "name": "4 escalopes de foie gras cru de canard du Sud-Ouest",
+  "ean": "3270160168729"
+ },
+ "16888": {
+  "ref": "016888",
+  "name": "Foie gras cru de canard du Sud-Ouest qualité extra",
+  "ean": "3270160168880"
+ },
+ "17184": {
+  "ref": "017184",
+  "name": "4 tranches de filet de colin d'Alaska MSC",
+  "ean": "3270160171842"
+ },
+ "17217": {
+  "ref": "017217",
+  "name": "4 pavés de saumon atlantique, élevé en Norvège",
+  "ean": "3270160172177"
+ },
+ "17382": {
+  "ref": "017382",
+  "name": "4 portions panées de filet de colin d'Alaska MSC",
+  "ean": "3270160173822"
+ },
+ "17481": {
+  "ref": "017481",
+  "name": "Filets de lotte du Cap",
+  "ean": "3270160174812"
+ },
+ "17548": {
+  "ref": "017548",
+  "name": "15 bâtonnets de colin d'Alaska MSC, pré-frits",
+  "ean": "3270160175482"
+ },
+ "17738": {
+  "ref": "017738",
+  "name": "4 dos de cabillaud MSC, Norvège ou Islande",
+  "ean": "3270160177387"
+ },
+ "17770": {
+  "ref": "017770",
+  "name": "4 portions filet cabillaud MSC, portions panées",
+  "ean": "3270160177707"
+ },
+ "17829": {
+  "ref": "017829",
+  "name": "Dos de merlu blanc du Cap MSC, 4 à 6 pièces",
+  "ean": "3270160178292"
+ },
+ "18084": {
+  "ref": "018084",
+  "name": "12 escargots belle grosseur",
+  "ean": "3270160180844"
+ },
+ "18093": {
+  "ref": "018093",
+  "name": "Préparation à base de beurre, ail et persil",
+  "ean": "3270160180936"
+ },
+ "18274": {
+  "ref": "018274",
+  "name": "24 moules farcies"
+ },
+ "18315": {
+  "ref": "018315",
+  "name": "Crevettes décortiquées ASC, HND, ECU ou VNM",
+  "ean": "3270160183159"
+ },
+ "18490": {
+  "ref": "018490",
+  "name": "Tajine poulet, semoule, olive, citron confit",
+  "ean": "3270160184903"
+ },
+ "18513": {
+  "ref": "018513",
+  "name": "Noix de St Jacques France Pecten avec corail",
+  "ean": "3270160185139"
+ },
+ "18737": {
+  "ref": "018737",
+  "name": "Moules du Pacifique cuites décoquillées ASC, Chili",
+  "ean": "3270160187379"
+ },
+ "18844": {
+  "ref": "018844",
+  "name": "Anneaux de calmar",
+  "ean": "3270160188444"
+ },
+ "18901": {
+  "ref": "018901",
+  "name": "8 tranches de saumon fumé Norvège ASC",
+  "ean": "3270160189014"
+ },
+ "18935": {
+  "ref": "018935",
+  "name": "Beignets de calmars à la romaine",
+  "ean": "3270160189359"
+ },
+ "18951": {},
+ "19140": {
+  "ref": "019140",
+  "name": "2 dos d'églefin MSC, Islande ou Norvège",
+  "ean": "3270160191406"
+ },
+ "19182": {
+  "ref": "019182",
+  "name": "2 pavés de saumon atlantique, élevé en Norvège",
+  "ean": "3270160191826"
+ },
+ "19190": {
+  "ref": "019190",
+  "name": "Filets de maquereau",
+  "ean": "3270160191901"
+ },
+ "19208": {
+  "ref": "019208",
+  "name": "2 dos de cabillaud MSC, Norvège ou Islande",
+  "ean": "3270160192083"
+ },
+ "19330": {
+  "ref": "019330",
+  "name": "4 filets de cabillaud MSC, panure croustillante",
+  "ean": "3270160193301"
+ },
+ "19421": {
+  "ref": "019421",
+  "name": "4 pavés de saumon argenté du Pacifique MSC*",
+  "ean": "3270160194216"
+ },
+ "19447": {
+  "ref": "019447",
+  "name": "Morceaux choisis de poissons nordiques",
+  "ean": "3270160194476"
+ },
+ "19538": {
+  "ref": "019538",
+  "name": "Filets de dorade-sébaste MSC",
+  "ean": "3270160195381"
+ },
+ "19562": {
+  "ref": "019562",
+  "name": "8 portions de cabillaud MSC panées pré-frites",
+  "ean": "3270160195626"
+ },
+ "19653": {
+  "ref": "019653",
+  "name": "4 portions filets Eglefin MSC, Islande",
+  "ean": "3270160196531"
+ },
+ "19661": {
+  "ref": "019661",
+  "name": "Filets de limande façon meunière, 4 à 5 filets",
+  "ean": "3270160196616"
+ },
+ "19687": {
+  "ref": "019687",
+  "name": "8 portions panées de colin d'Alaska MSC",
+  "ean": "3270160196876"
+ },
+ "19801": {
+  "ref": "019801",
+  "name": "4 portions de filets de saumon atlantique, Norvège",
+  "ean": "3270160198016"
+ },
+ "19934": {
+  "ref": "019934",
+  "name": "Filets de merlan,panure croustillante,4 à 6 filets",
+  "ean": "3270160199341"
+ },
+ "19968": {
+  "ref": "019968",
+  "name": "4 pavés de saumon kéta du Pacifique MSC",
+  "ean": "3270160199686"
+ },
+ "19976": {
+  "ref": "019976",
+  "name": "2 dos de cabillaud avec peau 'Skrei' MSC, Norvège",
+  "ean": "3270160199761"
+ },
+ "20147": {
+  "ref": "020147",
+  "name": "2 suprêmes de pintade, farcis girolles et porto",
+  "ean": "3270160201471"
+ },
+ "20189": {
+  "ref": "020189",
+  "name": "Aiguillettes de poulet rôties et coupées",
+  "ean": "3270160201891"
+ },
+ "20246": {
+  "ref": "020246",
+  "name": "Bâtonnets de poulet préparation à base de poulet",
+  "ean": "3270160202461"
+ },
+ "20262": {
+  "ref": "020262",
+  "name": "Bouchées de poulet à la provençale, 12 à 18 pièces",
+  "ean": "3270160202621"
+ },
+ "20270": {
+  "ref": "020270",
+  "name": "Aiguillettes de poulet marinées au citron",
+  "ean": "3270160202706"
+ },
+ "20288": {
+  "ref": "020288",
+  "name": "Magret de canard du Sud-Ouest",
+  "ean": "3270160202881"
+ },
+ "20361": {
+  "ref": "020361",
+  "name": "Aiguillettes poulet marinées aux épices tandoori",
+  "ean": "3270160203611"
+ },
+ "20379": {
+  "ref": "020379",
+  "name": "2 cuisses de canard du Sud-Ouest confites",
+  "ean": "3270160203796"
+ },
+ "20519": {
+  "ref": "020519",
+  "name": "Aiguillettes de canard marinées à la forestière",
+  "ean": "3270160205196"
+ },
+ "20858": {
+  "ref": "020858",
+  "name": "Rôti de pintade farci, farce aux cèpes et aux raisins",
+  "ean": "3270160208586"
+ },
+ "20866": {
+  "ref": "020866",
+  "name": "Chapon farci, farce au bloc de foie gras de canard et Sauternes",
+  "ean": "3270160208661"
+ },
+ "20882": {
+  "ref": "020882",
+  "name": "2 ballotisn de dinde farcis à la forestière",
+  "ean": "3270160208821"
+ },
+ "20973": {
+  "ref": "020973",
+  "name": "Manchons de poulet caramélisés",
+  "ean": "3270160209736"
+ },
+ "21427": {
+  "ref": "021427",
+  "name": "8 hacao, bouchées aux crevettes avec sauce soja",
+  "ean": "3270160214273"
+ },
+ "21865": {
+  "ref": "021865",
+  "name": "Poulet Tikka et riz basmati",
+  "ean": "3270160218653"
+ },
+ "22749": {
+  "ref": "022749",
+  "name": "Hachis parmentier",
+  "ean": "3270160227495"
+ },
+ "23105": {
+  "ref": "023105",
+  "name": "2 tartes aux poireaux",
+  "ean": "3270160231058"
+ },
+ "24193": {
+  "ref": "024193",
+  "name": "Coulis framboise, portionnable",
+  "ean": "3270160241934"
+ },
+ "24218": {
+  "ref": "024218",
+  "name": "Coulis aux 3 fruits rouges, portionnable",
+  "ean": "3270160242184"
+ },
+ "24309": {
+  "ref": "024309",
+  "name": "Brioche tranchée pur beurre",
+  "ean": "3270160243099"
+ },
+ "24375": {
+  "ref": "024375",
+  "name": "Crème anglaise, portionnable",
+  "ean": "3270160243754"
+ },
+ "24771": {
+  "ref": "024771",
+  "name": "Opéra",
+  "ean": "3270160247714"
+ },
+ "24896": {
+  "ref": "024896",
+  "name": "2 tartelettes Tatin pommes caramélisées",
+  "ean": "3270160248964"
+ },
+ "24945": {
+  "ref": "024945",
+  "name": "Croquant chocolat, 3 parts",
+  "ean": "3270160249459"
+ },
+ "26547": {
+  "ref": "026547",
+  "name": "6 cônes chocolat-pistache",
+  "ean": "3270160265473"
+ },
+ "26608": {
+  "ref": "026608",
+  "name": "6 cônes vanille",
+  "ean": "3270160266081"
+ },
+ "26710": {
+  "ref": "026710",
+  "name": "Filets de rouget-barbet cinnabare, avec peau",
+  "ean": "3270160267101"
+ },
+ "27538": {
+  "ref": "027538",
+  "name": "Crème glacée menthe, avec copeaux de chocolat",
+  "ean": "3270160275380"
+ },
+ "27571": {
+  "ref": "027571",
+  "name": "Crème glacée café",
+  "ean": "3270160275717"
+ },
+ "27645": {
+  "ref": "027645",
+  "name": "Crème glacée rhum, avec raisins macérés au rhum",
+  "ean": "3270160276455"
+ },
+ "29099": {
+  "ref": "029099",
+  "name": "Moussaka",
+  "ean": "3270160290994"
+ },
+ "29956": {
+  "ref": "029956",
+  "name": "Chakchouka tomates, poivrons, pois chiches",
+  "ean": "3270160299560"
+ },
+ "29958": {
+  "ref": "029958",
+  "name": "Brandade morue Parmentier à l'huile d'olive (6%)",
+  "ean": "3270160299584"
+ },
+ "30286": {
+  "ref": "030286",
+  "name": "yetigel x12",
+  "ean": "3332792000058"
+ },
+ "30319": {
+  "ref": "030319",
+  "name": "Plaque réfrigérante 500g",
+  "ean": "8003059151008"
+ },
+ "30476": {
+  "ref": "030476",
+  "name": "Tortilla chips 125 grs",
+  "ean": "3270160304769"
+ },
+ "30624": {
+  "ref": "030624",
+  "name": "Glacière 28l",
+  "ean": "3270160306244"
+ },
+ "30635": {
+  "ref": "030635",
+  "name": "Glacière coton 28 L, color block",
+  "ean": "3270160306350"
+ },
+ "30640": {
+  "ref": "030640",
+  "name": "24 crepes dentelles",
+  "ean": "3270160306404"
+ },
+ "30645": {
+  "ref": "030645",
+  "name": "Glacière isotherme Beya Rebai",
+  "ean": "3270160306459"
+ },
+ "30799": {
+  "ref": "030799",
+  "name": "Caramels au beurre salé 200g",
+  "ean": "3270160307999"
+ },
+ "30921": {
+  "ref": "030921",
+  "name": "Chips de manioc à la crevette",
+  "ean": "3270160309214"
+ },
+ "31144": {
+  "ref": "031144",
+  "name": "Sablés au beurre",
+  "ean": "3270160311446"
+ },
+ "31293": {
+  "ref": "031293",
+  "name": "Feuillets aux amandes",
+  "ean": "3270160312931"
+ },
+ "31318": {
+  "ref": "031318",
+  "name": "Dentelles",
+  "ean": "3270160313181"
+ },
+ "31681": {
+  "ref": "031681",
+  "name": "Glacière 40l",
+  "ean": "3270160316816"
+ },
+ "31962": {
+  "ref": "031962",
+  "name": "Crème vanillée",
+  "ean": "3254550006013"
+ },
+ "33324": {
+  "ref": "033324",
+  "name": "Coquille St-Jacques Pecten, France, sauce Noilly",
+  "ean": "3270160333240"
+ },
+ "33431": {
+  "ref": "033431",
+  "name": "2 galettes jambon-emmental",
+  "ean": "3270160334315"
+ },
+ "33952": {
+  "ref": "033952",
+  "name": "4 tartares de saumon à la ciboulette",
+  "ean": "3270160339525"
+ },
+ "33994": {
+  "ref": "033994",
+  "name": "Nuggets de poulet",
+  "ean": "3270160339945"
+ },
+ "34224": {
+  "ref": "034224",
+  "name": "Crème glacée pistache avec éclats de pistache",
+  "ean": "3270160342242"
+ },
+ "35330": {
+  "ref": "035330",
+  "name": "6 timbales glacées à l'italienne",
+  "ean": "3270160353309"
+ },
+ "35405": {
+  "ref": "035405",
+  "name": "10 mini-cônes vanille",
+  "ean": "3270160354054"
+ },
+ "35562": {
+  "ref": "035562",
+  "name": "4 oranges givrées",
+  "ean": "3270160355624"
+ },
+ "35611": {
+  "ref": "035611",
+  "name": "4 citrons givrés",
+  "ean": "3270160356119"
+ },
+ "35645": {
+  "ref": "035645",
+  "name": "4 pralin's vanille",
+  "ean": "3270160356454"
+ },
+ "35695": {
+  "ref": "035695",
+  "name": "4 coupes au marc de Champagne",
+  "ean": "3270160356959"
+ },
+ "35885": {
+  "ref": "035885",
+  "name": "10 mini-cônes chocolat",
+  "ean": "3270160358854"
+ },
+ "35893": {
+  "ref": "035893",
+  "name": "6 timbales de sorbet, framboise, mangue, citron",
+  "ean": "3270160358939"
+ },
+ "36082": {
+  "ref": "036082",
+  "name": "Macaron aux framboises",
+  "ean": "3270160360826"
+ },
+ "36355": {
+  "ref": "036355",
+  "name": "Opéra",
+  "ean": "3270160363551"
+ },
+ "36785": {
+  "ref": "036785",
+  "name": "6 petits pains à l'italienne, précuits",
+  "ean": "3270160367856"
+ },
+ "36909": {
+  "ref": "036909",
+  "name": "Succès aux noix",
+  "ean": "3270160369096"
+ },
+ "37198": {
+  "ref": "037198",
+  "name": "Pizza 3 fromages bio",
+  "ean": "3270160371983"
+ },
+ "39021": {
+  "ref": "039021",
+  "name": "2 soupes thaï au poulet et aux vermicelles",
+  "ean": "3270160390212"
+ },
+ "39039": {
+  "ref": "039039",
+  "name": "Mini-acras de morue",
+  "ean": "3270160390397"
+ },
+ "39104": {
+  "ref": "039104",
+  "name": "6 samossas aux légumes avec sauce aigre-douce",
+  "ean": "3270160391042"
+ },
+ "39310": {
+  "ref": "039310",
+  "name": "6 beignets de crevette",
+  "ean": "3270160393107"
+ },
+ "39625": {
+  "ref": "039625",
+  "name": "Bœuf aux oignons et nouilles chinoises aux légumes",
+  "ean": "3270160396252"
+ },
+ "39633": {
+  "ref": "039633",
+  "name": "Butter chicken et riz pilaf",
+  "ean": "3270160396337"
+ },
+ "39659": {
+  "ref": "039659",
+  "name": "Nouilles sautées à la chinoise, portionnable",
+  "ean": "3270160396597"
+ },
+ "39691": {
+  "ref": "039691",
+  "name": "8 nems au poulet avec sauce nuoc-mâm",
+  "ean": "3270160396917"
+ },
+ "39881": {
+  "ref": "039881",
+  "name": "8 nems aux légumes",
+  "ean": "3270160398812"
+ },
+ "39899": {
+  "ref": "039899",
+  "name": "8 bouchées de poulet au saté 2 parts",
+  "ean": "3270160398997"
+ },
+ "39972": {
+  "ref": "039972",
+  "name": "10 Yakitori",
+  "ean": "3270160399727"
+ },
+ "40044": {
+  "ref": "040044",
+  "name": "Mini boudins blancs aux morilles, 16 à 20 pièces",
+  "ean": "3270160400447"
+ },
+ "40101": {
+  "ref": "040101",
+  "name": "Sauce tomate",
+  "ean": "3270160401017"
+ },
+ "40317": {
+  "ref": "040317",
+  "name": "2 tartes aux fromages",
+  "ean": "3270160403172"
+ },
+ "40341": {
+  "ref": "040341",
+  "name": "2 galettes noix de Saint-Jacques",
+  "ean": "3270160403417"
+ },
+ "40581": {
+  "ref": "040581",
+  "name": "Flammekueche",
+  "ean": "3270160405817"
+ },
+ "40797": {
+  "ref": "040797",
+  "name": "Guacamole",
+  "ean": "3270160407972"
+ },
+ "40846": {
+  "ref": "040846",
+  "name": "Guacamole épicé",
+  "ean": "3270160408467"
+ },
+ "42018": {
+  "ref": "042018",
+  "name": "Tarte aux framboises",
+  "ean": "3270160420186"
+ },
+ "42026": {
+  "ref": "042026",
+  "name": "Tarte Tatin",
+  "ean": "3270160420261"
+ },
+ "42223": {
+  "ref": "042223",
+  "name": "2 moelleux au chocolat",
+  "ean": "3270160422234"
+ },
+ "43083": {
+  "ref": "043083",
+  "name": "4 bagels, petits pains américains, cuits",
+  "ean": "3270160430833"
+ },
+ "43124": {
+  "ref": "043124",
+  "name": "4 petits pains sans adjonction de sel, précuits",
+  "ean": "3270160431243"
+ },
+ "43141": {
+  "ref": "043141",
+  "name": "10 mini-crêpes bio",
+  "ean": "3270160431410"
+ },
+ "43257": {
+  "ref": "043257",
+  "name": "4 petits pains aux figues, précuits",
+  "ean": "3270160432578"
+ },
+ "43413": {
+  "ref": "043413",
+  "name": "6 pancakes",
+  "ean": "3270160434138"
+ },
+ "43421": {
+  "ref": "043421",
+  "name": "6 crêpes",
+  "ean": "3270160434213"
+ },
+ "43455": {
+  "ref": "043455",
+  "name": "6 gaufres",
+  "ean": "3270160434558"
+ },
+ "43603": {
+  "ref": "043603",
+  "name": "Crème fraîche épaisse",
+  "ean": "3270160436033"
+ },
+ "43637": {
+  "ref": "043637",
+  "name": "6 galettes de blé noir",
+  "ean": "3270160436378"
+ },
+ "43653": {
+  "ref": "043653",
+  "name": "Coulis mangue-passion, portionnable",
+  "ean": "3270160436538"
+ },
+ "43926": {
+  "ref": "043926",
+  "name": "2 petites baguettes de campagne",
+  "ean": "3270160439263"
+ },
+ "43976": {
+  "ref": "043976",
+  "name": "2 pâtes à pizza",
+  "ean": "3270160439768"
+ },
+ "45065": {
+  "ref": "045065",
+  "name": "2 mini-pots crème glacée Lait d'amande, griottes",
+  "ean": "3270160450657"
+ },
+ "45320": {
+  "ref": "045320",
+  "name": "4 bâtonnets chocolat 70% de cacao-fèves de cacao",
+  "ean": "3270160453207"
+ },
+ "47055": {
+  "ref": "047055",
+  "name": "10 crêpes jambon-emmental",
+  "ean": "3270160470556"
+ },
+ "47063": {
+  "ref": "047063",
+  "name": "Saumon farci, mousse aux noix de Saint Jacques",
+  "ean": "204706000009"
+ },
+ "47071": {
+  "ref": "047071",
+  "name": "20 crêpes jambon-emmental",
+  "ean": "3270160470716"
+ },
+ "47188": {
+  "ref": "047188",
+  "name": "2 tartares de Saint-Jacques aux tomates confites et au basilic",
+  "ean": "3270160471881"
+ },
+ "47196": {
+  "ref": "047196",
+  "name": "2 galettes jambon-champignon-emmental",
+  "ean": "3270160471966"
+ },
+ "47344": {
+  "ref": "047344",
+  "name": "20 mini croque-monsieur",
+  "ean": "3270160473441"
+ },
+ "47378": {
+  "ref": "047378",
+  "name": "Saumon en croûte , 6 parts",
+  "ean": "3270160473786"
+ },
+ "47568": {
+  "ref": "047568",
+  "name": "2 pastillas au poulet et aux légumes",
+  "ean": "3270160475681"
+ },
+ "47881": {
+  "ref": "047881",
+  "name": "2 clafoutis tomates, fromages de chèvre et brebis",
+  "ean": "3270160478811"
+ },
+ "47914": {
+  "ref": "047914",
+  "name": "2 pastillas à l'agneau",
+  "ean": "3270160479146"
+ },
+ "47948": {
+  "ref": "047948",
+  "name": "12 pruneaux au lard fumé",
+  "ean": "3270160479481"
+ },
+ "48020": {},
+ "48025": {
+  "ref": "048025",
+  "name": "St-Jacques Argopecten a/corail Pérou ASC bio",
+  "ean": "3270160480258"
+ },
+ "48027": {
+  "ref": "048027",
+  "name": "4 tranches de saumon fumé bio",
+  "ean": "3270160480272"
+ },
+ "48179": {
+  "ref": "048179",
+  "name": "Cocktail de 3 fruits de mer",
+  "ean": "3270160481798"
+ },
+ "48260": {
+  "ref": "048260",
+  "name": "Noix de Saint-Jacques tomate romarin MSC",
+  "ean": "3270160482603"
+ },
+ "48322": {
+  "ref": "048322",
+  "name": "Queue crevette crue ASC carapace coupée bio, HND",
+  "ean": "3270160483228"
+ },
+ "48351": {
+  "ref": "048351",
+  "name": "Petites seiches",
+  "ean": "3270160483518"
+ },
+ "48434": {
+  "ref": "048434",
+  "name": "Crevettes à l'huile d'olive (4%) au persil,à l'ail",
+  "ean": "3270160484348"
+ },
+ "48476": {
+  "ref": "048476",
+  "name": "Moules du Pacifique ASC marinière élevées Chili",
+  "ean": "3270160484768"
+ },
+ "48608": {
+  "ref": "048608",
+  "name": "Queues crevettes cuites décortiquées cocktail bio",
+  "ean": "3270160486083"
+ },
+ "48674": {
+  "ref": "048674",
+  "name": "Emincés saumon mariné aux échalotes, zestes citron",
+  "ean": "3270160486748"
+ },
+ "48765": {
+  "ref": "048765",
+  "name": "Crevette tropicale crue 'Gambas' 12-16 p. sauvage",
+  "ean": "3270160487653"
+ },
+ "48856": {
+  "ref": "048856",
+  "name": "8 crevettes tropicales crues 'Gambas' Label R. ASC",
+  "ean": "3270160488568"
+ },
+ "48864": {
+  "ref": "048864",
+  "name": "Noix de Saint-Jacques France",
+  "ean": "3270160488643"
+ },
+ "48880": {
+  "ref": "048880",
+  "name": "2 queues de langouste blanche, Caraïbes, crues",
+  "ean": "204888000002"
+ },
+ "48898": {
+  "ref": "048898",
+  "name": "Queues langouste blanche, Caraïbes, crues, 3 à 4 p",
+  "ean": "204889000001"
+ },
+ "48939": {
+  "ref": "048939",
+  "name": "Noix de Saint-Jacques Argentine MSC",
+  "ean": "3270160489398"
+ },
+ "48947": {
+  "ref": "048947",
+  "name": "Morceaux de calmar géants cuits",
+  "ean": "3270160489473"
+ },
+ "48971": {
+  "ref": "048971",
+  "name": "Homard canadien entier cuit MSC,Homarus americanus"
+ },
+ "49061": {
+  "ref": "049061",
+  "name": "Brandade parmentier de morue MSC",
+  "ean": "3270160490615"
+ },
+ "49334": {
+  "ref": "049334",
+  "name": "Tagliatelles aux truffes blanches d'été (3 %)",
+  "ean": "3270160493340"
+ },
+ "49392": {
+  "ref": "049392",
+  "name": "Ravioles du Dauphiné",
+  "ean": "3266140051600"
+ },
+ "49417": {
+  "ref": "049417",
+  "name": "Fagottini à la ricotta et aux épinards",
+  "ean": "3270160494170"
+ },
+ "50013": {
+  "ref": "050013",
+  "name": "Mélange à la thaïlandaise",
+  "ean": "3270160500130"
+ },
+ "50018": {
+  "ref": "050018",
+  "name": "Morilles",
+  "ean": "3270160500185"
+ },
+ "50025": {
+  "ref": "050025",
+  "name": "Purée de pois cassé",
+  "ean": "3270160500253"
+ },
+ "50026": {
+  "ref": "050026",
+  "name": "Kid Smile",
+  "ean": "3256830000018"
+ },
+ "50028": {
+  "ref": "050028",
+  "name": "Frites cuisinées à la graisse de canard",
+  "ean": "3270160500284"
+ },
+ "50030": {
+  "ref": "050030",
+  "name": "Ail coupé Bio",
+  "ean": "3270160500307"
+ },
+ "50031": {
+  "ref": "050031",
+  "name": "Persil plat coupé Bio",
+  "ean": "3270160500314"
+ },
+ "50035": {
+  "ref": "050035",
+  "name": "Inédites au romarin, pommes de terre, France",
+  "ean": "3270160500352"
+ },
+ "50036": {
+  "ref": "050036",
+  "name": "Inédites façon rustique",
+  "ean": "3270160500369"
+ },
+ "50037": {
+  "ref": "050037",
+  "name": "Inédites trois légumes, carottes,panais,betteraves",
+  "ean": "3270160500376"
+ },
+ "50038": {
+  "ref": "050038",
+  "name": "Poêlée de pommes de terre bio au basilic et au piment d'Espelette, France",
+  "ean": "3270160500383"
+ },
+ "50045": {
+  "ref": "050045",
+  "name": "Wedges inédites au thym citron",
+  "ean": "3270160500451"
+ },
+ "50046": {
+  "ref": "050046",
+  "name": "Les Wedges",
+  "ean": "3270160500468"
+ },
+ "50047": {
+  "ref": "050047",
+  "name": "Pommes rissolées en cubes bio",
+  "ean": "3270160500475"
+ },
+ "50075": {
+  "ref": "050075",
+  "name": "Croquettes de pommes de terre",
+  "ean": "3270160500758"
+ },
+ "50141": {
+  "ref": "050141",
+  "name": "Purée de pommes de terre au colin d'Alaska",
+  "ean": "3270160501410"
+ },
+ "50191": {
+  "ref": "050191",
+  "name": "Écrasée de pommes de terre à l'huile d'olive (7,5%)",
+  "ean": "3270160501915"
+ },
+ "50210": {
+  "ref": "050210",
+  "name": "Inédites aux épices, pommes de terre avec peau",
+  "ean": "3270160502103"
+ },
+ "50307": {
+  "ref": "050307",
+  "name": "Oignons rouges émincés",
+  "ean": "3270160503070"
+ },
+ "50314": {
+  "ref": "050314",
+  "name": "Purée de patate douce",
+  "ean": "3270160503148"
+ },
+ "50349": {
+  "ref": "050349",
+  "name": "Galettes de pomme de terre",
+  "ean": "3270160503490"
+ },
+ "50422": {
+  "ref": "050422",
+  "name": "Citronnelle coupée",
+  "ean": "3270160504220"
+ },
+ "50430": {
+  "ref": "050430",
+  "name": "Frites bio",
+  "ean": "3270160504305"
+ },
+ "50432": {
+  "ref": "050432",
+  "name": "Pommes rissolées à la graisse de canard",
+  "ean": "3270160504329"
+ },
+ "50480": {
+  "ref": "050480",
+  "name": "Oignons émincés bio",
+  "ean": "3270160504800"
+ },
+ "50481": {
+  "ref": "050481",
+  "name": "Basilic coupé bio",
+  "ean": "3270160504817"
+ },
+ "50482": {
+  "ref": "050482",
+  "name": "Persillade, persil, ail",
+  "ean": "3270160504824"
+ },
+ "50505": {
+  "ref": "050505",
+  "name": "Purée de pomme de terre à la tomate et à la mozzarella",
+  "ean": "3270160505050"
+ },
+ "50703": {
+  "ref": "050703",
+  "name": "Röstis de pomme de terre, précuits, 6 pièces",
+  "ean": "3270160507030"
+ },
+ "50787": {
+  "ref": "050787",
+  "name": "Purée de carotte, potiron, patate douce",
+  "ean": "3270160507870"
+ },
+ "50852": {
+  "ref": "050852",
+  "name": "Pommes de terre façon rôtissoire",
+  "ean": "3270160508525"
+ },
+ "50935": {
+  "ref": "050935",
+  "name": "Inédites à la patate douce, patates douce enrobées",
+  "ean": "3270160509355"
+ },
+ "50969": {
+  "ref": "050969",
+  "name": "Ecrasé marron, courge butternut, cranberry",
+  "ean": "3270160509690"
+ },
+ "57061": {
+  "ref": "057061",
+  "name": "Cannelloni à la ricotta et aux épinards",
+  "ean": "3270160570614"
+ },
+ "57178": {
+  "ref": "057178",
+  "name": "Semoule au poulet et aux petits légumes",
+  "ean": "3270160571789"
+ },
+ "57318": {
+  "ref": "057318",
+  "name": "Sauce à la bolognaise",
+  "ean": "3270160573189"
+ },
+ "57558": {
+  "ref": "057558",
+  "name": "Cannelloni à la bolognaise",
+  "ean": "3270160575589"
+ },
+ "57839": {
+  "ref": "057839",
+  "name": "Nouilles aux crevettes et aux légumes",
+  "ean": "3270160578399"
+ },
+ "57962": {
+  "ref": "057962",
+  "name": "Risotto aux cèpes",
+  "ean": "3270160579624"
+ },
+ "58391": {
+  "ref": "058391",
+  "name": "Croquant chocolat",
+  "ean": "3270160583911"
+ },
+ "58432": {
+  "ref": "058432",
+  "name": "Macaron aux framboises",
+  "ean": "3270160584321"
+ },
+ "58515": {
+  "ref": "058515",
+  "name": "Nougat glacé, crème au nougat, biscuit aux amandes",
+  "ean": "3270160585151"
+ },
+ "58573": {
+  "ref": "058573",
+  "name": "12 mini-moelleux au chocolat",
+  "ean": "3270160585731"
+ },
+ "58581": {
+  "ref": "058581",
+  "name": "Galette des rois frangipane, 6 parts, à cuire",
+  "ean": "3270160585816"
+ },
+ "58747": {
+  "ref": "058747",
+  "name": "Tarte aux myrtilles",
+  "ean": "3270160587476"
+ },
+ "58755": {
+  "ref": "058755",
+  "name": "Fondant au chocolat",
+  "ean": "3270160587551"
+ },
+ "58756": {
+  "ref": "058756",
+  "name": "Gâteau basque, 6 parts",
+  "ean": "3270160587568"
+ },
+ "58797": {
+  "ref": "058797",
+  "name": "8 nuggets de poulet",
+  "ean": "3270160587971"
+ },
+ "58896": {
+  "ref": "058896",
+  "name": "9 petits canelés",
+  "ean": "3270160588961"
+ },
+ "59019": {
+  "ref": "059019",
+  "name": "6 fagots d'haricots poitrine de porc fumée",
+  "ean": "3270160590193"
+ },
+ "59027": {
+  "ref": "059027",
+  "name": "Ecrasé de pomme de terre à la truffe noire 1%",
+  "ean": "3270160590278"
+ },
+ "59043": {
+  "ref": "059043",
+  "name": "Poêlée de champignons cuisinés bio",
+  "ean": "3270160590438"
+ },
+ "59176": {
+  "ref": "059176",
+  "name": "Quinoa et céréales cuisinés aux petits légumes",
+  "ean": "3270160591763"
+ },
+ "59192": {
+  "ref": "059192",
+  "name": "Gratin dauphinois",
+  "ean": "3270160591923"
+ },
+ "59217": {
+  "ref": "059217",
+  "name": "Poêlée à la forestière",
+  "ean": "3270160592173"
+ },
+ "59325": {
+  "ref": "059325",
+  "name": "Champignons de Paris en persillade",
+  "ean": "3270160593255"
+ },
+ "59326": {
+  "ref": "059326",
+  "name": "Mélange de champignons forestiers à la crème",
+  "ean": "3270160593262"
+ },
+ "59327": {
+  "ref": "059327",
+  "name": "Délice forestier aux figues et éclats de châtaignes",
+  "ean": "3270160593279"
+ },
+ "59332": {
+  "ref": "059332",
+  "name": "Duo haricots plats verts et beurre, coupés",
+  "ean": "3270160593323"
+ },
+ "59407": {
+  "ref": "059407",
+  "name": "3 sachets vapeur légumes verts",
+  "ean": "3270160594078"
+ },
+ "59449": {
+  "ref": "059449",
+  "name": "Poêlée de pommes de terre grenaille",
+  "ean": "3270160594498"
+ },
+ "59473": {
+  "ref": "059473",
+  "name": "Fèves extra-fines, France",
+  "ean": "3270160594733"
+ },
+ "59499": {
+  "ref": "059499",
+  "name": "Riz basmati cuisiné aux petits légumes",
+  "ean": "3270160594993"
+ },
+ "59514": {
+  "ref": "059514",
+  "name": "Poêlée à la campagnarde",
+  "ean": "3270160595143"
+ },
+ "59548": {
+  "ref": "059548",
+  "name": "Mogette de Vendée haricots blancs, France",
+  "ean": "3270160595488"
+ },
+ "59655": {
+  "ref": "059655",
+  "name": "4 mini-gratins dauphinois",
+  "ean": "3270160596553"
+ },
+ "59697": {
+  "ref": "059697",
+  "name": "Riz cuisiné à l'espagnole (poivrons, petits pois)",
+  "ean": "3270160596973"
+ },
+ "59712": {
+  "ref": "059712",
+  "name": "Julienne de légumes bio, France ou Italie",
+  "ean": "3270160597123"
+ },
+ "59837": {
+  "ref": "059837",
+  "name": "Ratatouille cuisinée bio, portionnable",
+  "ean": "3270160598373"
+ },
+ "59887": {
+  "ref": "059887",
+  "name": "Penne aux champignons à la crème",
+  "ean": "3270160598878"
+ },
+ "59928": {
+  "ref": "059928",
+  "name": "Trio de fleurettes brocolis,chou fleur,romanesco, Espagne",
+  "ean": "3270160599288"
+ },
+ "59936": {
+  "ref": "059936",
+  "name": "Choux de Bruxelles, France ou Belgique",
+  "ean": "3270160599363"
+ },
+ "59944": {
+  "ref": "059944",
+  "name": "Garden peas, France ou Espagne",
+  "ean": "3270160599448"
+ },
+ "59952": {
+  "ref": "059952",
+  "name": "Trio de poivrons verts, rouges, jaunes en lanières",
+  "ean": "3270160599523"
+ },
+ "59978": {
+  "ref": "059978",
+  "name": "Fondue de poireaux",
+  "ean": "3270160599783"
+ },
+ "60066": {
+  "ref": "060066",
+  "name": "2 pavés de boeuf marinés à l'échalote",
+  "ean": "3270160600663"
+ },
+ "60107": {
+  "ref": "060107",
+  "name": "2 pavés de bœuf marinés aux trois poivres",
+  "ean": "3270160601073"
+ },
+ "60123": {
+  "ref": "060123",
+  "name": "Haché pur bœuf prêt à cuisiner",
+  "ean": "3270160601233"
+ },
+ "60149": {
+  "ref": "060149",
+  "name": "4 tournedos filet",
+  "ean": "3270160601493"
+ },
+ "60173": {
+  "ref": "060173",
+  "name": "4 biftecks de bavette d'aloyau",
+  "ean": "3270160601738"
+ },
+ "60199": {
+  "ref": "060199",
+  "name": "Boulettes au boeuf et aux oignons, 30 pièces environ",
+  "ean": "3270160601998"
+ },
+ "60210": {
+  "ref": "060210",
+  "name": "Boulettes à l'italienne viande de bœuf et de veau",
+  "ean": "3270160602100"
+ },
+ "60214": {
+  "ref": "060214",
+  "name": "Boulettes de viande recette suédoise",
+  "ean": "3270160602148"
+ },
+ "60245": {
+  "ref": "060245",
+  "name": "Saucisses de volaille aux herbes, 10 pièces",
+  "ean": "3270160602452"
+ },
+ "60246": {
+  "ref": "060246",
+  "name": "Hauts de cuisses de poulet marinés à la provençale",
+  "ean": "3270160602469"
+ },
+ "60247": {
+  "ref": "060247",
+  "name": "BBQ ribs, à cuire, 2 pièces",
+  "ean": "3270160602476"
+ },
+ "60248": {
+  "ref": "060248",
+  "name": "Carpaccio de boeuf et sa sauce au pistou, 2 parts",
+  "ean": "3270160602483"
+ },
+ "60389": {
+  "ref": "060389",
+  "name": "4 effeuillés de Charolais",
+  "ean": "3270160603893"
+ },
+ "60489": {
+  "ref": "060489",
+  "name": "Bœuf bourguignon",
+  "ean": "3270160604890"
+ },
+ "60511": {
+  "ref": "060511",
+  "name": "2 tranches de foie de veau, origine France",
+  "ean": "3270160605118"
+ },
+ "60719": {
+  "ref": "060719",
+  "name": "2 escalopes de veau à la milanaise",
+  "ean": "3270160607198"
+ },
+ "60769": {
+  "ref": "060769",
+  "name": "Souris agneau fondante cuite dans son jus au thym",
+  "ean": "206076000009"
+ },
+ "60800": {
+  "ref": "060800",
+  "name": "2 brochettes boeuf aux 3 poivres",
+  "ean": "3270160608003"
+ },
+ "60826": {
+  "ref": "060826",
+  "name": "1 entrecôte Label Rouge",
+  "ean": "3270160608263"
+ },
+ "60827": {
+  "ref": "060827",
+  "name": "1 faux-filet Label Rouge",
+  "ean": "3270160608270"
+ },
+ "60828": {
+  "ref": "060828",
+  "name": "1 bavette Label Rouge",
+  "ean": "3270160608287"
+ },
+ "60829": {
+  "ref": "060829",
+  "name": "2 pavés de rumsteck Label Rouge",
+  "ean": "3270160608294"
+ },
+ "60870": {
+  "ref": "060870",
+  "name": "Gigot d'agneau Nouvelle-Zélande pièce 1,7 à 2,4 kg",
+  "ean": "206087000005"
+ },
+ "60875": {
+  "ref": "060875",
+  "name": "Boulettes au boeuf bio (18 boulettes environ)",
+  "ean": "3270160608751"
+ },
+ "60884": {
+  "ref": "060884",
+  "name": "Haché pur boeuf prêt à cuisiner bio, France",
+  "ean": "3270160608843"
+ },
+ "60933": {
+  "ref": "060933",
+  "name": "4 biftecks hachés bio (100g) pur boeuf",
+  "ean": "3270160609338"
+ },
+ "60941": {
+  "ref": "060941",
+  "name": "4 brochettes de poulet mariné au citron et au basilic",
+  "ean": "3270160609413"
+ },
+ "60948": {
+  "ref": "060948",
+  "name": "2 souris d'agneau jarret, Nouvelle Zélande",
+  "ean": "206094000005"
+ },
+ "60959": {
+  "ref": "060959",
+  "name": "4 brochettes de poulet marinées Tex-Mex",
+  "ean": "3270160609598"
+ },
+ "61502": {
+  "ref": "061502",
+  "name": "Crème glacée réglisse",
+  "ean": "3270160615025"
+ },
+ "63055": {
+  "ref": "063055",
+  "name": "4 tomates farcies",
+  "ean": "3270160630554"
+ },
+ "63427": {
+  "ref": "063427",
+  "name": "Parmentier de canard",
+  "ean": "3270160634279"
+ },
+ "63443": {
+  "ref": "063443",
+  "name": "Tagliatelles à la carbonara",
+  "ean": "3270160634439"
+ },
+ "63691": {
+  "ref": "063691",
+  "name": "Colin d'Alaska MSC à la bordelaise et riz légumes",
+  "ean": "3270160636914"
+ },
+ "64210": {
+  "ref": "064210",
+  "name": "Mini-cake jambon olives (à trancher)",
+  "ean": "3270160642106"
+ },
+ "64236": {
+  "ref": "064236",
+  "name": "Mini-cake chèvre tomate courgette (à trancher)",
+  "ean": "3270160642366"
+ },
+ "64260": {
+  "ref": "064260",
+  "name": "Salade à l'italienne",
+  "ean": "3270160642601"
+ },
+ "64278": {
+  "ref": "064278",
+  "name": "2 fondants tomate-fromage de chèvre-courgette",
+  "ean": "3270160642786"
+ },
+ "64442": {
+  "ref": "064442",
+  "name": "2 bouchées au ris de veau",
+  "ean": "3270160644421"
+ },
+ "64450": {
+  "ref": "064450",
+  "name": "Feuilleté jambon-emmental, 4 parts",
+  "ean": "3270160644506"
+ },
+ "64509": {
+  "ref": "064509",
+  "name": "4 coquilles aux noix de St-Jacques, à la bretonne",
+  "ean": "3270160645091"
+ },
+ "64591": {
+  "ref": "064591",
+  "name": "9 mini pizzas 3 fromages",
+  "ean": "3270160645916"
+ },
+ "64616": {
+  "ref": "064616",
+  "name": "9 mini pizzas jambon-fromage",
+  "ean": "3270160646166"
+ },
+ "64632": {
+  "ref": "064632",
+  "name": "Tarte fine courgettes fromage de chèvre",
+  "ean": "3270160646326"
+ },
+ "64781": {
+  "ref": "064781",
+  "name": "Filet de boeuf en croûte",
+  "ean": "3270160647811"
+ },
+ "64963": {
+  "ref": "064963",
+  "name": "2 sabayons de langoustines et de Saint-Jacques au Sauternes",
+  "ean": "3270160649631"
+ },
+ "65152": {
+  "ref": "065152",
+  "name": "6 Twix"
+ },
+ "65540": {
+  "ref": "065540",
+  "name": "Nougat glacé framboise",
+  "ean": "3270160655403"
+ },
+ "65566": {
+  "ref": "065566",
+  "name": "2 mini-pots glace crème de marron",
+  "ean": "3270160655663"
+ },
+ "65780": {
+  "ref": "065780",
+  "name": "12 mini-cônes vanille-chocolat",
+  "ean": "3270160657803"
+ },
+ "65872": {
+  "ref": "065872",
+  "name": "6 Profiteroles",
+  "ean": "3270160658725"
+ },
+ "66177": {
+  "ref": "066177",
+  "name": "2 galettes des rois individuelles, à cuire",
+  "ean": "3270160661770"
+ },
+ "66185": {
+  "ref": "066185",
+  "name": "Tarte citron meringuée",
+  "ean": "3270160661855"
+ },
+ "66268": {
+  "ref": "066268",
+  "name": "2 cheesecakes",
+  "ean": "3270160662685"
+ },
+ "66317": {
+  "ref": "066317",
+  "name": "12 mini-éclairs, chocolat, caramel, praliné, café",
+  "ean": "3270160663170"
+ },
+ "66383": {
+  "ref": "066383",
+  "name": "2 tartelettes au citron",
+  "ean": "3270160663835"
+ },
+ "66424": {
+  "ref": "066424",
+  "name": "Tiramisù, crème mascarpone,biscuit imbibé de café",
+  "ean": "3270160664245"
+ },
+ "66432": {
+  "ref": "066432",
+  "name": "Fondant au chocolat individuel",
+  "ean": "3270160664320"
+ },
+ "66557": {
+  "ref": "066557",
+  "name": "Couronne des rois, 8 parts",
+  "ean": "3270160665570"
+ },
+ "66573": {
+  "ref": "066573",
+  "name": "Tarte aux noix et noix de pécan, 1 part",
+  "ean": "3270160665730"
+ },
+ "66614": {
+  "ref": "066614",
+  "name": "Vacherin vanille-framboise",
+  "ean": "3270160666140"
+ },
+ "66656": {
+  "ref": "066656",
+  "name": "2 moelleux chocolat caramel au beurre salé",
+  "ean": "3270160666560"
+ },
+ "66854": {
+  "ref": "066854",
+  "name": "2 coupes pâtissières tiramisù",
+  "ean": "3270160668540"
+ },
+ "68010": {
+  "ref": "068010",
+  "name": "Potage courge butternut, patate douce, carotte",
+  "ean": "3270160680108"
+ },
+ "68027": {
+  "ref": "068027",
+  "name": "Velouté courge butternut, carotte, navet jaune bio",
+  "ean": "3270160680276"
+ },
+ "68033": {
+  "ref": "068033",
+  "name": "Rhubarbe rouge en morceaux bio, France",
+  "ean": "3270160680337"
+ },
+ "68041": {
+  "ref": "068041",
+  "name": "Salade de fruits bio, mangues, oranges, blueberries",
+  "ean": "3270160680412"
+ },
+ "68047": {
+  "ref": "068047",
+  "name": "Ananas en morceaux bio, Costa Rica",
+  "ean": "3270160680474"
+ },
+ "68048": {
+  "ref": "068048",
+  "name": "Purée haricot vert, carotte jaune, petit pois",
+  "ean": "3270160680481"
+ },
+ "68051": {
+  "ref": "068051",
+  "name": "Purée de potimarron bio",
+  "ean": "3270160680511"
+ },
+ "68052": {
+  "ref": "068052",
+  "name": "Purée de courge butternut, patate douce",
+  "ean": "3270160680528"
+ },
+ "68055": {
+  "ref": "068055",
+  "name": "Velouté courge butternut, potiron bio",
+  "ean": "3270160680559"
+ },
+ "68056": {
+  "ref": "068056",
+  "name": "Purée de légumes verts bio",
+  "ean": "3270160680566"
+ },
+ "68057": {
+  "ref": "068057",
+  "name": "Purée potiron, carotte, maïs bio",
+  "ean": "3270160680573"
+ },
+ "68059": {
+  "ref": "068059",
+  "name": "Fruit de la passion en cubes, Pérou",
+  "ean": "3270160680597"
+ },
+ "68064": {
+  "ref": "068064",
+  "name": "Légumes pour potage minestrone bio, Italie",
+  "ean": "3270160680641"
+ },
+ "68066": {
+  "ref": "068066",
+  "name": "Mini soupe petit pois, courgette, coco, curry",
+  "ean": "3270160680665"
+ },
+ "68070": {
+  "ref": "068070",
+  "name": "Velouté de courge butternut patate douce girolle",
+  "ean": "3270160680702"
+ },
+ "68080": {
+  "ref": "068080",
+  "name": "Framboises entières, UE et non UE",
+  "ean": "3270160680801"
+ },
+ "68089": {
+  "ref": "068089",
+  "name": "Açaï bowl à la purée de banane et d'açaï",
+  "ean": "3270160680894"
+ },
+ "68092": {
+  "ref": "068092",
+  "name": "Bol de fruits rouges",
+  "ean": "3270160680924"
+ },
+ "68093": {
+  "ref": "068093",
+  "name": "Fraises entières, Egypte",
+  "ean": "3270160680931"
+ },
+ "68109": {
+  "ref": "068109",
+  "name": "Bol de fruits exotiques",
+  "ean": "3270160681099"
+ },
+ "68159": {
+  "ref": "068159",
+  "name": "Velouté fève épinard cuisiné l'huile olive (5,3%)",
+  "ean": "3270160681594"
+ },
+ "68191": {
+  "ref": "068191",
+  "name": "Framboise entière bio, UE et non UE",
+  "ean": "3270160681914"
+ },
+ "68208": {
+  "ref": "068208",
+  "name": "Cocktail de fruits rouges bio",
+  "ean": "3270160682089"
+ },
+ "68209": {
+  "ref": "068209",
+  "name": "Cocktail de fruits rouges",
+  "ean": "3270160682096"
+ },
+ "68266": {
+  "ref": "068266",
+  "name": "Velouté de potiron",
+  "ean": "3270160682669"
+ },
+ "68381": {
+  "ref": "068381",
+  "name": "Potage aux 4 légumes bio",
+  "ean": "3270160683819"
+ },
+ "68383": {
+  "ref": "068383",
+  "name": "Mini so soupe carotte maïs, cheddar, paprika fumé",
+  "ean": "3270160683833"
+ },
+ "68410": {
+  "ref": "068410",
+  "name": "Pink pitaya, fruit du dragon rose en cubes",
+  "ean": "3270160684106"
+ },
+ "68412": {
+  "ref": "068412",
+  "name": "Noix de coco en cubes, Vietnam",
+  "ean": "3270160684120"
+ },
+ "68425": {
+  "ref": "068425",
+  "name": "Smoothie aux fruits exotiques",
+  "ean": "3270160684250"
+ },
+ "68426": {
+  "ref": "068426",
+  "name": "Smoothie fruits rouges",
+  "ean": "3270160684267"
+ },
+ "68435": {
+  "ref": "068435",
+  "name": "Velouté courge butternut, lentille corail, citron",
+  "ean": "3270160684359"
+ },
+ "68440": {
+  "ref": "068440",
+  "name": "Fraise en morceaux, Egypte",
+  "ean": "3270160684403"
+ },
+ "68450": {
+  "ref": "068450",
+  "name": "Velouté potimarron patate douce, truffe blanche",
+  "ean": "3270160684502"
+ },
+ "68503": {
+  "ref": "068503",
+  "name": "Rhubarbe en morceaux, Pologne",
+  "ean": "3270160685035"
+ },
+ "68638": {
+  "ref": "068638",
+  "name": "Salade de fruits exotiques",
+  "ean": "3270160686384"
+ },
+ "68654": {
+  "ref": "068654",
+  "name": "Salade d'agrumes",
+  "ean": "3270160686544"
+ },
+ "68711": {
+  "ref": "068711",
+  "name": "Velouté lentilles corail",
+  "ean": "3270160687114"
+ },
+ "68712": {
+  "ref": "068712",
+  "name": "Potage garden peas, haricot, poireau, oignon bio",
+  "ean": "3270160687121"
+ },
+ "68725": {
+  "ref": "068725",
+  "name": "Velouté courgette petit pois, fromage blanc",
+  "ean": "3270160687251"
+ },
+ "68726": {
+  "ref": "068726",
+  "name": "Bouillon à l'asiatique",
+  "ean": "3270160687268"
+ },
+ "68795": {
+  "ref": "068795",
+  "name": "Abricots en oreillons, France",
+  "ean": "3270160687954"
+ },
+ "68797": {
+  "ref": "068797",
+  "name": "Cerises noires dénoyautées, Bulgarie",
+  "ean": "3270160687978"
+ },
+ "68805": {
+  "ref": "068805",
+  "name": "Ananas en bâtonnet, Philippines",
+  "ean": "3270160688050"
+ },
+ "68810": {
+  "ref": "068810",
+  "name": "Myrtilles sauvages bio, Pologne ou Bulgarie",
+  "ean": "3270160688104"
+ },
+ "68829": {
+  "ref": "068829",
+  "name": "Cerises noires dénoyautées bio, Bulgarie",
+  "ean": "3270160688296"
+ },
+ "68831": {
+  "ref": "068831",
+  "name": "Framboises entières, UE et non UE",
+  "ean": "3270160688319"
+ },
+ "68834": {
+  "ref": "068834",
+  "name": "Poêlée festive de figue, prune, pomme, orange",
+  "ean": "3270160688340"
+ },
+ "68835": {
+  "ref": "068835",
+  "name": "Blueberries bio, Chili",
+  "ean": "3270160688357"
+ },
+ "68837": {
+  "ref": "068837",
+  "name": "Framboises brisées Bulgarie",
+  "ean": "3270160688371"
+ },
+ "68844": {
+  "ref": "068844",
+  "name": "Velouté patate douce, carotte jaune, ciboulette",
+  "ean": "3270160688449"
+ },
+ "68860": {
+  "ref": "068860",
+  "name": "Velouté châtaigne, potimarron, huile de noisette",
+  "ean": "3270160688609"
+ },
+ "68943": {
+  "ref": "068943",
+  "name": "Soupe patate douce, carotte, lait coco, gingembre",
+  "ean": "3270160689439"
+ },
+ "68944": {
+  "ref": "068944",
+  "name": "Velouté carotte jaune pois chiche",
+  "ean": "3270160689446"
+ },
+ "68977": {
+  "ref": "068977",
+  "name": "Bol de fruits au sirop passion framboise",
+  "ean": "3270160689774"
+ },
+ "69330": {
+  "ref": "069330",
+  "name": "2 cheeseburgers",
+  "ean": "3270160693306"
+ },
+ "69463": {
+  "ref": "069463",
+  "name": "Crevettes,Saint-Jacques, petites pâtes aux légumes",
+  "ean": "3270160694631"
+ },
+ "69562": {
+  "ref": "069562",
+  "name": "Crevettes à l'indienne, lentilles corail, légumes",
+  "ean": "3270160695621"
+ },
+ "69588": {
+  "ref": "069588",
+  "name": "Poulet et petites pâtes sauce aux champignons",
+  "ean": "3270160695881"
+ },
+ "69661": {
+  "ref": "069661",
+  "name": "Pâtes, crevettes, courgettes grillées, sauce au basilic",
+  "ean": "3270160696611"
+ },
+ "69687": {
+  "ref": "069687",
+  "name": "Lasagnes au saumon et aux épinards",
+  "ean": "3270160696871"
+ },
+ "69786": {
+  "ref": "069786",
+  "name": "Paëlla Valenciana",
+  "ean": "3270160697861"
+ },
+ "69827": {
+  "ref": "069827",
+  "name": "Lait de coco",
+  "ean": "3270160698271"
+ },
+ "69835": {
+  "ref": "069835",
+  "name": "Jus de citron",
+  "ean": "3270160698356"
+ },
+ "69843": {
+  "ref": "069843",
+  "name": "Fond de volaille",
+  "ean": "3270160698431"
+ },
+ "69851": {
+  "ref": "069851",
+  "name": "Fond de veau",
+  "ean": "3270160698516"
+ },
+ "69976": {
+  "ref": "069976",
+  "name": "Sauce aux Saint-Jacques et au Champagne",
+  "ean": "3270160699766"
+ },
+ "69984": {
+  "ref": "069984",
+  "name": "Sauce au foie gras de canard",
+  "ean": "3270160699841"
+ },
+ "69992": {
+  "ref": "069992",
+  "name": "Sauce Grand Veneur",
+  "ean": "3270160699926"
+ },
+ "71112": {
+  "ref": "071112",
+  "name": "Mini-gougères au fromage, 30 pièces environ",
+  "ean": "3270160711123"
+ },
+ "71188": {
+  "ref": "071188",
+  "name": "Tarte épinard, Parmigiano Reggiano, pignon de pin",
+  "ean": "3270160711888"
+ },
+ "71493": {
+  "ref": "071493",
+  "name": "2 flammekueche",
+  "ean": "3270160714933"
+ },
+ "71550": {
+  "ref": "071550",
+  "name": "10 crêpes champignon",
+  "ean": "3270160715503"
+ },
+ "71659": {
+  "ref": "071659",
+  "name": "Tourte noix de Saint-Jacques et colin d'Alaska",
+  "ean": "3270160716593"
+ },
+ "71683": {
+  "ref": "071683",
+  "name": "12 petites corolles",
+  "ean": "3270160716838"
+ },
+ "71732": {
+  "ref": "071732",
+  "name": "Pizza jambon speck, roquette, mozzarella",
+  "ean": "3270160717323"
+ },
+ "71766": {
+  "ref": "071766",
+  "name": "Pizza 4 saisons bio",
+  "ean": "3270160717668"
+ },
+ "71857": {
+  "ref": "071857",
+  "name": "Tarte fine champignons gorgonzola",
+  "ean": "3270160718573"
+ },
+ "72046": {
+  "ref": "072046",
+  "name": "Fajitas au poulet, 2 à 3 parts",
+  "ean": "3270160720460"
+ },
+ "72195": {
+  "ref": "072195",
+  "name": "2 naans, galettes de blé Cuisine Evasion",
+  "ean": "3270160721955"
+ },
+ "72202": {
+  "ref": "072202",
+  "name": "Assortiment de 12 yakitori",
+  "ean": "3270160722020"
+ },
+ "72260": {
+  "ref": "072260",
+  "name": "Soupe Kao Soi, bouillon lait coco, curry, nouilles",
+  "ean": "3270160722600"
+ },
+ "72301": {
+  "ref": "072301",
+  "name": "Edamame et sauce épicée",
+  "ean": "3270160723010"
+ },
+ "72426": {
+  "ref": "072426",
+  "name": "Soupe ramen Cuisine Evasion",
+  "ean": "3270160724260"
+ },
+ "72492": {
+  "ref": "072492",
+  "name": "Bo bun au poulet Cuisine Evasion",
+  "ean": "3270160724925"
+ },
+ "72517": {
+  "ref": "072517",
+  "name": "Chirashi au saumon",
+  "ean": "3270160725175"
+ },
+ "72591": {
+  "ref": "072591",
+  "name": "Dos de colin d'Alaska au citron et au basilic, risotto verde",
+  "ean": "3270160725915"
+ },
+ "72608": {
+  "ref": "072608",
+  "name": "Aiguillettes de poulet à la moutarde et au citron",
+  "ean": "3270160726080"
+ },
+ "72616": {
+  "ref": "072616",
+  "name": "Emincés de poulet, tagliatelles, légumes façon wok",
+  "ean": "3270160726165"
+ },
+ "72658": {
+  "ref": "072658",
+  "name": "Porc au caramel et riz à la coriandre",
+  "ean": "3270160726585"
+ },
+ "72715": {
+  "ref": "072715",
+  "name": "6 perles de coco Cuisine Evasion",
+  "ean": "3270160727155"
+ },
+ "72731": {
+  "ref": "072731",
+  "name": "16 mini-nems : poulet-menthe, légumes-coriandre",
+  "ean": "3270160727315"
+ },
+ "72757": {
+  "ref": "072757",
+  "name": "8 gyoza aux légumes, bouchées vapeur, sauce soja",
+  "ean": "3270160727575"
+ },
+ "72919": {
+  "ref": "072919",
+  "name": "Aubergine farcie à la grecque",
+  "ean": "3270160729197"
+ },
+ "72971": {
+  "ref": "072971",
+  "name": "6 brochettes de boeuf au fromage,sauce soja sucrée",
+  "ean": "3270160729715"
+ },
+ "72989": {
+  "ref": "072989",
+  "name": "8 raviolis vietnamiens aux légumes",
+  "ean": "3270160729890"
+ },
+ "73041": {
+  "ref": "073041",
+  "name": "4 bâtonnets vanille-macadamia",
+  "ean": "3270160730414"
+ },
+ "73043": {
+  "ref": "073043",
+  "name": "4 glaces Best vanille-amande-caramel beurre salé",
+  "ean": "3270160730438"
+ },
+ "73048": {
+  "ref": "073048",
+  "name": "6 tutti frutti",
+  "ean": "3270160730483"
+ },
+ "73049": {
+  "ref": "073049",
+  "name": "16 tubes, sorbets plein fruit et glace à l'eau",
+  "ean": "3270160730490"
+ },
+ "73063": {
+  "ref": "073063",
+  "name": "6 bâtonnets fruits",
+  "ean": "3270160730636"
+ },
+ "73080": {
+  "ref": "073080",
+  "name": "6 Bounty",
+  "ean": "5000159483063"
+ },
+ "73090": {
+  "ref": "073090",
+  "name": "Glace Le yaourt",
+  "ean": "3270160730902"
+ },
+ "73097": {
+  "ref": "073097",
+  "name": "5 bâtonnets citron citron vert gingembre",
+  "ean": "3270160730971"
+ },
+ "73113": {
+  "ref": "073113",
+  "name": "6 cônes extrême vanille",
+  "ean": "7613034975386"
+ },
+ "73117": {
+  "ref": "073117",
+  "name": "8 fusées sorbets orange, citron, framboise",
+  "ean": "3270160731176"
+ },
+ "73150": {
+  "ref": "073150",
+  "name": "6 cônes citron-framboise",
+  "ean": "3270160731503"
+ },
+ "73151": {
+  "ref": "073151",
+  "name": "6 cônes mangue-passion et noix de coco",
+  "ean": "3270160731510"
+ },
+ "73153": {
+  "ref": "073153",
+  "name": "6 Mini Magnum Double Gold Caramel Billionaire",
+  "ean": "8711327485082"
+ },
+ "73532": {
+  "ref": "073532",
+  "name": "2 mini-pots caramel beurre salé",
+  "ean": "3270160735327"
+ },
+ "73673": {
+  "ref": "073673",
+  "name": "6 cônes vanille-café",
+  "ean": "3270160736737"
+ },
+ "73706": {
+  "ref": "073706",
+  "name": "6 cônes caramel beurre salé",
+  "ean": "3270160737062"
+ },
+ "73722": {
+  "ref": "073722",
+  "name": "6 cônes menthe",
+  "ean": "3270160737222"
+ },
+ "73871": {
+  "ref": "073871",
+  "name": "2 nougats glacés",
+  "ean": "3270160738717"
+ },
+ "73907": {
+  "ref": "073907",
+  "name": "5 bâtonnets fraise-pastèque, sorbet plein fruit",
+  "ean": "3270160739073"
+ },
+ "73912": {
+  "ref": "073912",
+  "name": "8 mini-bâtonnets vanille-divers enrobages chocolat",
+  "ean": "3270160739127"
+ },
+ "74009": {
+  "ref": "074009",
+  "name": "Filets de merlu blanc du Cap MSC, panure bio",
+  "ean": "3270160740093"
+ },
+ "74077": {
+  "ref": "074077",
+  "name": "Filets de cabillaud MSC, Pêche française",
+  "ean": "3270160740772"
+ },
+ "74086": {
+  "ref": "074086",
+  "name": "Dos de cabillaud MSC, 3 à 6 pièces",
+  "ean": "3270160740864"
+ },
+ "74103": {
+  "ref": "074103",
+  "name": "Filets de colin d'Alaska MSC",
+  "ean": "3270160741038"
+ },
+ "74121": {
+  "ref": "074121",
+  "name": "Filets de limande-sole",
+  "ean": "3270160741212"
+ },
+ "74127": {
+  "ref": "074127",
+  "name": "20 portions de colin d'Alaska MSC*",
+  "ean": "3270160741274"
+ },
+ "74208": {
+  "ref": "074208",
+  "name": "Filets de truite arc-en-ciel, élevée en France",
+  "ean": "3294760357000"
+ },
+ "74209": {
+  "ref": "074209",
+  "name": "4 pavés de saumon atlantique ASC",
+  "ean": "3270160742097"
+ },
+ "74210": {
+  "ref": "074210",
+  "name": "Portions de filet colin lieu MSC, 4 à 6 pièces",
+  "ean": "3270160742103"
+ },
+ "74218": {
+  "ref": "074218",
+  "name": "2 filets de dorade royale avec peau",
+  "ean": "3270160742189"
+ },
+ "74219": {
+  "ref": "074219",
+  "name": "Aiguillettes de merlu blanc du Cap panure",
+  "ean": "3270160742196"
+ },
+ "74222": {
+  "ref": "074222",
+  "name": "2 filets de bar ASC avec peau, élevé en Turquie",
+  "ean": "3270160742226"
+ },
+ "74225": {
+  "ref": "074225",
+  "name": "Calmar pané panure poivre",
+  "ean": "3270160742257"
+ },
+ "74226": {
+  "ref": "074226",
+  "name": "Noix de St-Jacques MSC de la Baie de St-Brieuc",
+  "ean": "3270160742264"
+ },
+ "74242": {
+  "ref": "074242",
+  "name": "8 aiguillettes cabillaud MSC panure multi-grains",
+  "ean": "3270160742424"
+ },
+ "74251": {
+  "ref": "074251",
+  "name": "Dos de cabillaud, 3 à 6 pièces, sans arête",
+  "ean": "3270160742516"
+ },
+ "74276": {
+  "ref": "074276",
+  "name": "4 tranches de filets de saumon atlantique, Norvège",
+  "ean": "3270160742769"
+ },
+ "74317": {
+  "ref": "074317",
+  "name": "2 paupiettes de saumon aux poissons, aux poireaux",
+  "ean": "3270160743179"
+ },
+ "74322": {
+  "ref": "074322",
+  "name": "4 tranches de truite fumée, élevée en France",
+  "ean": "3270160743223"
+ },
+ "74359": {
+  "ref": "074359",
+  "name": "Filets de merlu blanc du Cap façon meunière",
+  "ean": "3270160743599"
+ },
+ "74368": {
+  "ref": "074368",
+  "name": "Salade d'algues, wakamé cultivé en Bretagne",
+  "ean": "3270160743681"
+ },
+ "74410": {
+  "ref": "074410",
+  "name": "Queues de gambas crues décortiquées crues ASC",
+  "ean": "3270160744107"
+ },
+ "74482": {
+  "ref": "074482",
+  "name": "2 dos de cabillaud façon fish and chips MSC",
+  "ean": "3270160744824"
+ },
+ "74490": {
+  "ref": "074490",
+  "name": "Crevettes panées, 10 à 12 pièces, élevées Equateur",
+  "ean": "3270160744909"
+ },
+ "74492": {
+  "ref": "074492",
+  "name": "Médaillons algues panés algue wakamé, Bretagne",
+  "ean": "3270160744923"
+ },
+ "74503": {
+  "ref": "074503",
+  "name": "Poêlée haricots de mer à l'échalote, Bretagne",
+  "ean": "3270160745036"
+ },
+ "74510": {
+  "ref": "074510",
+  "name": "4 tranches de filets de merlu blanc MSC sans arête",
+  "ean": "3270160745104"
+ },
+ "74520": {
+  "ref": "074520",
+  "name": "Saumon façon gravlax à l'aneth et baies roses",
+  "ean": "3270160745203"
+ },
+ "74540": {
+  "ref": "074540",
+  "name": "4 tranches de thon albacore, qualité sans arête",
+  "ean": "3270160745401"
+ },
+ "74560": {
+  "ref": "074560",
+  "name": "6 croquettes de colin d'Alaska panées MSC",
+  "ean": "3270160745609"
+ },
+ "74565": {
+  "ref": "074565",
+  "name": "2 pavés de saumon au citron et au poivre",
+  "ean": "3270160745654"
+ },
+ "74635": {
+  "ref": "074635",
+  "name": "2 pavés de bonite à ventre rayé MSC",
+  "ean": "3270160746354"
+ },
+ "74636": {
+  "ref": "074636",
+  "name": "Filets de sardine Pêche française avec peau",
+  "ean": "3270160746361"
+ },
+ "74672": {
+  "ref": "074672",
+  "name": "Crevettes au curry rouge, recette thaï",
+  "ean": "3270160746729"
+ },
+ "74674": {
+  "ref": "074674",
+  "name": "6 huîtres de Bretagne, sachet de vinaigre/échalote",
+  "ean": "3270160746743"
+ },
+ "74676": {
+  "ref": "074676",
+  "name": "Morceaux de calmar géant huile d'olive basilic pi",
+  "ean": "3270160746767"
+ },
+ "74763": {
+  "ref": "074763",
+  "name": "Dos colin lieu MSC, qualité sans arête",
+  "ean": "3270160747634"
+ },
+ "74771": {
+  "ref": "074771",
+  "name": "2 filets de cabillaud meunière MSC, sans arête",
+  "ean": "3270160747719"
+ },
+ "74772": {
+  "ref": "074772",
+  "name": "2 tranches de thon germon MSC",
+  "ean": "3270160747726"
+ },
+ "74846": {
+  "ref": "074846",
+  "name": "Soles entières vidées pelées, Mer du Nord",
+  "ean": "3270160748464"
+ },
+ "74847": {
+  "ref": "074847",
+  "name": "6 portions de filet de cabillaud MSC",
+  "ean": "3270160748471"
+ },
+ "74870": {
+  "ref": "074870",
+  "name": "Saumon pané ASC, 4 à 6 portions de filets",
+  "ean": "3270160748709"
+ },
+ "74937": {
+  "ref": "074937",
+  "name": "2 pavés de saumon atlantique avec peau ASC",
+  "ean": "3270160749379"
+ },
+ "74941": {
+  "ref": "074941",
+  "name": "Eperlans d'Amérique poissons entiers pour friture",
+  "ean": "3270160749416"
+ },
+ "74961": {
+  "ref": "074961",
+  "name": "Anchois en tempura",
+  "ean": "3270160749614"
+ },
+ "75118": {
+  "ref": "075118",
+  "name": "Poêlée marron, abricot",
+  "ean": "3270160751181"
+ },
+ "75184": {
+  "ref": "075184",
+  "name": "Brunoise à la méridionale",
+  "ean": "3270160751846"
+ },
+ "75192": {
+  "ref": "075192",
+  "name": "Graine de couscous cuisinée à l'huile d'olive, bio",
+  "ean": "3270160751921"
+ },
+ "75225": {
+  "ref": "075225",
+  "name": "Poêlée à la bretonne",
+  "ean": "3270160752256"
+ },
+ "75233": {
+  "ref": "075233",
+  "name": "Poêlée pointes asperges vertes, cèpes et morilles",
+  "ean": "3270160752331"
+ },
+ "75431": {
+  "ref": "075431",
+  "name": "4 mini-gratins de légumes",
+  "ean": "3270160754311"
+ },
+ "75465": {
+  "ref": "075465",
+  "name": "Poêlée de légumes à la provençale bio",
+  "ean": "3270160754656"
+ },
+ "75473": {
+  "ref": "075473",
+  "name": "Champignons de Paris émincés bio",
+  "ean": "3270160754731"
+ },
+ "75522": {
+  "ref": "075522",
+  "name": "Mini-coeurs d'artichauts entiers, Pérou",
+  "ean": "3270160755226"
+ },
+ "75530": {
+  "ref": "075530",
+  "name": "Légumes pour potage bio",
+  "ean": "3270160755301"
+ },
+ "75572": {
+  "ref": "075572",
+  "name": "Riz cuisiné à l'italienne",
+  "ean": "3270160755721"
+ },
+ "75580": {
+  "ref": "075580",
+  "name": "3 sachets vapeur légumes du soleil",
+  "ean": "3270160755806"
+ },
+ "75689": {
+  "ref": "075689",
+  "name": "Légumes pour wok",
+  "ean": "3270160756896"
+ },
+ "75704": {
+  "ref": "075704",
+  "name": "Duo de fleurettes bio (brocoli et chou-fleur)",
+  "ean": "3270160757046"
+ },
+ "75770": {
+  "ref": "075770",
+  "name": "Poêlée de légumes grillés courgette, aubergine",
+  "ean": "3270160757701"
+ },
+ "76076": {
+  "ref": "076076",
+  "name": "Crème glacée vanille-macadamia",
+  "ean": "3270160760763"
+ },
+ "79272": {
+  "ref": "079272",
+  "name": "Merlu blanc du Cap façon fish and chips MSC",
+  "ean": "3270160792726"
+ },
+ "80062": {
+  "ref": "080062",
+  "name": "Feuillets à la cannelle",
+  "ean": "3270160800629"
+ },
+ "80088": {
+  "ref": "080088",
+  "name": "Gressins au romarin",
+  "ean": "3270160800889"
+ },
+ "80111": {
+  "ref": "080111",
+  "name": "Sablés chocolat au lait, noisette-caramel",
+  "ean": "3270160801114"
+ },
+ "80153": {
+  "ref": "080153",
+  "name": "Crêpes dentelle au chocolat au lait",
+  "ean": "3270160801534"
+ },
+ "80179": {
+  "ref": "080179",
+  "name": "Flûtes au sésame",
+  "ean": "3270160801794"
+ },
+ "80210": {
+  "ref": "080210",
+  "name": "Chutney de figues aux épices",
+  "ean": "3270160802104"
+ },
+ "80921": {
+  "ref": "080921",
+  "name": "Coca-cola",
+  "ean": "3174780000363"
+ },
+ "80939": {
+  "ref": "080939",
+  "name": "Coca-cola zéro",
+  "ean": "5449000131836"
+ },
+ "81011": {
+  "ref": "081011",
+  "name": "Sauce aux champignons",
+  "ean": "3270160810116"
+ },
+ "81029": {
+  "ref": "081029",
+  "name": "Sauce au poivre vert",
+  "ean": "3270160810291"
+ },
+ "81037": {
+  "ref": "081037",
+  "name": "Sauce aux morilles",
+  "ean": "3270160810376"
+ },
+ "81079": {
+  "ref": "081079",
+  "name": "Gratin de coquillettes au jambon et à l'emmental",
+  "ean": "3270160810796"
+ },
+ "81110": {
+  "ref": "081110",
+  "name": "Cuisse de canard confite sauce au poivre vert",
+  "ean": "3270160811106"
+ },
+ "81136": {
+  "ref": "081136",
+  "name": "Endives au jambon",
+  "ean": "3270160811366"
+ },
+ "81219": {
+  "ref": "081219",
+  "name": "Ravioli aux cèpes sauce au parmesan",
+  "ean": "3270160812196"
+ },
+ "81293": {
+  "ref": "081293",
+  "name": "Poulet au curry et au lait de coco, duo de riz",
+  "ean": "3270160812936"
+ },
+ "81300": {
+  "ref": "081300",
+  "name": "Saumon et colin d'Alaska à l'oseille, pommes de terre à l'étouffée",
+  "ean": "3270160813001"
+ },
+ "81368": {
+  "ref": "081368",
+  "name": "Lasagnes aux légumes grillés et à la mozzarella",
+  "ean": "3270160813681"
+ },
+ "81459": {
+  "ref": "081459",
+  "name": "Risotto aux asperges vertes",
+  "ean": "3270160814596"
+ },
+ "81714": {
+  "ref": "081714",
+  "name": "Gratin de ravioles au poulet et aux champignons",
+  "ean": "3270160817146"
+ },
+ "81722": {
+  "ref": "081722",
+  "name": "Poulet sauce citron vert, purée de patate douce",
+  "ean": "3270160817221"
+ },
+ "82007": {
+  "ref": "082007",
+  "name": "Merveilleux au chocolat, 6 parts",
+  "ean": "3270160820078"
+ },
+ "82015": {
+  "ref": "082015",
+  "name": "16 Mignardises création",
+  "ean": "3270160820153"
+ },
+ "82029": {
+  "ref": "082029",
+  "name": "Cheesecake individuel au citron",
+  "ean": "3270160820290"
+ },
+ "82054": {
+  "ref": "082054",
+  "name": "4 noix de coco givrées",
+  "ean": "3270160820542"
+ },
+ "82078": {
+  "ref": "082078",
+  "name": "Galette des rois aux pommes, 6 parts, à cuire",
+  "ean": "3270160820788"
+ },
+ "82085": {
+  "ref": "082085",
+  "name": "12 macarons, citron-spéculos-fruits rouges-chocolat",
+  "ean": "3270160820856"
+ },
+ "82109": {
+  "ref": "082109",
+  "name": "2 vacherins vanille-framboise",
+  "ean": "3270160821099"
+ },
+ "82138": {
+  "ref": "082138",
+  "name": "Cheesecake à la framboise, 6 parts",
+  "ean": "3270160821389"
+ },
+ "82142": {
+  "ref": "082142",
+  "name": "30 mignardises",
+  "ean": "3270160821426"
+ },
+ "82148": {
+  "ref": "082148",
+  "name": "Tarte à la normande",
+  "ean": "3270160821488"
+ },
+ "82149": {
+  "ref": "082149",
+  "name": "Croustillant façon citron meringué, 1 part",
+  "ean": "3270160821495"
+ },
+ "82151": {
+  "ref": "082151",
+  "name": "Flan pâtissier, 1 part",
+  "ean": "3270160821518"
+ },
+ "82152": {
+  "ref": "082152",
+  "name": "6 petits pains multigraines",
+  "ean": "3270160821525"
+ },
+ "82165": {
+  "ref": "082165",
+  "name": "Feuille d'automne, 1 part",
+  "ean": "3270160821655"
+ },
+ "82168": {
+  "ref": "082168",
+  "name": "Opéra 1 part",
+  "ean": "3270160821686"
+ },
+ "82170": {
+  "ref": "082170",
+  "name": "16 macarons chocolat, framboise, vanille, pistache",
+  "ean": "3270160821709"
+ },
+ "82176": {
+  "ref": "082176",
+  "name": "Clafoutis aux griottes, 1 part",
+  "ean": "3270160821761"
+ },
+ "82181": {
+  "ref": "082181",
+  "name": "Gratin de gnocchi aux épinards et au bacon bio",
+  "ean": "3270160821815"
+ },
+ "82182": {
+  "ref": "082182",
+  "name": "Cake au chocolat, 6 parts",
+  "ean": "3270160821822"
+ },
+ "82183": {
+  "ref": "082183",
+  "name": "Cake au citron, 6 parts, pur beurre, à réchauffer",
+  "ean": "3270160821839"
+ },
+ "82192": {
+  "ref": "082192",
+  "name": "Crumble poire-chocolat",
+  "ean": "3270160821921"
+ },
+ "82205": {
+  "ref": "082205",
+  "name": "8 croissants pur beurre",
+  "ean": "3270160822058"
+ },
+ "82206": {
+  "ref": "082206",
+  "name": "6 pains au chocolat, pur beurre",
+  "ean": "3270160822065"
+ },
+ "82208": {
+  "ref": "082208",
+  "name": "2 cookies moelleux aux pépites de chocolat",
+  "ean": "3270160822089"
+ },
+ "82217": {
+  "ref": "082217",
+  "name": "Rainbow cake, gâteau arc-en-ciel, 6 parts",
+  "ean": "3270160822171"
+ },
+ "82218": {
+  "ref": "082218",
+  "name": "2 tartelettes citron meringuées",
+  "ean": "3270160822188"
+ },
+ "82224": {
+  "ref": "082224",
+  "name": "10 mini-croissants, pur beurre",
+  "ean": "3270160822249"
+ },
+ "82225": {
+  "ref": "082225",
+  "name": "10 mini-pains au chocolat, pur beurre",
+  "ean": "3270160822256"
+ },
+ "82232": {
+  "ref": "082232",
+  "name": "10 gaufres coeurs bio",
+  "ean": "3270160822324"
+ },
+ "82245": {
+  "ref": "082245",
+  "name": "2 mini-pots café, crème glacée au café",
+  "ean": "3270160822454"
+ },
+ "82250": {
+  "ref": "082250",
+  "name": "9 mini-coupes pâtissières",
+  "ean": "3270160822508"
+ },
+ "82255": {
+  "ref": "082255",
+  "name": "4 pastéis de nata",
+  "ean": "3270160822553"
+ },
+ "82259": {
+  "ref": "082259",
+  "name": "20 mini-macarons,chocolat,cassis, framboise,citron",
+  "ean": "3270160822591"
+ },
+ "82261": {
+  "ref": "082261",
+  "name": "8 mini-beignets coeur chocolat-noisette",
+  "ean": "3270160822614"
+ },
+ "82262": {
+  "ref": "082262",
+  "name": "Mini-churros coeur cacao noisette, 12 à 15 pièces",
+  "ean": "3270160822621"
+ },
+ "82272": {
+  "ref": "082272",
+  "name": "6 mini-merveilleux au chocolat",
+  "ean": "3270160822720"
+ },
+ "82298": {
+  "ref": "082298",
+  "name": "Dessert façon pomme d'amour, 1 part",
+  "ean": "3270160822980"
+ },
+ "82299": {
+  "ref": "082299",
+  "name": "2 petites baguettes classiques",
+  "ean": "3270160822997"
+ },
+ "82312": {
+  "ref": "082312",
+  "name": "12 macarons pâtissiers opéra noisette citron pomme",
+  "ean": "3270160823123"
+ },
+ "82319": {
+  "ref": "082319",
+  "name": "4 panini fourrés à la pâte à tartiner",
+  "ean": "3270160823192"
+ },
+ "82369": {
+  "ref": "082369",
+  "name": "Cake à la noisette façon rocher",
+  "ean": "3270160823697"
+ },
+ "82374": {
+  "ref": "082374",
+  "name": "Brioche babka chocolat noisette, 6 parts",
+  "ean": "3270160823741"
+ },
+ "82385": {
+  "ref": "082385",
+  "name": "Crumble mangue passion",
+  "ean": "3270160823857"
+ },
+ "82387": {
+  "ref": "082387",
+  "name": "Fondant au chocolat et praliné noisette, 1 part",
+  "ean": "3270160823871"
+ },
+ "82390": {
+  "ref": "082390",
+  "name": "Fondant choco noisette vegan, 6 parts",
+  "ean": "3270160823901"
+ },
+ "82392": {
+  "ref": "082392",
+  "name": "Crumble aux pommes",
+  "ean": "3270160823925"
+ },
+ "82393": {
+  "ref": "082393",
+  "name": "Crumble aux fruits rouges, 1 part",
+  "ean": "3270160823932"
+ },
+ "82395": {
+  "ref": "082395",
+  "name": "Gâteau cookie moelleux, 4 à 6 parts",
+  "ean": "3270160823956"
+ },
+ "82396": {
+  "ref": "082396",
+  "name": "2 macarons framboise",
+  "ean": "3270160823963"
+ },
+ "82397": {
+  "ref": "082397",
+  "name": "2 macarons caramel",
+  "ean": "3270160823970"
+ },
+ "82401": {
+  "ref": "082401",
+  "name": "16 mignardises",
+  "ean": "3270160824014"
+ },
+ "82406": {
+  "ref": "082406",
+  "name": "4 scones, petits pains sucrés",
+  "ean": "3270160824069"
+ },
+ "82407": {
+  "ref": "082407",
+  "name": "2 donuts, glaçage chocolat noir",
+  "ean": "3270160824076"
+ },
+ "82409": {
+  "ref": "082409",
+  "name": "San sebastian cheesecake, 1 part",
+  "ean": "3270160824090"
+ },
+ "82411": {
+  "ref": "082411",
+  "name": "Moelleux chocolat coeur coulant matcha, 1 part",
+  "ean": "3270160824113"
+ },
+ "82417": {
+  "ref": "082417",
+  "name": "6 mini-tropéziennes",
+  "ean": "3270160824175"
+ },
+ "82418": {
+  "ref": "082418",
+  "name": "2 muffins fourrés à la pâte à tartiner",
+  "ean": "3270160824182"
+ },
+ "82419": {
+  "ref": "082419",
+  "name": "2 desserts vanille framboise, piment d'espelette",
+  "ean": "3270160824199"
+ },
+ "82421": {
+  "ref": "082421",
+  "name": "2 desserts façon charlotte aux fruits rouges",
+  "ean": "3270160824212"
+ },
+ "82425": {
+  "ref": "082425",
+  "name": "Charlotte aux fruits exotiques, 6 parts",
+  "ean": "3270160824250"
+ },
+ "82433": {
+  "ref": "082433",
+  "name": "Tiramisu, mascarpone, café",
+  "ean": "3270160824335"
+ },
+ "82435": {
+  "ref": "082435",
+  "name": "Moelleux banane, chocolat, pécan",
+  "ean": "3270160824359"
+ },
+ "82436": {
+  "ref": "082436",
+  "name": "Macaron à la framboise individuel",
+  "ean": "3270160824366"
+ },
+ "82437": {
+  "ref": "082437",
+  "name": "Bûchette au chocolat et à la noisette, 1 part",
+  "ean": "3270160824373"
+ },
+ "82443": {
+  "ref": "082443",
+  "name": "Brioche feuilletée, pur beurre, 6 parts",
+  "ean": "3270160824434"
+ },
+ "82452": {
+  "ref": "082452",
+  "name": "Cookie vibes chocolat blanc - framboise - matcha",
+  "ean": "3270160824526"
+ },
+ "82460": {
+  "ref": "082460",
+  "name": "Banana bread, cake à la banane, 6 parts",
+  "ean": "3270160824601"
+ },
+ "82503": {
+  "ref": "082503",
+  "name": "12 mini-éclairs délicieux",
+  "ean": "3270160825035"
+ },
+ "82505": {
+  "ref": "082505",
+  "name": "Pain sans gluten, Wiso",
+  "ean": "3700442602707"
+ },
+ "82509": {
+  "ref": "082509",
+  "name": "2 crèmes brûlées",
+  "ean": "3270160825097"
+ },
+ "82511": {
+  "ref": "082511",
+  "name": "Tarte au chocolat gourmande, 6 parts",
+  "ean": "3270160825110"
+ },
+ "82518": {
+  "ref": "082518",
+  "name": "Tarte fruits exotiques, 6 parts",
+  "ean": "3270160825189"
+ },
+ "82521": {
+  "ref": "082521",
+  "name": "Cookie vibes, chocolat noix de pécan",
+  "ean": "3270160825219"
+ },
+ "82533": {
+  "ref": "082533",
+  "name": "Divin chocolat-praliné, 6 parts",
+  "ean": "3270160825332"
+ },
+ "82537": {
+  "ref": "082537",
+  "name": "Charlotte aux fruits rouges, 8 parts",
+  "ean": "3270160825370"
+ },
+ "82540": {
+  "ref": "082540",
+  "name": "6 croissants fourrés noisette - cacao",
+  "ean": "3270160825400"
+ },
+ "82543": {
+  "ref": "082543",
+  "name": "Oeuf pâtissier gourmand, 6 parts",
+  "ean": "3270160825431"
+ },
+ "82545": {
+  "ref": "082545",
+  "name": "2 moelleux chocolat praliné",
+  "ean": "3270160825455"
+ },
+ "82550": {
+  "ref": "082550",
+  "name": "Moelleux minute chocolat caramel",
+  "ean": "3270160825509"
+ },
+ "82572": {
+  "ref": "082572",
+  "name": "2 pâtes feuilletées, pre-étalées pur beurre",
+  "ean": "3270160825721"
+ },
+ "82575": {
+  "ref": "082575",
+  "name": "2 pâtes feuilletées bloc, pur beurre crues",
+  "ean": "3270160825752"
+ },
+ "82576": {
+  "ref": "082576",
+  "name": "2 pâtes brisées, pré-étalées pur beurre crues",
+  "ean": "3270160825769"
+ },
+ "82577": {
+  "ref": "082577",
+  "name": "2 pâtes sablées, pre-étalées pur beurre, crues",
+  "ean": "3270160825776"
+ },
+ "82578": {
+  "ref": "082578",
+  "name": "2 pâtes feuilletées Le Gall",
+  "ean": "3512031021215"
+ },
+ "82582": {
+  "ref": "082582",
+  "name": "2 pâtes feuilletées bloc Le Gall",
+  "ean": "3512031021222"
+ },
+ "82603": {
+  "ref": "082603",
+  "name": "9 mini-coupes pâtissières fruits rouges",
+  "ean": "3270160826032"
+ },
+ "82616": {
+  "ref": "082616",
+  "name": "Chou chocolat au cacao Equateur - sésame, 1 part",
+  "ean": "3270160826162"
+ },
+ "82626": {
+  "ref": "082626",
+  "name": "Entremets vanille-pécan",
+  "ean": "3270160826261"
+ },
+ "82628": {
+  "ref": "082628",
+  "name": "8 mini-pavlovas, 4 fruits exotiques, 4 framboise",
+  "ean": "3270160826285"
+ },
+ "82635": {
+  "ref": "082635",
+  "name": "Paris-Brest, 1 part",
+  "ean": "3270160826353"
+ },
+ "82637": {
+  "ref": "082637",
+  "name": "8 rennes chocolat croustillant amande",
+  "ean": "3270160826377"
+ },
+ "82638": {
+  "ref": "082638",
+  "name": "10 pions gourmands framb vanille / mangue-passion",
+  "ean": "3270160826384"
+ },
+ "82647": {
+  "ref": "082647",
+  "name": "Galettes des rois frangipane pralines, 6 parts",
+  "ean": "3270160826476"
+ },
+ "82649": {
+  "ref": "082649",
+  "name": "Le beau sapin, 6 parts",
+  "ean": "3270160826490"
+ },
+ "82650": {
+  "ref": "082650",
+  "name": "Galette cookies, 6 parts",
+  "ean": "3270160826506"
+ },
+ "82705": {
+  "ref": "082705",
+  "name": "Brioche à la cannelle",
+  "ean": "3270160827053"
+ },
+ "82739": {
+  "ref": "082739",
+  "name": "4 éclairs au chocolat",
+  "ean": "3270160827398"
+ },
+ "82747": {
+  "ref": "082747",
+  "name": "4 éclairs au café",
+  "ean": "3270160827473"
+ },
+ "82751": {
+  "ref": "082751",
+  "name": "6 brioches aux pépites de chocolat",
+  "ean": "3270160827510"
+ },
+ "82753": {
+  "ref": "082753",
+  "name": "6 mini-donuts",
+  "ean": "3270160827534"
+ },
+ "82756": {
+  "ref": "082756",
+  "name": "Mini-crêpes fourrées à la pâte à tartiner",
+  "ean": "3270160827565"
+ },
+ "82815": {
+  "ref": "082815",
+  "name": "2 merveilleux au chocolat",
+  "ean": "3270160828159"
+ },
+ "82816": {
+  "ref": "082816",
+  "name": "2 tartelettes fines aux pommes",
+  "ean": "3270160828166"
+ },
+ "82838": {
+  "ref": "082838",
+  "name": "2 brioches façon pain perdu, sauce caramel",
+  "ean": "3270160828388"
+ },
+ "82888": {
+  "ref": "082888",
+  "name": "Pyramide de sorbet, 30 boules, 12 à 15 parts",
+  "ean": "3270160828883"
+ },
+ "82901": {
+  "ref": "082901",
+  "name": "2 tiramisù savoiardi, biscuits cuillières",
+  "ean": "3270160829019"
+ },
+ "82953": {
+  "ref": "082953",
+  "name": "Moelleux au chocolat minute",
+  "ean": "3270160829538"
+ },
+ "82987": {
+  "ref": "082987",
+  "name": "Tartelette au chocolat et au caramel beurre salé",
+  "ean": "3270160829873"
+ },
+ "83019": {
+  "ref": "083019",
+  "name": "Pizza Royale",
+  "ean": "3270160830190"
+ },
+ "83027": {
+  "ref": "083027",
+  "name": "Pizza aux 4 fromages",
+  "ean": "3270160830275"
+ },
+ "83069": {
+  "ref": "083069",
+  "name": "Bagel saumon fumé, fromage frais, ciboulette",
+  "ean": "3270160830695"
+ },
+ "83085": {
+  "ref": "083085",
+  "name": "2 millefeuilles de saumon fumé",
+  "ean": "3270160830855"
+ },
+ "83291": {
+  "ref": "083291",
+  "name": "12 coquilles Saint-Jacques apéritives",
+  "ean": "3270160832910"
+ },
+ "83811": {
+  "ref": "083811",
+  "name": "Pizza chèvre, miel, noix",
+  "ean": "3270160838110"
+ },
+ "83895": {
+  "ref": "083895",
+  "name": "20 canapés apéritifs",
+  "ean": "3270160838950"
+ },
+ "84020": {
+  "ref": "084020",
+  "name": "Glace La vanille de Madagascar",
+  "ean": "3270160840205"
+ },
+ "84021": {
+  "ref": "084021",
+  "name": "Glace Le caramel au beurre salé",
+  "ean": "3270160840212"
+ },
+ "84022": {
+  "ref": "084022",
+  "name": "Glace Le chocolat",
+  "ean": "3270160840229"
+ },
+ "84023": {
+  "ref": "084023",
+  "name": "Glace Le café",
+  "ean": "3270160840236"
+ },
+ "84024": {
+  "ref": "084024",
+  "name": "Sorbet La framboise",
+  "ean": "3270160840243"
+ },
+ "84025": {
+  "ref": "084025",
+  "name": "Sorbet La mangue passion",
+  "ean": "3270160840250"
+ },
+ "84027": {
+  "ref": "084027",
+  "name": "Sorbet La fraise, Pure Sélection",
+  "ean": "3270160840274"
+ },
+ "84028": {
+  "ref": "084028",
+  "name": "Sorbet Le citron",
+  "ean": "3270160840281"
+ },
+ "84029": {
+  "ref": "084029",
+  "name": "Sorbet Le cacao",
+  "ean": "3270160840298"
+ },
+ "84033": {
+  "ref": "084033",
+  "name": "Bûche glacée marron-vanille, 8 parts",
+  "ean": "3270160840335"
+ },
+ "84055": {
+  "ref": "084055",
+  "name": "Crème glacée chocolat avec pépites de chocolat",
+  "ean": "3270160840557"
+ },
+ "84095": {
+  "ref": "084095",
+  "name": "Sorbet citron vert",
+  "ean": "3270160840953"
+ },
+ "84096": {
+  "ref": "084096",
+  "name": "Sorbet fraise",
+  "ean": "3270160840960"
+ },
+ "84097": {
+  "ref": "084097",
+  "name": "Sorbet Fou de passion",
+  "ean": "3270160840977"
+ },
+ "84101": {
+  "ref": "084101",
+  "name": "Sorbet Fou de Poire",
+  "ean": "3270160841011"
+ },
+ "84103": {
+  "ref": "084103",
+  "name": "Sorbet Fou de Citron",
+  "ean": "3270160841035"
+ },
+ "84104": {
+  "ref": "084104",
+  "name": "Crème glacée Fou de noix de coco",
+  "ean": "3270160841042"
+ },
+ "84116": {
+  "ref": "084116",
+  "name": "Crème glacée Fou de Vanille",
+  "ean": "3270160841165"
+ },
+ "84129": {
+  "ref": "084129",
+  "name": "Crème glacée Macadamia Nut Brittle",
+  "ean": "3415581122015"
+ },
+ "84130": {
+  "ref": "084130",
+  "name": "Crème glacée Vanilla Pécan",
+  "ean": "3415581115017"
+ },
+ "84131": {
+  "ref": "084131",
+  "name": "4 mini-pots Favorite Selection",
+  "ean": "3415581571110"
+ },
+ "84132": {
+  "ref": "084132",
+  "name": "4 mini-pots Macadamia Nut Brittle"
+ },
+ "84134": {
+  "ref": "084134",
+  "name": "4 mini-pots Fruit Collection"
+ },
+ "84136": {
+  "ref": "084136",
+  "name": "4 Mini-pots Caramel Attraction",
+  "ean": "3415581545715"
+ },
+ "84161": {
+  "ref": "084161",
+  "name": "Crème glacée Vanille",
+  "ean": "3270160841615"
+ },
+ "84162": {
+  "ref": "084162",
+  "name": "Crème glacée Chocolat - noisette",
+  "ean": "3270160841622"
+ },
+ "84163": {
+  "ref": "084163",
+  "name": "Sorbet Mangue-noix de coco",
+  "ean": "3270160841639"
+ },
+ "84174": {
+  "ref": "084174",
+  "name": "Cookie Dough",
+  "ean": "8711327373105"
+ },
+ "84177": {
+  "ref": "084177",
+  "name": "Touron*",
+  "ean": "3270160841776"
+ },
+ "84182": {
+  "ref": "084182",
+  "name": "Crème glacée plombières, La Belle Aude",
+  "ean": "3760015741028"
+ },
+ "84184": {
+  "ref": "084184",
+  "name": "Vanilla Caramel Brownie",
+  "ean": "3415581187717"
+ },
+ "84186": {
+  "ref": "084186",
+  "name": "Crème glacée noisette pralinée, La Belle Aude",
+  "ean": "3760015741424"
+ },
+ "84217": {
+  "ref": "084217",
+  "name": "Chocolat craquant",
+  "ean": "3270160842179"
+ },
+ "84218": {
+  "ref": "084218",
+  "name": "Sorbet façon pavlova,fruits rouges, crème,meringue",
+  "ean": "3270160842186"
+ },
+ "84220": {
+  "ref": "084220",
+  "name": "Sorbet mangue-passion",
+  "ean": "3270160842209"
+ },
+ "84227": {
+  "ref": "084227",
+  "name": "8 mini-bâtonnets vanille et chocolat",
+  "ean": "3270160842278"
+ },
+ "84228": {
+  "ref": "084228",
+  "name": "6 Mars",
+  "ean": "5000159541459"
+ },
+ "84229": {
+  "ref": "084229",
+  "name": "6 Snickers",
+  "ean": "5000159541336"
+ },
+ "84236": {
+  "ref": "084236",
+  "name": "Bûche glacée Nuances de chocolat, 4 parts",
+  "ean": "3270160842360"
+ },
+ "84237": {
+  "ref": "084237",
+  "name": "Bûche glacée Rêves d'agrumes, 4 parts",
+  "ean": "3270160842377"
+ },
+ "84241": {
+  "ref": "084241",
+  "name": "4 mini-pots Salted caramel H Dazs",
+  "ean": "3415581509717"
+ },
+ "84242": {
+  "ref": "084242",
+  "name": "4 mini-pots Häagen Dazs Vanilla Collection",
+  "ean": "3415581586718"
+ },
+ "84260": {
+  "ref": "084260",
+  "name": "8 mini-bâtonnets vanille et caramel",
+  "ean": "3270160842605"
+ },
+ "84281": {
+  "ref": "084281",
+  "name": "5 bâtonnets pêche abricot verveine",
+  "ean": "3270160842810"
+ },
+ "84292": {
+  "ref": "084292",
+  "name": "Crème glacée Stracciatella à l'italienne",
+  "ean": "3270160842926"
+ },
+ "84293": {
+  "ref": "084293",
+  "name": "Crème glacée façon cappuccino à l'italienne",
+  "ean": "3270160842933"
+ },
+ "84296": {
+  "ref": "084296",
+  "name": "Crème glacée sésame noir",
+  "ean": "3270160842964"
+ },
+ "84300": {
+  "ref": "084300",
+  "name": "4 bâtonnets vanille cookie",
+  "ean": "3270160843008"
+ },
+ "84301": {
+  "ref": "084301",
+  "name": "Cookie glacé crème glacée à la vanille",
+  "ean": "3270160843015"
+ },
+ "84302": {
+  "ref": "084302",
+  "name": "2 mochis glacés cacao coeur coulant / cookie",
+  "ean": "3270160843022"
+ },
+ "84303": {
+  "ref": "084303",
+  "name": "1 bâtonnet glace chocolat fleur de sel",
+  "ean": "3270160843039"
+ },
+ "84304": {
+  "ref": "084304",
+  "name": "1 bâtonnet glace fraise basilic",
+  "ean": "3270160843046"
+ },
+ "84310": {
+  "ref": "084310",
+  "name": "1 mochi glacé mangue",
+  "ean": "3270160843107"
+ },
+ "84311": {
+  "ref": "084311",
+  "name": "1 mochi sésame noir",
+  "ean": "3270160843114"
+ },
+ "84312": {
+  "ref": "084312",
+  "name": "1 mochi glacé noix de coco",
+  "ean": "3270160843121"
+ },
+ "84316": {
+  "ref": "084316",
+  "name": "4 Magnum double chocolat",
+  "ean": "8711327576865"
+ },
+ "84318": {
+  "ref": "084318",
+  "name": "6 Mini Magnum double caramel",
+  "ean": "8711327578517"
+ },
+ "84322": {
+  "ref": "084322",
+  "name": "Glace Collection provence 4 parfums",
+  "ean": "3760124195958"
+ },
+ "84324": {
+  "ref": "084324",
+  "name": "Sorbet Collection été 4 parfums,Maison de la glace",
+  "ean": "3760124195934"
+ },
+ "84332": {
+  "ref": "084332",
+  "name": "4 Smarties pop up",
+  "ean": "8436575298092"
+ },
+ "84336": {
+  "ref": "084336",
+  "name": "2 omelettes norvégiennes",
+  "ean": "3270160843367"
+ },
+ "84337": {
+  "ref": "084337",
+  "name": "Bûche glacée 3 chocolats, façon rocher, 8 parts",
+  "ean": "3270160843374"
+ },
+ "84338": {
+  "ref": "084338",
+  "name": "Bûche glacée fruits rouges-pomme, poire, 8 parts",
+  "ean": "3270160843381"
+ },
+ "84345": {
+  "ref": "084345",
+  "name": "Bûche glacée Douceur de vanille, 4 parts",
+  "ean": "3270160843459"
+ },
+ "84352": {
+  "ref": "084352",
+  "name": "6 Mini Magnum Classic amande blanc",
+  "ean": "8711327609082"
+ },
+ "84353": {
+  "ref": "084353",
+  "name": "4 Magnum White Almond",
+  "ean": "8711327608450"
+ },
+ "84354": {
+  "ref": "084354",
+  "name": "4 Magnum Amande",
+  "ean": "8711327608665"
+ },
+ "84356": {
+  "ref": "084356",
+  "name": "4 Magnum white chocolate",
+  "ean": "8711327606081"
+ },
+ "84358": {
+  "ref": "084358",
+  "name": "Sorbet La noix de coco",
+  "ean": "3270160843589"
+ },
+ "84359": {
+  "ref": "084359",
+  "name": "3 Magnum caramel salé et éclats d'amandes croquants",
+  "ean": "8711327391475"
+ },
+ "84360": {
+  "ref": "084360",
+  "name": "2 mochis glacés coco coeur passion,coeur framboise",
+  "ean": "3270160843602"
+ },
+ "84361": {
+  "ref": "084361",
+  "name": "2 moutons glacés, décors en pop-corn",
+  "ean": "3270160843619"
+ },
+ "84363": {
+  "ref": "084363",
+  "name": "8 bouchées glacées",
+  "ean": "3270160843633"
+ },
+ "84364": {
+  "ref": "084364",
+  "name": "Fior di latte, crème glacée à l'italienne",
+  "ean": "3270160843640"
+ },
+ "84367": {
+  "ref": "084367",
+  "name": "Sorbet citron - yuzu",
+  "ean": "3270160843671"
+ },
+ "84382": {
+  "ref": "084382",
+  "name": "5 bâtonnets pomme, goyave, framboise",
+  "ean": "3270160843824"
+ },
+ "84406": {
+  "ref": "084406",
+  "name": "Glace citron façon Limoncello à l'italienne",
+  "ean": "3270160844067"
+ },
+ "84410": {
+  "ref": "084410",
+  "name": "Glace marron",
+  "ean": "3270160844104"
+ },
+ "84414": {
+  "ref": "084414",
+  "name": "Glace Amarena à l'italienne",
+  "ean": "3270160844142"
+ },
+ "84420": {
+  "ref": "084420",
+  "name": "Crème glacée caramel fleur de sel",
+  "ean": "3270160844203"
+ },
+ "84425": {
+  "ref": "084425",
+  "name": "Sorbet fruits rouges",
+  "ean": "3270160844258"
+ },
+ "84435": {
+  "ref": "084435",
+  "name": "4 bâtonnets spéculoos",
+  "ean": "3270160844357"
+ },
+ "84450": {
+  "ref": "084450",
+  "name": "Sorbet fruit du dragon citron vert",
+  "ean": "3270160844500"
+ },
+ "84451": {
+  "ref": "084451",
+  "name": "Sorbet L'ananas Pure Sélection",
+  "ean": "3270160844517"
+ },
+ "84453": {
+  "ref": "084453",
+  "name": "Omelette norvégienne, 6 parts",
+  "ean": "3270160844531"
+ },
+ "84457": {
+  "ref": "084457",
+  "name": "4 sundaes vanille sauce caramel",
+  "ean": "3270160844579"
+ },
+ "84458": {
+  "ref": "084458",
+  "name": "4 sundaes vanille sauce framboise",
+  "ean": "3270160844586"
+ },
+ "84460": {
+  "ref": "084460",
+  "name": "6 mini-bâtonnets fraise orange",
+  "ean": "3270160844609"
+ },
+ "84468": {
+  "ref": "084468",
+  "name": "6 cônes fruits rouges",
+  "ean": "3270160844685"
+ },
+ "84485": {
+  "ref": "084485",
+  "name": "Crème glacée menthe copeaux de chocolat",
+  "ean": "3270160844852"
+ },
+ "84490": {
+  "ref": "084490",
+  "name": "1 mochi pistache",
+  "ean": "3270160844906"
+ },
+ "84503": {
+  "ref": "084503",
+  "name": "Berry choc",
+  "ean": "3270160845033"
+ },
+ "84506": {
+  "ref": "084506",
+  "name": "4 mochis lapins glacés, vanille et cacahuète",
+  "ean": "3270160845064"
+ },
+ "84507": {
+  "ref": "084507",
+  "name": "1 Snickers",
+  "ean": "5000159460880"
+ },
+ "84508": {
+  "ref": "084508",
+  "name": "Banana' choc bananes enrobées chocolat noir",
+  "ean": "3270160845088"
+ },
+ "84509": {
+  "ref": "084509",
+  "name": "Super Twister, glaces à l'eau",
+  "ean": "8000920402801"
+ },
+ "84510": {
+  "ref": "084510",
+  "name": "4 mini-pots Delight Collection",
+  "ean": "3415581552119"
+ },
+ "84511": {
+  "ref": "084511",
+  "name": "Cône Cornetto stracciatella et sauce caramel",
+  "ean": "8711327627697"
+ },
+ "84512": {
+  "ref": "084512",
+  "name": "Sorbet litchi, sauce fruits rouges",
+  "ean": "3270160845125"
+ },
+ "84516": {
+  "ref": "084516",
+  "name": "Anana'choc, ananas enrobés chocolat blanc",
+  "ean": "3270160845163"
+ },
+ "84517": {
+  "ref": "084517",
+  "name": "5 bâtonnets myrtille, hibiscus",
+  "ean": "3270160845170"
+ },
+ "84519": {
+  "ref": "084519",
+  "name": "Strawberry choc, fraises enrobées chocolat blanc",
+  "ean": "3270160845194"
+ },
+ "84523": {
+  "ref": "084523",
+  "name": "Mochi vanille",
+  "ean": "3270160845231"
+ },
+ "84525": {
+  "ref": "084525",
+  "name": "Salted caramel",
+  "ean": "3415581114713"
+ },
+ "84526": {
+  "ref": "084526",
+  "name": "4 Magnum classic",
+  "ean": "8711327606234"
+ },
+ "84527": {
+  "ref": "084527",
+  "name": "8 Magnum classic, amande et chocolat blanc",
+  "ean": "8711327621176"
+ },
+ "84531": {
+  "ref": "084531",
+  "name": "4 bâtonnets NUII Texan pecan",
+  "ean": "5900130034980"
+ },
+ "84534": {
+  "ref": "084534",
+  "name": "4 mini-pots Häagen-Dazs Original Collection",
+  "ean": "3415581555912"
+ },
+ "84535": {
+  "ref": "084535",
+  "name": "Vanille de Madagascar",
+  "ean": "8711327615380"
+ },
+ "84538": {
+  "ref": "084538",
+  "name": "6 Mini Magnum Utopia double hazelnut",
+  "ean": "8711327662773"
+ },
+ "84541": {
+  "ref": "084541",
+  "name": "Bâtonnet vanille sauce caramel aromatisée",
+  "ean": "3270160845415"
+ },
+ "84542": {
+  "ref": "084542",
+  "name": "4 cônes Magnum noisette",
+  "ean": "8711327681507"
+ },
+ "84543": {
+  "ref": "084543",
+  "name": "6 cônes vanille fraise",
+  "ean": "3270160845439"
+ },
+ "84551": {
+  "ref": "084551",
+  "name": "Bûche glacée vanille chocolat, noisette, 8 parts",
+  "ean": "3270160845514"
+ },
+ "84553": {
+  "ref": "084553",
+  "name": "2 bûchettes glacées fruits rouges, vanille",
+  "ean": "3270160845538"
+ },
+ "84554": {
+  "ref": "084554",
+  "name": "Bûche pâtissière façon tiramisu, 6 à 8 parts",
+  "ean": "3270160845545"
+ },
+ "84556": {
+  "ref": "084556",
+  "name": "Bûche glacée poire Belle Hélène, 8 parts",
+  "ean": "3270160845569"
+ },
+ "84557": {
+  "ref": "084557",
+  "name": "4 bâtonnets NUII pistache",
+  "ean": "5900130036335"
+ },
+ "84560": {
+  "ref": "084560",
+  "name": "2 monstres glacés",
+  "ean": "3270160845606"
+ },
+ "84562": {
+  "ref": "084562",
+  "name": "4 bâtonnets vanille noisette",
+  "ean": "3270160845620"
+ },
+ "84564": {
+  "ref": "084564",
+  "name": "Crème glacée façon achta amande, fleur d'oranger",
+  "ean": "3270160845644"
+ },
+ "84565": {
+  "ref": "084565",
+  "name": "6 bâtonnets citron, glace à l'eau",
+  "ean": "3270160845651"
+ },
+ "84566": {
+  "ref": "084566",
+  "name": "6 bâtonnets menthe, glace à l'eau",
+  "ean": "3270160845668"
+ },
+ "84567": {
+  "ref": "084567",
+  "name": "1 bâtonnet citron yuzu menthe",
+  "ean": "3270160845675"
+ },
+ "84568": {
+  "ref": "084568",
+  "name": "5 bâtonnets pomme, orange sanguine, bergamote",
+  "ean": "3270160845682"
+ },
+ "84569": {
+  "ref": "084569",
+  "name": "Bûche glacée stracciatella, 8 parts",
+  "ean": "3270160845699"
+ },
+ "84570": {
+  "ref": "084570",
+  "name": "5 bâtonnets mangue ananas coco",
+  "ean": "3270160845705"
+ },
+ "84573": {
+  "ref": "084573",
+  "name": "1 bâtonnet Magnum Utopia double noisette",
+  "ean": "8711327667174"
+ },
+ "84574": {
+  "ref": "084574",
+  "name": "1 bâtonnet Magnum amande",
+  "ean": "8711327609341"
+ },
+ "84575": {
+  "ref": "084575",
+  "name": "4 mini-pots Les glaces insolites par Joyca",
+  "ean": "3270160845750"
+ },
+ "84576": {
+  "ref": "084576",
+  "name": "Glace ubé sauce passion",
+  "ean": "3270160845767"
+ },
+ "84577": {
+  "ref": "084577",
+  "name": "Bûche glacée façon cake marbré, 8 parts",
+  "ean": "3270160845774"
+ },
+ "84578": {
+  "ref": "084578",
+  "name": "Crème glacée matcha sauce framboise",
+  "ean": "3270160845781"
+ },
+ "84579": {
+  "ref": "084579",
+  "name": "Bûche glacée cache-noisette, 4 parts",
+  "ean": "3270160845798"
+ },
+ "84581": {
+  "ref": "084581",
+  "name": "Feuilleté glacé façon tiramisu, 6 parts",
+  "ean": "3270160845811"
+ },
+ "84583": {
+  "ref": "084583",
+  "name": "6 cônes vanille rhum raisin",
+  "ean": "3270160845835"
+ },
+ "84584": {
+  "ref": "084584",
+  "name": "Barre glacée cacahuète",
+  "ean": "3270160845842"
+ },
+ "84585": {
+  "ref": "084585",
+  "name": "Barre glacée noisette",
+  "ean": "3270160845859"
+ },
+ "84586": {
+  "ref": "084586",
+  "name": "6 bâtonnets orange glace à l'eau",
+  "ean": "3270160845866"
+ },
+ "84592": {
+  "ref": "084592",
+  "name": "Bûche glacée bougies enchantées, 8 parts",
+  "ean": "3270160845927"
+ },
+ "84594": {
+  "ref": "084594",
+  "name": "Bûche glacée nuit de Noël, 8 parts",
+  "ean": "3270160845941"
+ },
+ "84602": {
+  "ref": "084602",
+  "name": "Bûche glacée cartes fruitées, 8 parts",
+  "ean": "3270160846023"
+ },
+ "84605": {
+  "ref": "084605",
+  "name": "2 oursons glacés chocolat façon guimauve",
+  "ean": "3270160846054"
+ },
+ "84607": {
+  "ref": "084607",
+  "name": "Bûche pâtissière façon chocolat Dubaï, 8 parts",
+  "ean": "3270160846078"
+ },
+ "84608": {
+  "ref": "084608",
+  "name": "Bûche glacée Village Céleste, 8 parts",
+  "ean": "3270160846085"
+ },
+ "84610": {
+  "ref": "084610",
+  "name": "Bûche glacée trois sorberts pomme, f.r., ciron",
+  "ean": "3270160846108"
+ },
+ "84615": {
+  "ref": "084615",
+  "name": "Bûche glacée exotique, 8 parts",
+  "ean": "3270160846153"
+ },
+ "84625": {
+  "ref": "084625",
+  "name": "Bûche glacée La magie des cadeaux, 8 parts",
+  "ean": "3270160846252"
+ },
+ "84628": {
+  "ref": "084628",
+  "name": "4 cônes Magnum mangue et chocolat blanc",
+  "ean": "8711327681248"
+ },
+ "84630": {
+  "ref": "084630",
+  "name": "Bûche glacée Neige enchantée, 8 parts",
+  "ean": "3270160846306"
+ },
+ "84631": {
+  "ref": "084631",
+  "name": "Bonbon White chocolate & cookies",
+  "ean": "8711327640450"
+ },
+ "84635": {
+  "ref": "084635",
+  "name": "Bûche glacée façon pavlova exotique, 8 parts",
+  "ean": "3270160846351"
+ },
+ "84640": {
+  "ref": "084640",
+  "name": "Bûche glacée vanille fruits rouges, 8 parts",
+  "ean": "3270160846405"
+ },
+ "84641": {
+  "ref": "084641",
+  "name": "Dessert glacé bio, Collection Rubis, 8 parts",
+  "ean": "3270160846412"
+ },
+ "84642": {
+  "ref": "084642",
+  "name": "5 bâtonnets fraise framboise poivron",
+  "ean": "3270160846429"
+ },
+ "84643": {
+  "ref": "084643",
+  "name": "6 bâtonnets chocolat",
+  "ean": "3270160846436"
+ },
+ "84644": {
+  "ref": "084644",
+  "name": "6 bâtonnets vanille",
+  "ean": "3270160846443"
+ },
+ "84645": {
+  "ref": "084645",
+  "name": "6 bâtonnets café",
+  "ean": "3270160846450"
+ },
+ "84646": {
+  "ref": "084646",
+  "name": "Crème glacée pistache à l'italienne",
+  "ean": "3270160846467"
+ },
+ "85013": {
+  "ref": "085013",
+  "name": "Tuiles salées",
+  "ean": "3270160850136"
+ },
+ "85014": {
+  "ref": "085014",
+  "name": "Tuiles crème oignon",
+  "ean": "3270160850143"
+ },
+ "85015": {
+  "ref": "085015",
+  "name": "Assortiment de sticks feuilletés graines-fromages",
+  "ean": "3270160850150"
+ },
+ "85016": {
+  "ref": "085016",
+  "name": "Palmiers apéritifs fromage-oignon",
+  "ean": "3270160850167"
+ },
+ "85018": {
+  "ref": "085018",
+  "name": "Torsades feuilletées aux olives",
+  "ean": "3270160850181"
+ },
+ "85040": {
+  "ref": "085040",
+  "name": "Lorina grenade, recette artisanale",
+  "ean": "3551720026353"
+ },
+ "85063": {
+  "ref": "085063",
+  "name": "Galettes bretonnes pur beurre",
+  "ean": "3270160850631"
+ },
+ "85064": {
+  "ref": "085064",
+  "name": "Guimauves nuages",
+  "ean": "3270160850648"
+ },
+ "85074": {
+  "ref": "085074",
+  "name": "Croustillants à la cacahuète",
+  "ean": "3270160850747"
+ },
+ "85098": {
+  "ref": "085098",
+  "name": "Tapenade aux olives noires",
+  "ean": "3270160850983"
+ },
+ "85099": {
+  "ref": "085099",
+  "name": "Spécialité à la tomate séchée et au basilic",
+  "ean": "3270160850990"
+ },
+ "85100": {
+  "ref": "085100",
+  "name": "Spécialité à l'anchoïade et aux olives vertes",
+  "ean": "3270160851003"
+ },
+ "85101": {
+  "ref": "085101",
+  "name": "Bière Vivat bio blonde",
+  "ean": "3760077521026"
+ },
+ "85104": {
+  "ref": "085104",
+  "name": "Mini-toast apéritif",
+  "ean": "3270160851041"
+ },
+ "85106": {
+  "ref": "085106",
+  "name": "Groix et Nature Rillettes de Noix de St Jacques",
+  "ean": "3760056410679"
+ },
+ "85112": {
+  "ref": "085112",
+  "name": "Mix apéritif",
+  "ean": "3270160851126"
+ },
+ "85113": {
+  "ref": "085113",
+  "name": "Mélange Apéritif",
+  "ean": "3270160851133"
+ },
+ "85115": {
+  "ref": "085115",
+  "name": "Pulco citronnade",
+  "ean": "3124480167170"
+ },
+ "85130": {
+  "ref": "085130",
+  "name": "Cidre brut",
+  "ean": "3760255150000"
+ },
+ "85134": {
+  "ref": "085134",
+  "name": "Cidre brut",
+  "ean": "3760255150215"
+ },
+ "85136": {
+  "ref": "085136",
+  "name": "Cidre poiré brut",
+  "ean": "3760255150222"
+ },
+ "85137": {
+  "ref": "085137",
+  "name": "Bière Bellerose, blonde",
+  "ean": "3572860001352"
+ },
+ "85139": {
+  "ref": "085139",
+  "name": "Bière Vivat bio blonde",
+  "ean": "3760077520944"
+ },
+ "85149": {
+  "ref": "085149",
+  "name": "Terrine campagne au piment d'Espelette Label Rouge",
+  "ean": "3275411804234"
+ },
+ "85150": {
+  "ref": "085150",
+  "name": "Terrine campagne Label Rouge",
+  "ean": "3275411804203"
+ },
+ "85179": {
+  "ref": "085179",
+  "name": "Brewdog Punk IPA"
+ },
+ "85209": {
+  "ref": "085209",
+  "name": "Groix et Nature Rillettes de Sardine au Piment d'Espelette",
+  "ean": "3760056410709"
+ },
+ "85210": {
+  "ref": "085210",
+  "name": "12 cornets à glace",
+  "ean": "3270160852109"
+ },
+ "85220": {
+  "ref": "085220",
+  "name": "Barre aux noix aux fruits biologiques, Brazil nuts",
+  "ean": "59527601559"
+ },
+ "85221": {
+  "ref": "085221",
+  "name": "Soupe de poisson, 35% de poisson, Gastromer",
+  "ean": "3269660018436"
+ },
+ "85222": {
+  "ref": "085222",
+  "name": "Chips à la truffe d'été Tuber aestivum 1,1% aromatisées",
+  "ean": "3527904420514"
+ },
+ "85230": {
+  "ref": "085230",
+  "name": "Mélange de noix",
+  "ean": "5056150602316"
+ },
+ "85232": {
+  "ref": "085232",
+  "name": "Amandes caramélisées",
+  "ean": "5056150602309"
+ },
+ "85237": {
+  "ref": "085237",
+  "name": "Bâtonnets sablés au chocolat au lait bio",
+  "ean": "3270160852376"
+ },
+ "85239": {
+  "ref": "085239",
+  "name": "Kit couvert bois FSC",
+  "ean": "3270160852390"
+ },
+ "85240": {
+  "ref": "085240",
+  "name": "Lorina Limonade",
+  "ean": "3551720026841"
+ },
+ "85245": {
+  "ref": "085245",
+  "name": "Barre au noix, au chocolat, bio, Taste of Nature",
+  "ean": "59527172158"
+ },
+ "85246": {
+  "ref": "085246",
+  "name": "Pistaches grillées salées avec coques",
+  "ean": "3270160852468"
+ },
+ "85257": {
+  "ref": "085257",
+  "name": "Palmiers pur beurre",
+  "ean": "3270160852574"
+ },
+ "85259": {
+  "ref": "085259",
+  "name": "Fraise fraise Mara des bois",
+  "ean": "3245310083740"
+ },
+ "85260": {
+  "ref": "085260",
+  "name": "Abricot fruit de la passion",
+  "ean": "3245310083733"
+ },
+ "85263": {
+  "ref": "085263",
+  "name": "Shortbread sablés pur beurre",
+  "ean": "3270160852635"
+ },
+ "85272": {
+  "ref": "085272",
+  "name": "14 mini meringues",
+  "ean": "3270160852727"
+ },
+ "85274": {
+  "ref": "085274",
+  "name": "6 coupes gaufrette",
+  "ean": "3270160852741"
+ },
+ "85275": {
+  "ref": "085275",
+  "name": "10 sucettes caramel au lait frais",
+  "ean": "3608580053200"
+ },
+ "85276": {
+  "ref": "085276",
+  "name": "10 sucettes saveurs fruits",
+  "ean": "3608580047148"
+ },
+ "85277": {
+  "ref": "085277",
+  "name": "Petits pois goût wasabi",
+  "ean": "3270160852772"
+ },
+ "85288": {
+  "ref": "085288",
+  "name": "20 ini-gaufrettes pur beurre",
+  "ean": "3270160852888"
+ },
+ "85324": {
+  "ref": "085324",
+  "name": "Moutarde de Bourgogne IGP",
+  "ean": "3230140003914"
+ },
+ "85326": {
+  "ref": "085326",
+  "name": "Rillettes de crabe",
+  "ean": "3760056410662"
+ },
+ "85356": {
+  "ref": "085356",
+  "name": "Chips sel et poivre",
+  "ean": "3270160853564"
+ },
+ "85357": {
+  "ref": "085357",
+  "name": "Mini-glacière isotherme 7,3l",
+  "ean": "3270160853571"
+ },
+ "85358": {
+  "ref": "085358",
+  "name": "Terrine de canard à l'Armagnac",
+  "ean": "3275411804098"
+ },
+ "85360": {
+  "ref": "085360",
+  "name": "Rillettes de canard",
+  "ean": "3275411804180"
+ },
+ "85384": {
+  "ref": "085384",
+  "name": "25 pinces fermeture hermétique"
+ },
+ "85413": {
+  "ref": "085413",
+  "name": "Ecorces d'orange confites enrobées de chocolat",
+  "ean": "3270160854134"
+ },
+ "85414": {
+  "ref": "085414",
+  "name": "Glaçons alimentaires"
+ },
+ "85415": {
+  "ref": "085415",
+  "name": "Glace pilée"
+ },
+ "85418": {
+  "ref": "085418",
+  "name": "Mini-toasts apéritifs au sésame",
+  "ean": "3270160854189"
+ },
+ "85420": {
+  "ref": "085420",
+  "name": "Sablés apéritifs Parmigiano Reggiano pavot",
+  "ean": "3270160854202"
+ },
+ "85440": {
+  "ref": "085440",
+  "name": "Noix de cajou, poivre et sel",
+  "ean": "3270160854400"
+ },
+ "85445": {
+  "ref": "085445",
+  "name": "Champagne brut, Marquis de Pomereuil",
+  "ean": "3760015370013"
+ },
+ "85446": {
+  "ref": "085446",
+  "name": "AOP Champagne Brut Malard cuvée spéciale",
+  "ean": "3760197910526"
+ },
+ "85447": {
+  "ref": "085447",
+  "name": "Roses au chocolat au lait",
+  "ean": "3270160854479"
+ },
+ "85449": {
+  "ref": "085449",
+  "name": "Guimauves aromatisées à la framboise",
+  "ean": "3270160854493"
+ },
+ "85450": {
+  "ref": "085450",
+  "name": "Foie gras canard, Terroir des Eleveurs Réunis",
+  "ean": "3067163663463"
+ },
+ "85452": {
+  "ref": "085452",
+  "name": "Pur ketchup",
+  "ean": "3361779992215"
+ },
+ "85463": {
+  "ref": "085463",
+  "name": "Amandes enrobées de chocolat au lait",
+  "ean": "3270160854639"
+ },
+ "85467": {
+  "ref": "085467",
+  "name": "Florentines au chocolat noir",
+  "ean": "3270160854677"
+ },
+ "85469": {
+  "ref": "085469",
+  "name": "Kit couvert inox"
+ },
+ "85477": {
+  "ref": "085477",
+  "name": "Groix et Nature Rillettes de saumon d'Ecosse",
+  "ean": "3760056410693"
+ },
+ "85478": {
+  "ref": "085478",
+  "name": "Chips de pomme de terre salées",
+  "ean": "3270160854783"
+ },
+ "85483": {
+  "ref": "085483",
+  "name": "Mini-flûtes feuilletées emmental",
+  "ean": "3270160854837"
+ },
+ "85484": {
+  "ref": "085484",
+  "name": "6 mini lunettes coeurs fraise bio",
+  "ean": "3270160854844"
+ },
+ "85490": {
+  "ref": "085490",
+  "name": "Mini gressins goût pizza",
+  "ean": "3270160854905"
+ },
+ "85491": {
+  "ref": "085491",
+  "name": "Popcorn au sucre naturel movies star",
+  "ean": "3760018855586"
+ },
+ "85492": {
+  "ref": "085492",
+  "name": "Popcorn sel de guérande movies star",
+  "ean": "3760018855548"
+ },
+ "85494": {
+  "ref": "085494",
+  "name": "Sauce soja sucrée, Les deux Pagodes",
+  "ean": "3171920000436"
+ },
+ "85495": {
+  "ref": "085495",
+  "name": "Sauce soja salée, Les deux Pagodes",
+  "ean": "3171920000238"
+ },
+ "85497": {
+  "ref": "085497",
+  "name": "Confit d'oignon au miel et aux épices",
+  "ean": "3270160854974"
+ },
+ "85499": {
+  "ref": "085499",
+  "name": "Terrine de campagne aux cèpes Label Rouge",
+  "ean": "3275411804227"
+ },
+ "85500": {
+  "ref": "085500",
+  "name": "Chips de manioc à la crevette saveur sweet chili",
+  "ean": "3270160855001"
+ },
+ "85503": {
+  "ref": "085503",
+  "name": "Chips ondulées au sel de Guérande",
+  "ean": "3270160855032"
+ },
+ "85506": {
+  "ref": "085506",
+  "name": "Cidre Rosé",
+  "ean": "3760255150123"
+ },
+ "85509": {
+  "ref": "085509",
+  "name": "Chips de légumes bio au sel de Camargue",
+  "ean": "3270160855094"
+ },
+ "85511": {
+  "ref": "085511",
+  "name": "Vin France désalcoolisé,Le Grand Chavin Chardonnay",
+  "ean": "3663852013634"
+ },
+ "85513": {
+  "ref": "085513",
+  "name": "Roulés feuilletés persillade",
+  "ean": "3270160855131"
+ },
+ "85514": {
+  "ref": "085514",
+  "name": "AOP Bordeaux Supérieur, Château Valade",
+  "ean": "3760204748005"
+ },
+ "85515": {
+  "ref": "085515",
+  "name": "Lorina pêche blanche",
+  "ean": "3551720207653"
+ },
+ "85518": {
+  "ref": "085518",
+  "name": "IGP Méditerannée Son Des Cigales Maïonnette",
+  "ean": "3760260410335"
+ },
+ "85523": {
+  "ref": "085523",
+  "name": "Ginger Beer bio",
+  "ean": "3760266661182"
+ },
+ "85525": {
+  "ref": "085525",
+  "name": "Croutons natures",
+  "ean": "3270160855254"
+ },
+ "85541": {
+  "ref": "085541",
+  "name": "Dash water citron vert",
+  "ean": "5060489731012"
+ },
+ "85542": {
+  "ref": "085542",
+  "name": "Dash water framboise",
+  "ean": "5060489731005"
+ },
+ "85543": {
+  "ref": "085543",
+  "name": "Dash water concombre menthe",
+  "ean": "5060489730015"
+ },
+ "85555": {
+  "ref": "085555",
+  "name": "9 tartelettes au citron bio",
+  "ean": "3270160855551"
+ },
+ "85557": {
+  "ref": "085557",
+  "name": "2 cookies aux pépites de chocolat",
+  "ean": "3270160855575"
+ },
+ "85558": {
+  "ref": "085558",
+  "name": "Pause gourmande, noix de cajou, amandes sucrées",
+  "ean": "3270160855582"
+ },
+ "85571": {
+  "ref": "085571",
+  "name": "Chips piment d'Espelette",
+  "ean": "3270160855711"
+ },
+ "85574": {
+  "ref": "085574",
+  "name": "Nectar pêche de vigne, fabrication artisanale",
+  "ean": "3660668005068"
+ },
+ "85580": {
+  "ref": "085580",
+  "name": "Cookies aux pépites de chocolat et noisettes",
+  "ean": "3270160855803"
+ },
+ "85590": {
+  "ref": "085590",
+  "name": "Biscuits animaux, sablés au chocolat au lait",
+  "ean": "3270160855902"
+ },
+ "85605": {
+  "ref": "085605",
+  "name": "Cacahuètes grillées salées",
+  "ean": "3270160856053"
+ },
+ "85606": {
+  "ref": "085606",
+  "name": "Amandes grillées salées",
+  "ean": "3270160856060"
+ },
+ "85608": {
+  "ref": "085608",
+  "name": "Chips sarrasin au sel de Guérande",
+  "ean": "3270160856084"
+ },
+ "85614": {
+  "ref": "085614",
+  "name": "Sac en coton color block",
+  "ean": "3270160856145"
+ },
+ "85621": {
+  "ref": "085621",
+  "name": "Lemonaid fruit de la passion bio",
+  "ean": "42282143"
+ },
+ "85629": {
+  "ref": "085629",
+  "name": "Orangina jaune",
+  "ean": "3124480167026"
+ },
+ "85632": {
+  "ref": "085632",
+  "name": "Guimauves coeurs chocolat noir",
+  "ean": "3270160856329"
+ },
+ "85637": {
+  "ref": "085637",
+  "name": "Lipton Ice Tea pêche",
+  "ean": "3228886043714"
+ },
+ "85653": {
+  "ref": "085653",
+  "name": "Eau minérale Evian"
+ },
+ "85655": {
+  "ref": "085655",
+  "name": "Prosecco Bosco Del Conte"
+ },
+ "85679": {
+  "ref": "085679",
+  "name": "Volvic zeste citron"
+ },
+ "85681": {
+  "ref": "085681",
+  "name": "Sac coton Beya Rebai",
+  "ean": "3270160856817"
+ },
+ "85683": {
+  "ref": "085683",
+  "name": "Eau minérale Evian"
+ },
+ "85684": {
+  "ref": "085684",
+  "name": "Badoit",
+  "ean": "3068320114453"
+ },
+ "85710": {
+  "ref": "085710",
+  "name": "Mini-crêpes au Roquefort",
+  "ean": "3270160857104"
+ },
+ "85714": {
+  "ref": "085714",
+  "name": "Touraine Sauvignon Les 5 Terroirs",
+  "ean": "3760218912379"
+ },
+ "85730": {
+  "ref": "085730",
+  "name": "Gaufrettes apéritives au Maroilles",
+  "ean": "3270160857302"
+ },
+ "85736": {
+  "ref": "085736",
+  "name": "Glaçons alimentaires, Ice"
+ },
+ "85740": {
+  "ref": "085740",
+  "name": "Maïs grillé salé",
+  "ean": "3270160857401"
+ },
+ "85745": {
+  "ref": "085745",
+  "name": "AOP Coteaux Bourguignons, Les Boiseuils",
+  "ean": "3330548005272"
+ },
+ "85747": {
+  "ref": "085747",
+  "name": "IGP Pays d'Oc Chardonnay bio, La Vicomté"
+ },
+ "85755": {
+  "ref": "085755",
+  "name": "Guimauves oursons choc lait caramel",
+  "ean": "3270160857555"
+ },
+ "85765": {
+  "ref": "085765",
+  "name": "Côtes du Rhône Bio Domaine des Treilles 75cl",
+  "ean": "3760084270665"
+ },
+ "85766": {
+  "ref": "085766",
+  "name": "Crozes Hermitage Vibrato R.Duvernay",
+  "ean": "3760256776650"
+ },
+ "85770": {
+  "ref": "085770",
+  "name": "Coca cola cherry saveur cerise",
+  "ean": "5449000214843"
+ },
+ "85771": {
+  "ref": "085771",
+  "name": "Fuze tea saveur pêche intense",
+  "ean": "5449000232311"
+ },
+ "85782": {
+  "ref": "085782",
+  "name": "AOP Côtes de Provence, Château Pas du Cerf - Artus",
+  "ean": "3760068130121"
+ },
+ "85866": {
+  "ref": "085866",
+  "name": "Moutarde au miel et au vinaigre balsamique, Fallot",
+  "ean": "3230140003716"
+ },
+ "85869": {
+  "ref": "085869",
+  "name": "San Pellegrino",
+  "ean": "8002270116544"
+ },
+ "85876": {
+  "ref": "085876",
+  "name": "Mix amandes salé",
+  "ean": "5056150603078"
+ },
+ "85900": {
+  "ref": "085900",
+  "name": "Biscuits petit-beurre au chocolat au lait",
+  "ean": "3270160859009"
+ },
+ "85934": {
+  "ref": "085934",
+  "name": "Biscuits meringués noisettes et chocolat au lait",
+  "ean": "3270160859344"
+ },
+ "85976": {
+  "ref": "085976",
+  "name": "Billes de bretzel",
+  "ean": "3270160859764"
+ },
+ "85981": {
+  "ref": "085981",
+  "name": "Sac isotherme",
+  "ean": "3270160859818"
+ },
+ "85984": {
+  "ref": "085984",
+  "name": "La rose au chocolat au lait",
+  "ean": "3270160859849"
+ },
+ "86003": {
+  "ref": "086003",
+  "name": "Sauce beurre blanc au Noilly-Prat®",
+  "ean": "3270160860036"
+ },
+ "86004": {
+  "ref": "086004",
+  "name": "Sauce à l'oseille",
+  "ean": "3270160860043"
+ },
+ "86005": {
+  "ref": "086005",
+  "name": "Sauce beurre citron",
+  "ean": "3270160860050"
+ },
+ "86014": {
+  "ref": "086014",
+  "name": "8 nems au porc",
+  "ean": "3270160860142"
+ },
+ "86015": {
+  "ref": "086015",
+  "name": "8 nems aux crevettes",
+  "ean": "3270160860159"
+ },
+ "86016": {
+  "ref": "086016",
+  "name": "Gnocchis au chèvre et aux épinards, sauce tomate",
+  "ean": "3270160860166"
+ },
+ "86017": {
+  "ref": "086017",
+  "name": "Gratin de conchiglioni farcis au fromage Corse et au jambon fumé",
+  "ean": "3270160860173"
+ },
+ "86022": {
+  "ref": "086022",
+  "name": "Cannelloni ricotta épinard et sauce tomate",
+  "ean": "3270160860227"
+ },
+ "86023": {
+  "ref": "086023",
+  "name": "Saumon en croûte d'amande, risotto",
+  "ean": "3270160860234"
+ },
+ "86028": {
+  "ref": "086028",
+  "name": "Bœuf mariné, nouilles et légumes sautés, sauce soja sésame",
+  "ean": "3270160860289"
+ },
+ "86033": {
+  "ref": "086033",
+  "name": "Poêlée de gnocchis, tomates, mozzarella 3-4 parts",
+  "ean": "3270160860333"
+ },
+ "86062": {
+  "ref": "086062",
+  "name": "Melanzane alla parmigiana, aubergines parmesane",
+  "ean": "3270160860623"
+ },
+ "86068": {
+  "ref": "086068",
+  "name": "Saumon aux épices tandoori, riz noir",
+  "ean": "3270160860685"
+ },
+ "86072": {
+  "ref": "086072",
+  "name": "Chili con carne individuel",
+  "ean": "3270160860722"
+ },
+ "86075": {
+  "ref": "086075",
+  "name": "Couscous",
+  "ean": "3270160860753"
+ },
+ "86079": {
+  "ref": "086079",
+  "name": "Parmentier de boeuf charolais",
+  "ean": "3270160860791"
+ },
+ "86099": {
+  "ref": "086099",
+  "name": "Mezze, assortiment de 12 pièces",
+  "ean": "3270160860999"
+ },
+ "86102": {
+  "ref": "086102",
+  "name": "Lasagnes bolognaise individuel",
+  "ean": "3270160861026"
+ },
+ "86103": {
+  "ref": "086103",
+  "name": "Lasagnes alla bolognese",
+  "ean": "3270160861033"
+ },
+ "86104": {
+  "ref": "086104",
+  "name": "Chili con carne",
+  "ean": "3270160861040"
+ },
+ "86110": {
+  "ref": "086110",
+  "name": "Spaghetti à la bolognaise",
+  "ean": "3270160861101"
+ },
+ "86122": {
+  "ref": "086122",
+  "name": "Donburi au poulet Cuisine Evasion",
+  "ean": "3270160861224"
+ },
+ "86123": {
+  "ref": "086123",
+  "name": "8 brochettes de poulet thaï",
+  "ean": "3270160861231"
+ },
+ "86124": {
+  "ref": "086124",
+  "name": "Crevettes sauce piquante et riz thaï",
+  "ean": "3270160861248"
+ },
+ "86129": {
+  "ref": "086129",
+  "name": "St-Jacques, sauce au basilic thai, nouilles de riz",
+  "ean": "3270160861293"
+ },
+ "86133": {
+  "ref": "086133",
+  "name": "Noodle box crevettes sauce curry rouge",
+  "ean": "3270160861330"
+ },
+ "86157": {
+  "ref": "086157",
+  "name": "Soupe Tom Kha Kaï",
+  "ean": "3270160861576"
+ },
+ "86160": {
+  "ref": "086160",
+  "name": "Buddha bowl, végan",
+  "ean": "3270160861606"
+ },
+ "86166": {
+  "ref": "086166",
+  "name": "Houmous"
+ },
+ "86170": {
+  "ref": "086170",
+  "name": "Moussaka à la libanaise"
+ },
+ "86175": {
+  "ref": "086175",
+  "name": "Paëlla",
+  "ean": "3270160861750"
+ },
+ "86176": {
+  "ref": "086176",
+  "name": "Linguine au saumon ASC, sauce tomatée, légumes",
+  "ean": "3270160861767"
+ },
+ "86177": {
+  "ref": "086177",
+  "name": "Tartiflette",
+  "ean": "3270160861774"
+ },
+ "86183": {
+  "ref": "086183",
+  "name": "Buddha bowl tikka, tout bon tout veggie",
+  "ean": "3270160861835"
+ },
+ "86184": {
+  "ref": "086184",
+  "name": "Couscous, tout bon tout veggie",
+  "ean": "3270160861842"
+ },
+ "86194": {
+  "ref": "086194",
+  "name": "Japchae au poulet",
+  "ean": "3270160861941"
+ },
+ "86200": {
+  "ref": "086200",
+  "name": "Poulet pandan et riz cuisiné Cuisine Evasion",
+  "ean": "3270160862009"
+ },
+ "86202": {
+  "ref": "086202",
+  "name": "Riz à la cantonaise Cuisine Evasion",
+  "ean": "3270160862023"
+ },
+ "86206": {
+  "ref": "086206",
+  "name": "Sauce à la thaïlandaise curry coco",
+  "ean": "3270160862061"
+ },
+ "86207": {
+  "ref": "086207",
+  "name": "12 sushi",
+  "ean": "3270160862078"
+ },
+ "86215": {
+  "ref": "086215",
+  "name": "Rigattoni all'arrabbiata",
+  "ean": "3270160862153"
+ },
+ "86228": {
+  "ref": "086228",
+  "name": "6 Empanadas au bœuf",
+  "ean": "3270160862283"
+ },
+ "86233": {
+  "ref": "086233",
+  "name": "Blanquette de veau à la crème d'Isigny et riz",
+  "ean": "3270160862337"
+ },
+ "86238": {
+  "ref": "086238",
+  "name": "Filet mignon de porc, sauce à la moutarde",
+  "ean": "3270160862382"
+ },
+ "86248": {
+  "ref": "086248",
+  "name": "Aiguillettes de poulet au miel et aux épices",
+  "ean": "3270160862481"
+ },
+ "86261": {
+  "ref": "086261",
+  "name": "12 mini gyoza Cuisine Evasion",
+  "ean": "3270160862610"
+ },
+ "86267": {
+  "ref": "086267",
+  "name": "4 baozis aux légumes",
+  "ean": "3270160862672"
+ },
+ "86287": {
+  "ref": "086287",
+  "name": "Emincés de poulet, conchiglie complètes, légumes",
+  "ean": "3270160862870"
+ },
+ "86292": {
+  "ref": "086292",
+  "name": "Falafels, boulghour aux petits légumes",
+  "ean": "3270160862924"
+ },
+ "86315": {
+  "ref": "086315",
+  "name": "Wok de légumes nouilles à l'asiatique bio 3 parts",
+  "ean": "3270160863150"
+ },
+ "86327": {
+  "ref": "086327",
+  "name": "6 mochis glacés noix coco, sésame noir, mangue",
+  "ean": "3270160863273"
+ },
+ "86337": {
+  "ref": "086337",
+  "name": "Palak Dal, lentilles épinards riz",
+  "ean": "3270160863372"
+ },
+ "86339": {
+  "ref": "086339",
+  "name": "Linguine au pesto rosso",
+  "ean": "3270160863396"
+ },
+ "86357": {
+  "ref": "086357",
+  "name": "Truffade de l'Aubrac",
+  "ean": "3270160863570"
+ },
+ "86360": {
+  "ref": "086360",
+  "name": "Riz à la thaïlandaise",
+  "ean": "3270160863600"
+ },
+ "86397": {
+  "ref": "086397",
+  "name": "Poulet et mini-farfalles sauce aux 3 fromages",
+  "ean": "3270160863976"
+ },
+ "86403": {
+  "ref": "086403",
+  "name": "6 beignets de crevette ASC",
+  "ean": "3270160864034"
+ },
+ "86410": {
+  "ref": "086410",
+  "name": "Pad thaï",
+  "ean": "3270160864102"
+ },
+ "86411": {
+  "ref": "086411",
+  "name": "Pintade sce Monbazillac noisette",
+  "ean": "3270160864119"
+ },
+ "86416": {
+  "ref": "086416",
+  "name": "Emincés de dinde sauce au citron, linguine complète et légumes verts",
+  "ean": "3270160864164"
+ },
+ "86420": {
+  "ref": "086420",
+  "name": "Duo de colin d'Alaska et noix de Saint-Jacques MSC",
+  "ean": "3270160864201"
+ },
+ "86427": {
+  "ref": "086427",
+  "name": "8 Dim sum aux crevettes",
+  "ean": "3270160864270"
+ },
+ "86428": {
+  "ref": "086428",
+  "name": "Poulet karaage, riz et légumes cuisinés",
+  "ean": "3270160864287"
+ },
+ "86429": {
+  "ref": "086429",
+  "name": "Assortiment de 6 mochis glacés",
+  "ean": "3270160864294"
+ },
+ "86441": {
+  "ref": "086441",
+  "name": "Sauce à la provençale bio",
+  "ean": "3270160864416"
+ },
+ "86442": {
+  "ref": "086442",
+  "name": "Pesto",
+  "ean": "3270160864423"
+ },
+ "86444": {
+  "ref": "086444",
+  "name": "Sauce aux crustacés, homard, crabe vert",
+  "ean": "3270160864447"
+ },
+ "86456": {
+  "ref": "086456",
+  "name": "Gnocchis farcis à la stracciatella de burrata",
+  "ean": "3270160864560"
+ },
+ "86459": {
+  "ref": "086459",
+  "name": "Couscous royal au poulet et merguez 2 parts",
+  "ean": "3270160864591"
+ },
+ "86460": {
+  "ref": "086460",
+  "name": "Girasoli à la burrata et au basilic",
+  "ean": "3270160864607"
+ },
+ "86461": {
+  "ref": "086461",
+  "name": "Soupe wonton bouillon légumes, raviolis crevettes",
+  "ean": "3270160864614"
+ },
+ "86463": {
+  "ref": "086463",
+  "name": "Naanwich poulet tikka massala",
+  "ean": "3270160864638"
+ },
+ "86464": {
+  "ref": "086464",
+  "name": "Rougail saucisse, riz lentilles cuisinées",
+  "ean": "3270160864645"
+ },
+ "86466": {
+  "ref": "086466",
+  "name": "Poulet biryani riz aux raisins secs",
+  "ean": "3270160864669"
+ },
+ "86468": {
+  "ref": "086468",
+  "name": "Corn fritters, beignets de maïs, cheddar",
+  "ean": "3270160864683"
+ },
+ "86471": {
+  "ref": "086471",
+  "name": "Crevettes sauce vierge",
+  "ean": "3270160864713"
+ },
+ "86472": {
+  "ref": "086472",
+  "name": "Boulettes au bœuf sauce à la tomate",
+  "ean": "3270160864720"
+ },
+ "86473": {
+  "ref": "086473",
+  "name": "Aiguillettes de poulet, sauce au citron",
+  "ean": "3270160864737"
+ },
+ "86475": {
+  "ref": "086475",
+  "name": "Duo de carottes cuisinées et graines de courge",
+  "ean": "3270160864751"
+ },
+ "86476": {
+  "ref": "086476",
+  "name": "Gnocchi de patate douce et épinards",
+  "ean": "3270160864768"
+ },
+ "86477": {
+  "ref": "086477",
+  "name": "Trio de légumes champignons grillés persillés",
+  "ean": "3270160864775"
+ },
+ "86478": {
+  "ref": "086478",
+  "name": "Butternut grillée et oignons rouges cuisinés",
+  "ean": "3270160864782"
+ },
+ "86480": {
+  "ref": "086480",
+  "name": "Ecrasé pommes de terre à l'emmental",
+  "ean": "3270160864805"
+ },
+ "86482": {
+  "ref": "086482",
+  "name": "Ratatouille cuisinée au piment d'Espelette",
+  "ean": "3270160864829"
+ },
+ "86486": {
+  "ref": "086486",
+  "name": "Orecchiette sauce tomate nduja piquante",
+  "ean": "3270160864867"
+ },
+ "86487": {
+  "ref": "086487",
+  "name": "2 loukoumades à la grecque,beignets cannelle",
+  "ean": "3270160864874"
+ },
+ "86489": {
+  "ref": "086489",
+  "name": "Colombo de poulet, riz, sce lait de coco, poulet",
+  "ean": "3270160864898"
+ },
+ "86490": {
+  "ref": "086490",
+  "name": "4 bâtonnets chocolat noisette",
+  "ean": "3270160864904"
+ },
+ "86491": {
+  "ref": "086491",
+  "name": "10 gyoza au poulet",
+  "ean": "3270160864911"
+ },
+ "86492": {
+  "ref": "086492",
+  "name": "Ma box à partager",
+  "ean": "3270160864928"
+ },
+ "86493": {
+  "ref": "086493",
+  "name": "Ma box à partager Végé",
+  "ean": "3270160864935"
+ },
+ "86495": {
+  "ref": "086495",
+  "name": "Mac and cheese gratin de pâtes aux fromages",
+  "ean": "3270160864959"
+ },
+ "86497": {
+  "ref": "086497",
+  "name": "2 hotteok haricots rouges, crêpe fourrée",
+  "ean": "3270160864973"
+ },
+ "86498": {
+  "ref": "086498",
+  "name": "Kebab bowl",
+  "ean": "3270160864980"
+ },
+ "86501": {
+  "ref": "086501",
+  "name": "Buddha Bowl Saté, émincés végétaux, légumes,riz",
+  "ean": "3270160865017"
+ },
+ "86507": {
+  "ref": "086507",
+  "name": "Boulettes party au boeuf, riz et légumes",
+  "ean": "3270160865079"
+ },
+ "86512": {
+  "ref": "086512",
+  "name": "Chicken curry balti, poulet, riz, sce curry balti",
+  "ean": "3270160865123"
+ },
+ "86517": {
+  "ref": "086517",
+  "name": "6 brochettes de poulet tandoori",
+  "ean": "3270160865178"
+ },
+ "86521": {
+  "ref": "086521",
+  "name": "Champions les gnocchi légumes verts,jambon cuit",
+  "ean": "3270160865215"
+ },
+ "86523": {
+  "ref": "086523",
+  "name": "Yachae bokkeumbap, riz aux légumes, 2 parts",
+  "ean": "3270160865239"
+ },
+ "86528": {
+  "ref": "086528",
+  "name": "Boulettes de poulet, semoule cuisinée",
+  "ean": "3270160865284"
+ },
+ "86529": {
+  "ref": "086529",
+  "name": "Petit salé aux lentilles vertes",
+  "ean": "3270160865291"
+ },
+ "86531": {
+  "ref": "086531",
+  "name": "Aligot de l'Aveyron et saucisse de Toulouse",
+  "ean": "3270160865314"
+ },
+ "86536": {
+  "ref": "086536",
+  "name": "Bouchées poulet karaage marinées épices, gingembre",
+  "ean": "3270160865369"
+ },
+ "86540": {
+  "ref": "086540",
+  "name": "Poulet aux noix de cajou Cuisine Evasion",
+  "ean": "3270160865406"
+ },
+ "86542": {
+  "ref": "086542",
+  "name": "Gnocchi aux cèpes et aux champignons de Paris",
+  "ean": "3270160865420"
+ },
+ "86543": {
+  "ref": "086543",
+  "name": "St-Jacques, riz noir duo de carottes,sce lait coco",
+  "ean": "3270160865437"
+ },
+ "86547": {
+  "ref": "086547",
+  "name": "4 bao maléfiques aux légumes",
+  "ean": "3270160865475"
+ },
+ "86550": {
+  "ref": "086550",
+  "name": "Sauce béchamel",
+  "ean": "3270160865505"
+ },
+ "86552": {
+  "ref": "086552",
+  "name": "Garniture de cuisson,oignon, carotte, poireau, ail",
+  "ean": "3270160865529"
+ },
+ "86554": {
+  "ref": "086554",
+  "name": "Cabillaud en croûte, écrasé de patate douce",
+  "ean": "3270160865543"
+ },
+ "86557": {
+  "ref": "086557",
+  "name": "Gratin de Spaetzle au munster",
+  "ean": "3270160865574"
+ },
+ "86565": {
+  "ref": "086565",
+  "name": "Emincés de poulet, riz à la sauce mangue et curry",
+  "ean": "3270160865659"
+ },
+ "86566": {
+  "ref": "086566",
+  "name": "Boulettes végétariennes sauce cajun légumes rouges",
+  "ean": "3270160865666"
+ },
+ "86575": {
+  "ref": "086575",
+  "name": "Soupe Hu Tieu légumes, crevettes",
+  "ean": "3270160865758"
+ },
+ "86582": {
+  "ref": "086582",
+  "name": "Saumon ASC, orge, quinoa, purée aux légumes verts",
+  "ean": "3270160865826"
+ },
+ "86584": {
+  "ref": "086584",
+  "name": "Merlu blanc MSC, boulghour, purée aux carottes",
+  "ean": "3270160865840"
+ },
+ "86586": {
+  "ref": "086586",
+  "name": "Assortiment indien",
+  "ean": "3270160865864"
+ },
+ "86603": {
+  "ref": "086603",
+  "name": "Kare udon, nouilles udon à la sauce curry",
+  "ean": "3270160866038"
+ },
+ "86608": {
+  "ref": "086608",
+  "name": "Bœuf sce marchand de vin,écrasé PDT légumes",
+  "ean": "3270160866083"
+ },
+ "86609": {
+  "ref": "086609",
+  "name": "Filets de maquereau, pâtes orzo, légumes du soleil",
+  "ean": "3270160866090"
+ },
+ "86611": {
+  "ref": "086611",
+  "name": "Poulet bulgogi, kimchi et riz cuisiné",
+  "ean": "3270160866113"
+ },
+ "86612": {
+  "ref": "086612",
+  "name": "Bibimbap Cuisine Evasion",
+  "ean": "3270160866120"
+ },
+ "86617": {
+  "ref": "086617",
+  "name": "Riz gluant au lait de coco et à la mangue",
+  "ean": "3270160866175"
+ },
+ "86628": {
+  "ref": "086628",
+  "name": "Soupe Pho Cuisine Evasion",
+  "ean": "3270160866281"
+ },
+ "86637": {
+  "ref": "086637",
+  "name": "Navarin de la mer",
+  "ean": "3270160866373"
+ },
+ "86640": {
+  "ref": "086640",
+  "name": "Kkwabaegi",
+  "ean": "3270160866403"
+ },
+ "86642": {
+  "ref": "086642",
+  "name": "Lasagnes végétariennes légumes soleil et fromage",
+  "ean": "3270160866427"
+ },
+ "86643": {
+  "ref": "086643",
+  "name": "2 rouleaux de Printemps au poulet",
+  "ean": "3270160866434"
+ },
+ "86653": {
+  "ref": "086653",
+  "name": "Falafels, sauce au basilic",
+  "ean": "3270160866533"
+ },
+ "86668": {
+  "ref": "086668",
+  "name": "Mini penne au chorizo, sauce à la tomate",
+  "ean": "3270160866687"
+ },
+ "86678": {
+  "ref": "086678",
+  "name": "Merlu sauce au cidre et pommes de terre grenaille",
+  "ean": "3270160866786"
+ },
+ "86686": {
+  "ref": "086686",
+  "name": "Cabillaud sauce vierge et duo de riz camarguais",
+  "ean": "3270160866861"
+ },
+ "86695": {
+  "ref": "086695",
+  "name": "Banger and mash, écrasé PDT, saucisses",
+  "ean": "3270160866953"
+ },
+ "86702": {
+  "ref": "086702",
+  "name": "Riz à la cantonaise",
+  "ean": "3270160867028"
+ },
+ "86703": {
+  "ref": "086703",
+  "name": "Coquillettes, mini-knacks et sauce à l'emmental",
+  "ean": "3270160867035"
+ },
+ "86705": {
+  "ref": "086705",
+  "name": "8 briouates poulet, raisins, miel, curcuma",
+  "ean": "3270160867059"
+ },
+ "86743": {
+  "ref": "086743",
+  "name": "Ravioli ricotta épinard, sauce tomate",
+  "ean": "3270160867431"
+ },
+ "86843": {
+  "ref": "086843",
+  "name": "Cari de crevettes",
+  "ean": "3270160868438"
+ },
+ "86917": {
+  "ref": "086917",
+  "name": "8 jirou pao au poulet, bouchées vapeur au poulet",
+  "ean": "3270160869176"
+ },
+ "87002": {
+  "ref": "087002",
+  "name": "Julienne de légumes sans résidu de pesticides, Italie",
+  "ean": "3270160870028"
+ },
+ "87005": {
+  "ref": "087005",
+  "name": "Patates douces bio local, Sud-Est de la France",
+  "ean": "3270160870059"
+ },
+ "87006": {
+  "ref": "087006",
+  "name": "Courgettes bio local, Sud-Est de la France",
+  "ean": "3270160870066"
+ },
+ "87009": {
+  "ref": "087009",
+  "name": "Purée pomme de terre, duo de carottes et poulet",
+  "ean": "3270160870097"
+ },
+ "87010": {
+  "ref": "087010",
+  "name": "Gratin duo de choux bio",
+  "ean": "3270160870103"
+ },
+ "87011": {
+  "ref": "087011",
+  "name": "4 mini gratins de légumes bio",
+  "ean": "3270160870110"
+ },
+ "87012": {
+  "ref": "087012",
+  "name": "Poivrons piquillo grillés",
+  "ean": "3270160870127"
+ },
+ "87019": {
+  "ref": "087019",
+  "name": "Céréales à l'asiatique riz, légumes, sce lait coco",
+  "ean": "3270160870196"
+ },
+ "87022": {
+  "ref": "087022",
+  "name": "Légumes à griller",
+  "ean": "3270160870226"
+ },
+ "87027": {
+  "ref": "087027",
+  "name": "Mélange de légumes grillés et pommes de terre bio",
+  "ean": "3270160870271"
+ },
+ "87028": {
+  "ref": "087028",
+  "name": "Feuilles d'épinards sans résidu pesticides, France",
+  "ean": "3270160870288"
+ },
+ "87029": {
+  "ref": "087029",
+  "name": "Carottes en rondelles sans résidu de pesticides",
+  "ean": "3270160870295"
+ },
+ "87033": {
+  "ref": "087033",
+  "name": "Mélange de champignons bio",
+  "ean": "3270160870332"
+ },
+ "87035": {
+  "ref": "087035",
+  "name": "Mélange de légumes anciens bio, France",
+  "ean": "3270160870356"
+ },
+ "87038": {
+  "ref": "087038",
+  "name": "Perles de blé et lentilles vertes cuisinées",
+  "ean": "3270160870387"
+ },
+ "87039": {
+  "ref": "087039",
+  "name": "Mini Röstis de pomme de terre bio",
+  "ean": "3270160870394"
+ },
+ "87041": {
+  "ref": "087041",
+  "name": "Brunoise de champignons champignon Paris, shiitaké",
+  "ean": "3270160870417"
+ },
+ "87056": {
+  "ref": "087056",
+  "name": "Purée de carotte-lentille corail-lait de coco bio",
+  "ean": "3270160870561"
+ },
+ "87063": {
+  "ref": "087063",
+  "name": "4 nids de pomme de terre",
+  "ean": "3270160870639"
+ },
+ "87067": {
+  "ref": "087067",
+  "name": "Trio de fusilli de légumineuses au pesto rosso",
+  "ean": "3270160870677"
+ },
+ "87085": {
+  "ref": "087085",
+  "name": "Marrons entiers épluchés, Portugal",
+  "ean": "3270160870851"
+ },
+ "87087": {
+  "ref": "087087",
+  "name": "2 choux végétariens légumes, champignons",
+  "ean": "3270160870875"
+ },
+ "87090": {
+  "ref": "087090",
+  "name": "6 fagots de légumes",
+  "ean": "3270160870905"
+ },
+ "87101": {
+  "ref": "087101",
+  "name": "Mini gaspacho concombre, courgette, petit pois",
+  "ean": "3270160871018"
+ },
+ "87102": {
+  "ref": "087102",
+  "name": "Purée de céleri rave sans résidu de pesticides",
+  "ean": "3270160871025"
+ },
+ "87115": {
+  "ref": "087115",
+  "name": "Poêlée PDT champignon, pois gourmand, marron",
+  "ean": "3270160871155"
+ },
+ "87122": {
+  "ref": "087122",
+  "name": "Curry de lentilles corail et légumes",
+  "ean": "3270160871223"
+ },
+ "87149": {
+  "ref": "087149",
+  "name": "Fèves de soja edamame",
+  "ean": "3270160871490"
+ },
+ "87152": {
+  "ref": "087152",
+  "name": "Flageolets verts fins sans résidu de pesticides, France",
+  "ean": "3270160871520"
+ },
+ "87181": {
+  "ref": "087181",
+  "name": "Mélange à la libanaise",
+  "ean": "3270160871810"
+ },
+ "87200": {
+  "ref": "087200",
+  "name": "Poêlée de légumes et riz",
+  "ean": "3270160872008"
+ },
+ "87201": {
+  "ref": "087201",
+  "name": "Poêlée patate douce, asperge,carotte, châtaigne",
+  "ean": "3270160872015"
+ },
+ "87205": {
+  "ref": "087205",
+  "name": "Nouilles aux légumes et à la sauce soja",
+  "ean": "3270160872053"
+ },
+ "87206": {
+  "ref": "087206",
+  "name": "Julienne de légumes bio",
+  "ean": "3270160872060"
+ },
+ "87210": {
+  "ref": "087210",
+  "name": "Épinards cuisinés tomate, mozzarella, basilic",
+  "ean": "3270160872107"
+ },
+ "87230": {
+  "ref": "087230",
+  "name": "Choux de Bruxelles à la crème et moutarde",
+  "ean": "3270160872305"
+ },
+ "87240": {
+  "ref": "087240",
+  "name": "Mélange de choux romanesco, carottes parisiennes",
+  "ean": "3270160872404"
+ },
+ "87264": {
+  "ref": "087264",
+  "name": "Courge butternut grillée aux oignons rouges",
+  "ean": "3270160872640"
+ },
+ "87265": {
+  "ref": "087265",
+  "name": "Mélange de légumes grillés sans résidu de pesticides, Italie",
+  "ean": "3270160872657"
+ },
+ "87266": {
+  "ref": "087266",
+  "name": "Aubergines grillées sans résidu de pesticides, Italie",
+  "ean": "3270160872664"
+ },
+ "87267": {
+  "ref": "087267",
+  "name": "Courgettes grillées sans résidu pesticides, Italie",
+  "ean": "3270160872671"
+ },
+ "87271": {
+  "ref": "087271",
+  "name": "Gratin de pomme de terre, oignon, comté",
+  "ean": "3270160872718"
+ },
+ "87304": {
+  "ref": "087304",
+  "name": "Légumes à la campagnarde, sauce moutarde",
+  "ean": "3270160873043"
+ },
+ "87321": {
+  "ref": "087321",
+  "name": "Tajine de légumes",
+  "ean": "3270160873210"
+ },
+ "87322": {
+  "ref": "087322",
+  "name": "Légumes à la mexicaine",
+  "ean": "3270160873227"
+ },
+ "87330": {
+  "ref": "087330",
+  "name": "Chou-fleur à l'asiatique",
+  "ean": "3270160873302"
+ },
+ "87334": {
+  "ref": "087334",
+  "name": "Artichauts à la romaine, menthe, citron",
+  "ean": "3270160873340"
+ },
+ "87335": {
+  "ref": "087335",
+  "name": "Purée de carotte sans résidu de pesticides",
+  "ean": "3270160873357"
+ },
+ "87336": {
+  "ref": "087336",
+  "name": "Mélange brocolis, HV, courgettes, garden peas",
+  "ean": "3270160873364"
+ },
+ "87340": {
+  "ref": "087340",
+  "name": "Epinards hachés bio local équitable",
+  "ean": "3270160873401"
+ },
+ "87351": {
+  "ref": "087351",
+  "name": "Riz cuisiné à l'indienne",
+  "ean": "3270160873517"
+ },
+ "87355": {
+  "ref": "087355",
+  "name": "4 röstis de légumes et cheddar",
+  "ean": "3270160873555"
+ },
+ "87359": {
+  "ref": "087359",
+  "name": "Courge butternut en cubes sans résidu de pesticide",
+  "ean": "3270160873593"
+ },
+ "87360": {
+  "ref": "087360",
+  "name": "Pois chiches bio, France",
+  "ean": "3270160873609"
+ },
+ "87401": {
+  "ref": "087401",
+  "name": "Chunky chips, frites épaisses, sauce tartare",
+  "ean": "3270160874019"
+ },
+ "87403": {
+  "ref": "087403",
+  "name": "Légumes asiatiques pour wok",
+  "ean": "3270160874033"
+ },
+ "87406": {
+  "ref": "087406",
+  "name": "En avant les dauphins",
+  "ean": "3270160874064"
+ },
+ "87407": {
+  "ref": "087407",
+  "name": "Ecrasé de pomme de terre, façon sarladaise, cèpes",
+  "ean": "3270160874071"
+ },
+ "87409": {
+  "ref": "087409",
+  "name": "6 fleurs de carottes orange et jaune",
+  "ean": "3270160874095"
+ },
+ "87413": {
+  "ref": "087413",
+  "name": "A fond les oursons 6 pièces environ",
+  "ean": "3270160874132"
+ },
+ "87415": {
+  "ref": "087415",
+  "name": "6 sapins pomme de terre",
+  "ean": "3270160874156"
+ },
+ "87420": {
+  "ref": "087420",
+  "name": "Trio de poivrons sans résidu de pesticides",
+  "ean": "3270160874200"
+ },
+ "87423": {
+  "ref": "087423",
+  "name": "4 mini gratins dauphinois, truffe blanche d'été 1%",
+  "ean": "3270160874231"
+ },
+ "87427": {
+  "ref": "087427",
+  "name": "Gratin courgette, pomme de terre, emmental bio",
+  "ean": "3270160874279"
+ },
+ "87433": {
+  "ref": "087433",
+  "name": "4 gaufres aux légumes",
+  "ean": "3270160874330"
+ },
+ "87437": {
+  "ref": "087437",
+  "name": "Poireaux émincés bio, France ou Belgique",
+  "ean": "3270160874378"
+ },
+ "87438": {
+  "ref": "087438",
+  "name": "Mini-coeurs d'artichauts en quartiers, Italie",
+  "ean": "3270160874385"
+ },
+ "87445": {
+  "ref": "087445",
+  "name": "Gratin de courge butternut, céréales, sauce au fromage nature",
+  "ean": "3270160874453"
+ },
+ "87447": {
+  "ref": "087447",
+  "name": "Gratin de patate douce, champignon, épinard",
+  "ean": "3270160874477"
+ },
+ "87453": {
+  "ref": "087453",
+  "name": "Gratin de pâte, épinard, poireau et sauce au comté",
+  "ean": "3270160874538"
+ },
+ "87457": {
+  "ref": "087457",
+  "name": "2 galettes végétales",
+  "ean": "3270160874576"
+ },
+ "87459": {
+  "ref": "087459",
+  "name": "Légumes à la grecque, aubergine, tomate, Feta AOP",
+  "ean": "3270160874590"
+ },
+ "87460": {
+  "ref": "087460",
+  "name": "Bol vapeur juste assaisonné à la sauce soja",
+  "ean": "3270160874606"
+ },
+ "87461": {
+  "ref": "087461",
+  "name": "12 bouchées de légumes carotte jaune, brocoli, emmental",
+  "ean": "3270160874613"
+ },
+ "87462": {
+  "ref": "087462",
+  "name": "8 mini râpés de légumes, comté",
+  "ean": "3270160874620"
+ },
+ "87464": {
+  "ref": "087464",
+  "name": "Etoiles de légumes, chou-fleur, brocoli,mozzarella",
+  "ean": "3270160874644"
+ },
+ "87472": {
+  "ref": "087472",
+  "name": "3 sachets vapeur assaisonnés à l'orange, coriandre",
+  "ean": "3270160874729"
+ },
+ "87478": {
+  "ref": "087478",
+  "name": "Bol vapeur assaisonné au miel,l?huile d'olive 1,3%",
+  "ean": "3270160874781"
+ },
+ "87490": {
+  "ref": "087490",
+  "name": "Dinos aventuriers, carotte, pomme de terre",
+  "ean": "3270160874903"
+ },
+ "87492": {
+  "ref": "087492",
+  "name": "Duo de billes aux légumes, 12 pièces environ",
+  "ean": "3270160874927"
+ },
+ "87493": {
+  "ref": "087493",
+  "name": "Penne aux champignons à la crème",
+  "ean": "3270160874934"
+ },
+ "87494": {
+  "ref": "087494",
+  "name": "Gratin d'aubergines",
+  "ean": "3270160874941"
+ },
+ "87505": {
+  "ref": "087505",
+  "name": "Gnocchis de légumineuses",
+  "ean": "3270160875054"
+ },
+ "87530": {
+  "ref": "087530",
+  "name": "Lentilles vertes, cuites",
+  "ean": "3270160875306"
+ },
+ "87532": {
+  "ref": "087532",
+  "name": "Mini soupe potiron, marron, huile de noisette",
+  "ean": "3270160875320"
+ },
+ "87533": {
+  "ref": "087533",
+  "name": "Potage minestrone légumes verts et légumineuses",
+  "ean": "3270160875337"
+ },
+ "87534": {
+  "ref": "087534",
+  "name": "Méli-Mélo party potage légumes, pâtes, fromage",
+  "ean": "3270160875344"
+ },
+ "87554": {
+  "ref": "087554",
+  "name": "Purée carotte violette,carotte jaune, lait de coco",
+  "ean": "3270160875542"
+ },
+ "87602": {
+  "ref": "087602",
+  "name": "Navets en morceaux sans résidu pesticides, France",
+  "ean": "3270160876020"
+ },
+ "87643": {
+  "ref": "087643",
+  "name": "Epinards hachés à la crème bio",
+  "ean": "3270160876433"
+ },
+ "87645": {
+  "ref": "087645",
+  "name": "Wedges et légumes grillés",
+  "ean": "3270160876457"
+ },
+ "87646": {
+  "ref": "087646",
+  "name": "Curry de légumes à l'indienne",
+  "ean": "3270160876464"
+ },
+ "87669": {
+  "ref": "087669",
+  "name": "Duo de poivrons rouges et jaunes bio",
+  "ean": "3270160876693"
+ },
+ "87677": {
+  "ref": "087677",
+  "name": "Potimarron en morceaux bio, France",
+  "ean": "3270160876778"
+ },
+ "87685": {
+  "ref": "087685",
+  "name": "Haricots plats coupés bio, France",
+  "ean": "3270160876853"
+ },
+ "87728": {
+  "ref": "087728",
+  "name": "Gratin de légumes à la provençale",
+  "ean": "3270160877287"
+ },
+ "87768": {
+  "ref": "087768",
+  "name": "Légumes pour wok Bio",
+  "ean": "3270160877683"
+ },
+ "87801": {
+  "ref": "087801",
+  "name": "Légumes à la bretonne, sarrasin grillé",
+  "ean": "3270160878017"
+ },
+ "87810": {
+  "ref": "087810",
+  "name": "Oseille coupée sans résidu de pesticides",
+  "ean": "3270160878109"
+ },
+ "87819": {
+  "ref": "087819",
+  "name": "Patates douces bio Local Equitable, Sud-Ouest",
+  "ean": "3270160878192"
+ },
+ "87820": {
+  "ref": "087820",
+  "name": "Gratin de gnocchi, champignon de Paris, courgette",
+  "ean": "3270160878208"
+ },
+ "87821": {
+  "ref": "087821",
+  "name": "Gratin macaroni, légumes et mozzarella",
+  "ean": "3270160878215"
+ },
+ "87859": {
+  "ref": "087859",
+  "name": "Poêlée à la parisienne bio",
+  "ean": "3270160878598"
+ },
+ "87891": {
+  "ref": "087891",
+  "name": "3 sachets vapeur légumes du potager",
+  "ean": "3270160878918"
+ },
+ "87915": {
+  "ref": "087915",
+  "name": "Haricots verts extra-fins bio",
+  "ean": "3270160879151"
+ },
+ "87924": {
+  "ref": "087924",
+  "name": "Ecrasé de pomme de terre et patate douce",
+  "ean": "3270160879243"
+ },
+ "87932": {
+  "ref": "087932",
+  "name": "Garden peas et duo de carottes bio, France",
+  "ean": "3270160879328"
+ },
+ "87955": {
+  "ref": "087955",
+  "name": "3 épis maïs doux sans résidu de pesticides Espagne",
+  "ean": "3270160879557"
+ },
+ "87958": {
+  "ref": "087958",
+  "name": "Haricots verts très fins sans résidu de pesticides",
+  "ean": "3270160879588"
+ },
+ "87959": {
+  "ref": "087959",
+  "name": "Haricots verts extra-fins sans résidu de pesticide",
+  "ean": "3270160879595"
+ },
+ "87960": {
+  "ref": "087960",
+  "name": "Duo de haricots verts et haricots beurres bio",
+  "ean": "3270160879601"
+ },
+ "87961": {
+  "ref": "087961",
+  "name": "Patate douce en morceaux sans résidu de pesticides",
+  "ean": "3270160879618"
+ },
+ "87966": {
+  "ref": "087966",
+  "name": "Petits pois doux sans résidu de pesticides",
+  "ean": "3270160879663"
+ },
+ "87968": {
+  "ref": "087968",
+  "name": "Courgettes en rondelles",
+  "ean": "3270160879687"
+ },
+ "87974": {
+  "ref": "087974",
+  "name": "Courgettes sans résidu de pesticides, Italie",
+  "ean": "3270160879748"
+ },
+ "87982": {
+  "ref": "087982",
+  "name": "Fleurettes de brocolis sans résidu de pesticides",
+  "ean": "3270160879823"
+ },
+ "87990": {
+  "ref": "087990",
+  "name": "Tomates en quartiers pelées sans résidus de pesticides",
+  "ean": "3270160879908"
+ },
+ "88013": {
+  "ref": "088013",
+  "name": "Émincés de poulet au miel et au citron",
+  "ean": "3270160880133"
+ },
+ "88019": {
+  "ref": "088019",
+  "name": "Blanquette de volaille, 2 parts",
+  "ean": "3270160880195"
+ },
+ "88039": {
+  "ref": "088039",
+  "name": "Le Passionné. Foie gras de canard entier Sud-Ouest",
+  "ean": "3270160880393"
+ },
+ "88050": {
+  "ref": "088050",
+  "name": "Escalopes de poulet, 4 à 6 pièces",
+  "ean": "3270160880508"
+ },
+ "88139": {
+  "ref": "088139",
+  "name": "Aiguillettes de poulet, 7 à 11 pièces",
+  "ean": "3270160881390"
+ },
+ "88171": {
+  "ref": "088171",
+  "name": "Filets de poulet rôtis",
+  "ean": "3270160881710"
+ },
+ "88189": {
+  "ref": "088189",
+  "name": "2 cordons bleus de poulet au comté A.O.P.",
+  "ean": "3270160881895"
+ },
+ "88220": {
+  "ref": "088220",
+  "name": "Pintade farcie, farce au bloc de foie gras canard",
+  "ean": "3270160882205"
+ },
+ "88221": {
+  "ref": "088221",
+  "name": "4 saucisses fumées",
+  "ean": "3270160882212"
+ },
+ "88238": {
+  "ref": "088238",
+  "name": "Rôti de chapon farci aux marrons",
+  "ean": "3270160882380"
+ },
+ "88246": {
+  "ref": "088246",
+  "name": "Poularde farcie, farce aux morilles et au vin jaune",
+  "ean": "208824000002"
+ },
+ "88250": {
+  "ref": "088250",
+  "name": "Ribs à la mexicaine",
+  "ean": "3270160882502"
+ },
+ "88263": {
+  "ref": "088263",
+  "name": "Aiguillettes de canard, origine France",
+  "ean": "3270160882632"
+ },
+ "88264": {
+  "ref": "088264",
+  "name": "Magret de canard tranché mariné aux cèpes",
+  "ean": "3270160882649"
+ },
+ "88276": {
+  "ref": "088276",
+  "name": "2 cordons de poulet au beaufort A.O.P",
+  "ean": "3270160882762"
+ },
+ "88288": {
+  "ref": "088288",
+  "name": "Bouchées de filet de poulet curry coco",
+  "ean": "3270160882885"
+ },
+ "88296": {
+  "ref": "088296",
+  "name": "Poulet pané croustillant",
+  "ean": "3270160882960"
+ },
+ "88305": {
+  "ref": "088305",
+  "name": "Foie gras de canard entier Sud-Ouest, 2 tranches",
+  "ean": "3270160883059"
+ },
+ "88320": {
+  "ref": "088320",
+  "name": "Magret de canard laqué canard du Sud-Ouest",
+  "ean": "3270160883202"
+ },
+ "88337": {
+  "ref": "088337",
+  "name": "Dinde farcie, farce aux marrons et aux cèpes",
+  "ean": "208833000000"
+ },
+ "88405": {
+  "ref": "088405",
+  "name": "Bouchées de poulet panées, saveur barbecue",
+  "ean": "3270160884056"
+ },
+ "88412": {
+  "ref": "088412",
+  "name": "2 boudins blancs supérieurs",
+  "ean": "3270160884124"
+ },
+ "88413": {
+  "ref": "088413",
+  "name": "2 cuisses de lapin",
+  "ean": "3270160884131"
+ },
+ "88415": {
+  "ref": "088415",
+  "name": "Morceaux râbles de lapin, 5 à 6 morceaux",
+  "ean": "3270160884155"
+ },
+ "88420": {
+  "ref": "088420",
+  "name": "Hauts de cuisses de poulet,panure multi-grains",
+  "ean": "3270160884209"
+ },
+ "88430": {
+  "ref": "088430",
+  "name": "Émincés de poulet rôtis, cuits",
+  "ean": "3270160884308"
+ },
+ "88436": {
+  "ref": "088436",
+  "name": "Filets de poulet découpés, origine France",
+  "ean": "3270160884360"
+ },
+ "88460": {
+  "ref": "088460",
+  "name": "Le Marbré. Foie gras canard Sud-Ouest à l'Armagnac",
+  "ean": "3270160884605"
+ },
+ "88478": {
+  "ref": "088478",
+  "name": "L'Originel. Foie gras de canard entier Sud-Ouest",
+  "ean": "3270160884780"
+ },
+ "89006": {
+  "ref": "089006",
+  "name": "Salade à la scandinave",
+  "ean": "3270160890064"
+ },
+ "89010": {
+  "ref": "089010",
+  "name": "12 mini cheese naans",
+  "ean": "3270160890101"
+ },
+ "89011": {
+  "ref": "089011",
+  "name": "Pizza Regina 'Italia'",
+  "ean": "3270160890118"
+ },
+ "89012": {
+  "ref": "089012",
+  "name": "Pizza 4 formaggi italiani 'Italia'",
+  "ean": "3270160890125"
+ },
+ "89015": {
+  "ref": "089015",
+  "name": "2 mini-calzones jambon mozzarella Italia",
+  "ean": "3270160890156"
+ },
+ "89016": {
+  "ref": "089016",
+  "name": "Pizza bœuf, merguez, sauce salsa",
+  "ean": "3270160890163"
+ },
+ "89017": {
+  "ref": "089017",
+  "name": "Pizza légumes, pesto, parmigiano reggiano",
+  "ean": "3270160890170"
+ },
+ "89027": {
+  "ref": "089027",
+  "name": "Pizza thon, tomate, olive",
+  "ean": "3270160890279"
+ },
+ "89060": {
+  "ref": "089060",
+  "name": "30 mini-feuilletés saveurs du soleil",
+  "ean": "3270160890606"
+ },
+ "89080": {
+  "ref": "089080",
+  "name": "Pizza sans gluten",
+  "ean": "8008698026090"
+ },
+ "89084": {
+  "ref": "089084",
+  "name": "2 tartes bio courgette tomate féta AOP",
+  "ean": "3270160890842"
+ },
+ "89085": {
+  "ref": "089085",
+  "name": "2 galettes chèvre-lardon-oignon",
+  "ean": "3270160890859"
+ },
+ "89086": {
+  "ref": "089086",
+  "name": "2 galettes saumon - fondue de poireaux",
+  "ean": "3270160890866"
+ },
+ "89111": {
+  "ref": "089111",
+  "name": "20 mini-feuilletés saucisse",
+  "ean": "3270160891115"
+ },
+ "89113": {
+  "ref": "089113",
+  "name": "Pizza tomate, poulet, artichaut",
+  "ean": "3270160891139"
+ },
+ "89118": {
+  "ref": "089118",
+  "name": "4 coquilles aux fruits de mer",
+  "ean": "3270160891184"
+ },
+ "89119": {
+  "ref": "089119",
+  "name": "2 coquilles colin d'Alaska, noix de St-Jacques MSC",
+  "ean": "3270160891191"
+ },
+ "89124": {
+  "ref": "089124",
+  "name": "2 cassolettes aux Saint-Jacques*, sauce Chardonnay",
+  "ean": "3270160891245"
+ },
+ "89129": {
+  "ref": "089129",
+  "name": "30 Canapés traiteur",
+  "ean": "3270160891290"
+ },
+ "89130": {
+  "ref": "089130",
+  "name": "6 verrines apéritives",
+  "ean": "3270160891306"
+ },
+ "89131": {
+  "ref": "089131",
+  "name": "Pain surprise au pain spécial campagne",
+  "ean": "3270160891313"
+ },
+ "89138": {
+  "ref": "089138",
+  "name": "2 quiches lorraines",
+  "ean": "3270160891382"
+ },
+ "89146": {
+  "ref": "089146",
+  "name": "Quiche lorraine",
+  "ean": "3270160891467"
+ },
+ "89153": {
+  "ref": "089153",
+  "name": "2 frusta 4 fromages 'Italia'",
+  "ean": "3270160891535"
+ },
+ "89159": {
+  "ref": "089159",
+  "name": "2 tartes figue, chèvre, romarin",
+  "ean": "3270160891597"
+ },
+ "89163": {
+  "ref": "089163",
+  "name": "Salade à la grecque",
+  "ean": "3270160891634"
+ },
+ "89164": {
+  "ref": "089164",
+  "name": "Salad bowl au saumon",
+  "ean": "3270160891641"
+ },
+ "89165": {
+  "ref": "089165",
+  "name": "16 bouchées apéritives aux légumes",
+  "ean": "3270160891658"
+ },
+ "89166": {
+  "ref": "089166",
+  "name": "Pain surprise polaire",
+  "ean": "3270160891665"
+ },
+ "89167": {
+  "ref": "089167",
+  "name": "16 petits fours",
+  "ean": "3270160891672"
+ },
+ "89169": {
+  "ref": "089169",
+  "name": "6 verrines de la mer",
+  "ean": "3270160891696"
+ },
+ "89176": {
+  "ref": "089176",
+  "name": "12 mini-bagels",
+  "ean": "3270160891764"
+ },
+ "89179": {
+  "ref": "089179",
+  "name": "Bacon burger",
+  "ean": "3270160891795"
+ },
+ "89180": {
+  "ref": "089180",
+  "name": "12 bouchées panées au fromage",
+  "ean": "3270160891801"
+ },
+ "89182": {
+  "ref": "089182",
+  "name": "12 escargots très gros, Label Rouge",
+  "ean": "3270160891825"
+ },
+ "89184": {
+  "ref": "089184",
+  "name": "2 chaussons poulet, champignon, emmental",
+  "ean": "3270160891849"
+ },
+ "89227": {
+  "ref": "089227",
+  "name": "4 paniers jambon-emmental",
+  "ean": "3270160892273"
+ },
+ "89230": {
+  "ref": "089230",
+  "name": "24 sandwichs club",
+  "ean": "3270160892303"
+ },
+ "89231": {
+  "ref": "089231",
+  "name": "12 mini-wraps",
+  "ean": "3270160892310"
+ },
+ "89234": {
+  "ref": "089234",
+  "name": "Salade de lentille, saumon fumé,pomme Granny Smith",
+  "ean": "3270160892341"
+ },
+ "89237": {
+  "ref": "089237",
+  "name": "8 bouchées apéritives au saumon",
+  "ean": "3270160892372"
+ },
+ "89244": {
+  "ref": "089244",
+  "name": "2 chicken rolls",
+  "ean": "3270160892440"
+ },
+ "89260": {
+  "ref": "089260",
+  "name": "12 croustillants apéritifs",
+  "ean": "3270160892600"
+ },
+ "89264": {
+  "ref": "089264",
+  "name": "2 chaussons tomate, poivron, mozzarella, pesto rosso",
+  "ean": "3270160892648"
+ },
+ "89267": {
+  "ref": "089267",
+  "name": "Mini-cake chorizo tomate cerise confite",
+  "ean": "3270160892679"
+ },
+ "89274": {
+  "ref": "089274",
+  "name": "2 coquilles aux noix de St-Jacques sce Sauternes",
+  "ean": "3270160892747"
+ },
+ "89276": {
+  "ref": "089276",
+  "name": "2 tartares de bar aux carottes et aux agrumes",
+  "ean": "3270160892761"
+ },
+ "89277": {
+  "ref": "089277",
+  "name": "2 pissaladières oignons, olives noires, anchois",
+  "ean": "3270160892778"
+ },
+ "89293": {
+  "ref": "089293",
+  "name": "Salade radiatori thon",
+  "ean": "3270160892938"
+ },
+ "89305": {
+  "ref": "089305",
+  "name": "Nouilles de riz légumes à l'asiatique",
+  "ean": "3270160893058"
+ },
+ "89319": {
+  "ref": "089319",
+  "name": "2 cassolettes au bar à la crevette, à l'écrevisse",
+  "ean": "3270160893195"
+ },
+ "89321": {
+  "ref": "089321",
+  "name": "Fried snacks, assortiment de bouchées panées",
+  "ean": "3270160893218"
+ },
+ "89322": {
+  "ref": "089322",
+  "name": "Tarte fine boeuf, cheddar",
+  "ean": "3270160893225"
+ },
+ "89335": {
+  "ref": "089335",
+  "name": "Bagel tzatziki, saumon fumé",
+  "ean": "3270160893355"
+ },
+ "89340": {
+  "ref": "089340",
+  "name": "Sandwich à l'italienne",
+  "ean": "3270160893409"
+ },
+ "89342": {
+  "ref": "089342",
+  "name": "4 paniers noix de Saint-Jacques à la bretonne",
+  "ean": "3270160893423"
+ },
+ "89345": {
+  "ref": "089345",
+  "name": "4 paniers saumon fumé, saumon",
+  "ean": "3270160893454"
+ },
+ "89354": {
+  "ref": "089354",
+  "name": "Crousti'express frites spéciales micro-ondes",
+  "ean": "3599741007593"
+ },
+ "89374": {
+  "ref": "089374",
+  "name": "Hash browns potatoes, garniture de pomme de terre",
+  "ean": "3270160893744"
+ },
+ "89378": {
+  "ref": "089378",
+  "name": "10 mini cheeseburgers",
+  "ean": "3270160893782"
+ },
+ "89407": {
+  "ref": "089407",
+  "name": "2 croustillants chèvre, miel, figue",
+  "ean": "3270160894079"
+ },
+ "89409": {
+  "ref": "089409",
+  "name": "Pizza Volcana \"Italia\"",
+  "ean": "3270160894093"
+ },
+ "89417": {
+  "ref": "089417",
+  "name": "Mini pizzas margherita",
+  "ean": "3270160894178"
+ },
+ "89421": {
+  "ref": "089421",
+  "name": "Pizza funghi e tartufo \"Italia\"",
+  "ean": "3270160894215"
+ },
+ "89422": {
+  "ref": "089422",
+  "name": "Corn dogs pops, bille de saucisse",
+  "ean": "3270160894222"
+ },
+ "89423": {
+  "ref": "089423",
+  "name": "Pizza cheddar, lardon fumé, oignon rouge",
+  "ean": "3270160894239"
+ },
+ "89428": {
+  "ref": "089428",
+  "name": "10 mini-donuts",
+  "ean": "3270160894284"
+ },
+ "89429": {
+  "ref": "089429",
+  "name": "2 galettes jambon tomme de montagne, oignons",
+  "ean": "3270160894291"
+ },
+ "89430": {
+  "ref": "089430",
+  "name": "4 paniers épinard - chèvre",
+  "ean": "3270160894307"
+ },
+ "89431": {
+  "ref": "089431",
+  "name": "Margherita, mozzarella, tomate, origan",
+  "ean": "3270160894314"
+ },
+ "89432": {
+  "ref": "089432",
+  "name": "Chapati sauce méchouia, sandwich au poulet",
+  "ean": "3270160894321"
+ },
+ "89434": {
+  "ref": "089434",
+  "name": "2 dômes crustacés légumes croquants",
+  "ean": "3270160894345"
+ },
+ "89439": {
+  "ref": "089439",
+  "name": "4 empanadas poulet tex mex, à cuire",
+  "ean": "3270160894390"
+ },
+ "89440": {
+  "ref": "089440",
+  "name": "Pizza houmous basilic stracciatella, sce framboise",
+  "ean": "3270160894406"
+ },
+ "89442": {
+  "ref": "089442",
+  "name": "Mini-galettes au sarrasin",
+  "ean": "3270160894420"
+ },
+ "89445": {
+  "ref": "089445",
+  "name": "8 mini tacos",
+  "ean": "3270160894451"
+ },
+ "89449": {
+  "ref": "089449",
+  "name": "Beignets de fleur de courgette",
+  "ean": "3270160894499"
+ },
+ "89450": {
+  "ref": "089450",
+  "name": "Tourte pintade, champignons, sce Côtes du Jura",
+  "ean": "3270160894505"
+ },
+ "89457": {
+  "ref": "089457",
+  "name": "8 montgolfières apéritives bloc de foie gras",
+  "ean": "3270160894574"
+ },
+ "89458": {
+  "ref": "089458",
+  "name": "Frittatine stracciatella, bouchées de pâtes panée",
+  "ean": "3270160894581"
+ },
+ "89461": {
+  "ref": "089461",
+  "name": "Cheese roll, roulé à la sauce cheddar",
+  "ean": "3270160894611"
+ },
+ "89463": {
+  "ref": "089463",
+  "name": "8 montgolfières apéritives noix de cajou,cèpes",
+  "ean": "3270160894635"
+ },
+ "89465": {
+  "ref": "089465",
+  "name": "Pizza panini, sandwich pizza jambon, tomate",
+  "ean": "3270160894659"
+ },
+ "89473": {
+  "ref": "089473",
+  "name": "14 couronnes mini choux Parmigiano, truffe blanche",
+  "ean": "3270160894734"
+ },
+ "89490": {
+  "ref": "089490",
+  "name": "9 mini-burgers roses",
+  "ean": "3270160894901"
+ },
+ "89501": {
+  "ref": "089501",
+  "name": "Pizza 3 fromages salami sauce barbecue",
+  "ean": "3270160895014"
+ },
+ "89503": {
+  "ref": "089503",
+  "name": "Burrata al forno burrata entière et sauce pesto",
+  "ean": "3270160895038"
+ },
+ "89505": {
+  "ref": "089505",
+  "name": "Linguine façon bolognaise végétale 1 part",
+  "ean": "3270160895052"
+ },
+ "89506": {
+  "ref": "089506",
+  "name": "Tarte fine inédite, jambon végétal La Vie TM",
+  "ean": "3270160895069"
+ },
+ "89507": {
+  "ref": "089507",
+  "name": "Pizza con prosciutto,jambon cru, figues,mascarpone",
+  "ean": "3270160895076"
+ },
+ "89510": {
+  "ref": "089510",
+  "name": "36 escargots moyens de Bourgogne",
+  "ean": "3270160895106"
+ },
+ "89512": {
+  "ref": "089512",
+  "name": "Mini-panini 3 fromages, tomate",
+  "ean": "3270160895120"
+ },
+ "89517": {
+  "ref": "089517",
+  "name": "2 tartines légumes du soleil, mozzarella",
+  "ean": "3270160895175"
+ },
+ "89519": {
+  "ref": "089519",
+  "name": "Pink burger bacon végétal La Vie TM à base de soja",
+  "ean": "3270160895199"
+ },
+ "89521": {
+  "ref": "089521",
+  "name": "Salade à la mexicaine",
+  "ean": "3270160895212"
+ },
+ "89522": {
+  "ref": "089522",
+  "name": "Spaghetti carbonara au maïs et au riz, sans gluten",
+  "ean": "3270160895229"
+ },
+ "89529": {
+  "ref": "089529",
+  "name": "Mac and Cheese jambon végétal La Vie TM",
+  "ean": "3270160895298"
+ },
+ "89530": {
+  "ref": "089530",
+  "name": "Hot-dog",
+  "ean": "3270160895304"
+ },
+ "89531": {
+  "ref": "089531",
+  "name": "2 galettes oeuf brouillé fromage de brebis,poivron",
+  "ean": "3270160895311"
+ },
+ "89539": {
+  "ref": "089539",
+  "name": "4 coquilles aux noix St Jacques à la bretonne MSC",
+  "ean": "3270160895397"
+ },
+ "89541": {
+  "ref": "089541",
+  "name": "8 mini-coeurs apéritifs salés",
+  "ean": "3270160895410"
+ },
+ "89555": {
+  "ref": "089555",
+  "name": "Veg'gets saveur barbecue",
+  "ean": "3270160895557"
+ },
+ "89565": {
+  "ref": "089565",
+  "name": "8 mini-croque festifs,tomate, mozzarella, origan",
+  "ean": "3270160895656"
+ },
+ "89595": {
+  "ref": "089595",
+  "name": "8 rolls feuilletés à la raclette",
+  "ean": "3270160895953"
+ },
+ "89597": {
+  "ref": "089597",
+  "name": "6 mises en bouches festives",
+  "ean": "3270160895977"
+ },
+ "89605": {
+  "ref": "089605",
+  "name": "Tarte flambée, munster, jambon, oignon",
+  "ean": "3270160896059"
+ },
+ "89608": {
+  "ref": "089608",
+  "name": "16 mini-feuilletés d'escargots",
+  "ean": "3270160896080"
+ },
+ "89610": {
+  "ref": "089610",
+  "name": "4 friands à l'emmental, à cuire",
+  "ean": "3270160896103"
+ },
+ "89615": {
+  "ref": "089615",
+  "name": "Tea time sandwich club, 4 sandwichs",
+  "ean": "3270160896158"
+ },
+ "89659": {
+  "ref": "089659",
+  "name": "Salade à la parmesane",
+  "ean": "3270160896592"
+ },
+ "89701": {
+  "ref": "089701",
+  "name": "Délice végétal, noix de cajou, champignons",
+  "ean": "3270160897018"
+ },
+ "89707": {
+  "ref": "089707",
+  "name": "8 mini-focaccias au thym",
+  "ean": "3270160897070"
+ },
+ "89708": {
+  "ref": "089708",
+  "name": "15 mini-quiches",
+  "ean": "3270160897087"
+ },
+ "89710": {
+  "ref": "089710",
+  "name": "8 mini-burgers au foie gras de canard",
+  "ean": "3270160897100"
+ },
+ "89712": {
+  "ref": "089712",
+  "name": "Bâtonnets panés à la mozzarella et à la truffe",
+  "ean": "3270160897124"
+ },
+ "89714": {
+  "ref": "089714",
+  "name": "9 croustilles apéritives aux noix de St-Jacques",
+  "ean": "3270160897148"
+ },
+ "89720": {
+  "ref": "089720",
+  "name": "Curry vert de légumes et riz thaï",
+  "ean": "3270160897209"
+ },
+ "89723": {
+  "ref": "089723",
+  "name": "Radiatori au pesto et mozzarella au lait de bufflonne",
+  "ean": "3270160897230"
+ },
+ "89730": {
+  "ref": "089730",
+  "name": "8 mini kebabs, poulet rôti, sauce blanche, épices",
+  "ean": "3270160897308"
+ },
+ "89758": {
+  "ref": "089758",
+  "name": "Mac and Cheese au jambon",
+  "ean": "3270160897582"
+ },
+ "89781": {
+  "ref": "089781",
+  "name": "Hachis parmentier",
+  "ean": "3270160897810"
+ },
+ "89790": {
+  "ref": "089790",
+  "name": "Tarte soleil au pesto rosso, pâte pur beurre",
+  "ean": "3270160897902"
+ },
+ "89882": {
+  "ref": "089882",
+  "name": "10 gaufres apéritives, pomme de terre, emmental",
+  "ean": "3270160898824"
+ },
+ "89947": {
+  "ref": "089947",
+  "name": "8 paninis apéritifs, pesto, tomate, mozzarella",
+  "ean": "3270160899470"
+ },
+ "200168": {
+  "ref": "200168",
+  "name": "Paëlla de la mer colin d'Alaska, crevettes",
+  "ean": "3270162001680"
+ },
+ "200170": {
+  "ref": "200170",
+  "name": "5 croissants aux amandes",
+  "ean": "3270162001703"
+ },
+ "400001": {
+  "ref": "400001",
+  "name": "Assortiment de 4 financiers",
+  "ean": "3270164000018"
+ },
+ "400035": {
+  "ref": "400035",
+  "name": "Macarons tricolores, bleu blanc rouge",
+  "ean": "3270164000353"
+ },
+ "400041": {
+  "ref": "400041",
+  "name": "Douceurs de France tour Eiffel, Arc de triomphe",
+  "ean": "3270164000414"
+ },
+ "0081": {
+  "ref": "000081",
+  "name": "Fonds d'artichauts, Egypte",
+  "ean": "3270160000814"
+ },
+ "0180": {
+  "ref": "000180",
+  "name": "Poireaux en rondelles, France ou Benelux",
+  "ean": "3270160001804"
+ },
+ "0222": {
+  "ref": "000222",
+  "name": "Légumes pour potage",
+  "ean": "3270160002221"
+ },
+ "0248": {
+  "ref": "000248",
+  "name": "4 tranches de filets de cabillaud MSC, sans arête",
+  "ean": "3270160002481"
+ },
+ "0545": {
+  "ref": "000545",
+  "name": "Filets de poulet, 5 à 10 pièces",
+  "ean": "3270160005451"
+ },
+ "0586": {
+  "ref": "000586",
+  "name": "Epinards hachés, France",
+  "ean": "3270160005864"
+ },
+ "0727": {
+  "ref": "000727",
+  "name": "Cuisses de poulet, 5 à 7 pièces",
+  "ean": "3270160007271"
+ }
+}

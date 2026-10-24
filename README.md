@@ -38,9 +38,13 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
   Premier test des codes sur PC : environ 4/8. En disant « 89 431 », la reconnaissance avale
   parfois un chiffre → l'app propose maintenant les codes à un chiffre près.
 - Certains codes du catalogue semblent faux ou mal nommés (à confirmer avec des exemples).
+- Catalogue enrichi (24/10) : chaque article a maintenant son **code-barres (EAN-13)** et le **nom complet de sa fiche** (`tools/fiches.json`). Pas encore utilisés par l'app.
+- Les 32 codes à 4 chiffres (ex. 2277, référence du site `002277`) sont à vérifier : comment la tablette les affiche-t-elle ? Le pavé attend 5 chiffres.
 
 ## Pistes pour la suite
 
+- **Scanner le code-barres avec la caméra** (mode « 📷 Scanner » à côté de Voix / Pavé) : le code article est dans l'EAN des articles Picard (`327016` + 6 chiffres de la référence + clé de contrôle), donc zéro erreur de reconnaissance. Chrome Android sait lire les codes-barres (`BarcodeDetector`). À vérifier : le code-barres d'un carton est-il celui du produit ? (photo d'une étiquette de carton à fournir). Reconnaître un article sans code-barres à partir de sa photo : bien plus dur (emballages semblables), service payant probable, en réserve.
+- Utiliser le **nom complet de la fiche** comme second nom de recherche à la voix.
 - **Corriger le catalogue** avec des photos d'étiquettes de rayon (code + nom) : les lire, comparer
   avec `catalog.js`, lister les différences, puis corriger (ajouter un fichier de corrections fusionné
   par `tools/build-catalog.js`, pour qu'une mise à jour du site ne les écrase pas).
@@ -56,6 +60,8 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
 l'adresse des fiches produit (`pizza-margherita-400g-000000000000089431` → 89431), via le plan du
 site public (sitemap). Les noms n'y ont pas d'accents : `tools/accents.json` les remet sur les mots
 courants. Les articles vendus en magasin mais absents du site manquent.
+
+Chaque ligne du catalogue est `[code, nom, code-barres, nom complet de la fiche]`. Les deux derniers viennent de `tools/fiches.json`, lu sur les fiches produit du site par `npm run fiches` (environ 26 minutes, une fiche par seconde, reprend où il s'est arrêté) ; `npm run catalogue` les fusionne. 1 556 fiches lues, 27 sans code-barres affiché. La référence du site est le code sur 6 chiffres (`089431`) : notre code est la même chose sans le zéro de tête.
 
 Les codes se suivent de près (89421, 89422, 89423…) : un chiffre mal entendu donne souvent un autre
 article qui existe. C'est pour ça que l'app affiche et lit toujours le nom de l'article.
@@ -86,5 +92,6 @@ ouverture (avec du réseau). Penser à changer le numéro de `CACHE` dans `sw.js
 - `catalog.js` : catalogue généré (code, nom). Ne pas modifier à la main.
 - `manifest.webmanifest`, `sw.js`, `icon-*.png` : application installable, fonctionne hors ligne.
 - `tools/build-catalog.js`, `tools/accents.json` : génération du catalogue.
+- `tools/fetch-fiches.js`, `tools/fiches.json` : lecture des fiches produit (référence, nom complet, EAN).
 - `tests/logic.test.js` : tests de la logique sur le vrai catalogue.
 - `tests/ui.test.js` : tests de l'interface dans un navigateur simulé (micro et voix simulés).

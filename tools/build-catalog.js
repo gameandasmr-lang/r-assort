@@ -1,6 +1,7 @@
 // Construit catalog.js à partir du plan du site picard.fr (sitemap public).
 // Les adresses des fiches produit contiennent le code article :
 //   /produits/pizza-margherita-400g-000000000000089431.html → 89431 « Pizza margherita 400g »
+// Si tools/fiches.json existe (node tools/fetch-fiches.js), le code-barres et le nom complet sont ajoutés.
 // Lancer avec : node tools/build-catalog.js
 'use strict';
 var fs = require('fs');
@@ -9,6 +10,7 @@ var path = require('path');
 var SITEMAP = 'https://www.picard.fr/sitemap_0.xml';
 var OUT = path.join(__dirname, '..', 'catalog.js');
 var WORDS_OUT = path.join(__dirname, 'words.txt');
+var FICHES = path.join(__dirname, 'fiches.json'); // produit par tools/fetch-fiches.js (facultatif)
 
 // Les adresses n'ont pas d'accents : on les remet sur les mots courants.
 var ACCENTS = require('./accents.json');
@@ -42,7 +44,14 @@ fetch(SITEMAP, { headers: { 'User-Agent': 'reassort-perso/1.0' } })
     var lengths = {};
     codes.forEach(function (c) { lengths[c.length] = (lengths[c.length] || 0) + 1; });
 
-    var lines = codes.map(function (c) { return '  [' + JSON.stringify(c) + ', ' + JSON.stringify(byCode[c]) + ']'; });
+    // Ligne : [code, nom, code-barres, nom complet de la fiche] (les deux derniers si la fiche est connue).
+    var fiches = fs.existsSync(FICHES) ? JSON.parse(fs.readFileSync(FICHES, 'utf8')) : {};
+    var lines = codes.map(function (c) {
+      var row = [c, byCode[c]];
+      var f = fiches[c];
+      if (f && f.ean) row.push(f.ean, f.name || '');
+      return '  [' + row.map(function (v) { return JSON.stringify(v); }).join(', ') + ']';
+    });
     fs.writeFileSync(OUT,
       '// Généré par tools/build-catalog.js le ' + new Date().toISOString().slice(0, 10) +
       ' depuis le plan du site picard.fr. Ne pas modifier à la main.\n' +
@@ -54,7 +63,7 @@ fetch(SITEMAP, { headers: { 'User-Agent': 'reassort-perso/1.0' } })
       .sort(function (a, b) { return wordCount[b] - wordCount[a]; });
     fs.writeFileSync(WORDS_OUT, words.map(function (w) { return wordCount[w] + ' ' + w; }).join('\n'));
 
-    console.log(codes.length + ' articles écrits dans catalog.js');
+    console.log(codes.length + ' articles écrits dans catalog.js (' + Object.keys(fiches).length + ' fiches fusionnées)');
     console.log('Longueur des codes : ' + JSON.stringify(lengths));
   })
   .catch(function (e) {
