@@ -72,6 +72,16 @@ test('code inconnu → propositions proches', function () {
   assert.strictEqual(p.qty, 2);
 });
 
+test('chiffre avalé par la reconnaissance → propositions', function () {
+  var p = point('89 31 deux cartons');
+  assert.strictEqual(p.target.kind, 'unknownCode');
+  assert.ok(p.target.suggestions.some(function (i) { return i.code === '89431'; }), JSON.stringify(p.target.suggestions.map(function (i) { return i.code; })));
+  assert.strictEqual(p.qty, 2);
+  var r = R.ask('89 31', [{ id: 1, code: '89431', name: 'Pizza margherita 400g', qty: 2, out: true }], catalog);
+  assert.strictEqual(r.kind, 'notNoted');
+  assert.strictEqual(r.near[0].id, 1);
+});
+
 test('un poids n\'est pas pris pour un code', function () {
   var p = point('pizza margherita 400 deux cartons');
   assert.notStrictEqual(p.target.kind, 'unknownCode');

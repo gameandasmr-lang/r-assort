@@ -1,5 +1,5 @@
-// Réseau d'abord (pour recevoir les mises à jour), cache en secours si pas de réseau.
-var CACHE = 'reassort-v3';
+// R??seau d'abord (pour recevoir les mises ?? jour), cache en secours si pas de r??seau.
+var CACHE = 'reassort-v4';
 var FILES = ['./', 'index.html', 'style.css', 'catalog.js', 'logic.js', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (event) {

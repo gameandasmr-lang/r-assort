@@ -147,15 +147,27 @@
         (tokens[end].key === 'et' && end + 1 < tokens.length && isNumberToken(tokens[end + 1].key)))) end++;
 
       var unknown = null;
+      var short = null;
       for (var stop = end; stop > start; stop--) {
         var digits = readDigits(tokens.slice(start, stop));
         if (!digits || digits.length < 4) continue;
         if (isKnown && isKnown(digits)) return { code: digits, known: true, start: start, stop: stop };
-        // Un code inconnu n'est retenu qu'à 5 chiffres (presque tous les codes Picard) :
-        // sinon « 400 deux » deviendrait le code 4002.
         if (!unknown && digits.length === 5) unknown = { code: digits, known: false, start: start, stop: stop };
+        // 4 chiffres inconnus : souvent un chiffre que la reconnaissance a avalé (« 89 31 »).
+        // Marqué `short` : à ignorer si la phrase contient aussi un nom (« pizza 400 deux »).
+        if (!short && digits.length === 4) short = { code: digits, known: false, short: true, start: start, stop: stop };
+      }
+      // « 89 31 deux cartons » : code écrit en chiffres, quantité en lettres → le code s'arrête aux lettres.
+      var digitStop = start;
+      while (digitStop < end && /^\d+$/.test(tokens[digitStop].key)) digitStop++;
+      if (digitStop > start && digitStop < end) {
+        var written = readDigits(tokens.slice(start, digitStop));
+        if (written.length === 5 || written.length === 4) {
+          return { code: written, known: false, short: written.length === 4, start: start, stop: digitStop };
+        }
       }
       if (unknown) return unknown;
+      if (short) return short;
       start = end;
     }
     return null;
@@ -308,9 +320,11 @@
 
     var byCode = catalog ? catalog.byCode : {};
     var hit = extractCode(tokens, function (c) { return has(byCode, c); });
-    if (hit) tokens = withoutRange(tokens, hit);
-
-    var parts = splitQuantity(tokens, !!hit);
+    var parts = splitQuantity(hit ? withoutRange(tokens, hit) : tokens, !!hit);
+    if (hit && hit.short && parts.name) {
+      hit = null;
+      parts = splitQuantity(tokens, false);
+    }
     var target;
     if (hit && hit.known) {
       target = { kind: 'item', item: byCode[hit.code] };
@@ -421,6 +435,7 @@
 
     var tokens = tokenize(text);
     var hit = extractCode(tokens, function (c) { return has(entryByCode, c) || has(byCode, c); });
+    if (hit && hit.short && nameKeys(text).length) hit = null;
     if (hit) {
       if (has(entryByCode, hit.code)) return { kind: 'match', entry: entryByCode[hit.code] };
       var near = nearCodes(hit.code, Object.keys(entryByCode)).map(function (c) { return entryByCode[c]; });
