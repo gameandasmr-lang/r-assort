@@ -1,5 +1,5 @@
 // Visite les fiches produit de picard.fr (celles du plan du site) et garde pour chaque article
-// sa référence officielle, son nom complet et son code-barres (EAN-13) dans tools/fiches.json.
+// sa référence officielle, son nom complet, son code-barres (EAN-13) et le nom de son image dans tools/fiches.json.
 // Reprend là où il s'est arrêté (le fichier sert de cache) et attend entre deux fiches.
 // Lancer avec : node tools/fetch-fiches.js [nombre-max-de-fiches]
 'use strict';
@@ -36,6 +36,9 @@ function parseFiche(html) {
   if (ref) out.ref = ref[1];
   if (name) out.name = decode(name[1].replace(/<[^>]+>/g, ' '));
   if (ean) out.ean = ean[1];
+  // Image du produit : chemin sous /produits/ (« 000000000000089431_E_.jpg »), '' si la fiche n'en a pas.
+  var image = /property="og:image"\s+content="[^"]*\/produits\/([^"?]+)/.exec(html);
+  out.image = image ? image[1] : '';
   return out;
 }
 
@@ -50,7 +53,8 @@ async function main() {
   var re = /<loc>(https:\/\/www\.picard\.fr\/produits\/[a-z0-9-]+-0*(\d{4,6})\.html)<\/loc>/g;
   var todo = [];
   var m;
-  while ((m = re.exec(xml))) if (!cache[m[2]]) todo.push({ code: m[2], url: m[1] });
+  // À visiter : les fiches jamais lues, et celles lues avant l'ajout de l'image.
+  while ((m = re.exec(xml))) if (!cache[m[2]] || cache[m[2]].image === undefined) todo.push({ code: m[2], url: m[1] });
   console.log(todo.length + ' fiches à visiter (' + Object.keys(cache).length + ' déjà en cache)');
 
   var done = 0;

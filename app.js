@@ -7,6 +7,8 @@
   var TAB_KEY = 'reassort.tab';
   var CUSTOM_KEY = 'reassort.catalogue-perso';
   var TEST_KEY = 'reassort.test-codes';
+  var IMAGE_BASE = 'https://www.picard.fr/dw/image/v2/AAHV_PRD/on/demandware.static/-/Sites-catalog-picard/default/produits/';
+  var IMAGE_HEIGHT = 160;   // taille demandée au site : l'image arrive légère (~15 Ko) et nette sur écran de téléphone
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var MIC_ERRORS = {
     'not-allowed': 'Micro refusé : autorise le micro pour ce site dans Chrome.',
@@ -56,9 +58,11 @@
   }
 
   // Un article renommé à la main est retenu pour les prochaines fois.
-  function remember(code, name) {
+  function remember(code, name, ean) {
     if (!code || !name) return;
-    custom = custom.filter(function (row) { return row[0] !== code; }).concat([[code, name]]);
+    var old = custom.filter(function (row) { return row[0] === code; })[0];
+    ean = ean || (old && old[2]) || null;
+    custom = custom.filter(function (row) { return row[0] !== code; }).concat([ean ? [code, name, ean] : [code, name]]);
     store(CUSTOM_KEY, custom);
     catalog = buildCatalog();
   }
@@ -181,9 +185,13 @@
   // --- Affichage d'un article ----------------------------------------------
 
   function articleHtml(article) {
+    var item = article.code && catalog.byCode[article.code];
+    var thumb = item && item.image
+      ? '<img class="thumb" src="' + IMAGE_BASE + encodeURI(item.image) + '?sh=' + IMAGE_HEIGHT + '" alt="" loading="lazy" onerror="this.remove()">'
+      : '';
     var code = article.code ? '<span class="code">' + escapeHtml(article.code) + '</span>' : '';
     var name = article.name ? escapeHtml(article.name) : (article.code ? '<em>Article inconnu</em>' : '');
-    return code + '<span class="article-name">' + name + '</span>';
+    return thumb + code + '<span class="article-name">' + name + '</span>';
   }
 
   // --- Pointage --------------------------------------------------------------
@@ -435,6 +443,21 @@
     return true;
   }
 
+  // Donne un nom à l'article scanné : retenu avec son code-barres, il sera reconnu aux prochains scans.
+  function nameScanned() {
+    if (!scannedCode) return;
+    var name = window.prompt('Nom de cet article', '');
+    if (name === null) return;
+    name = name.trim();
+    if (!name) return;
+    remember(scannedCode, name, scannedEan);
+    var entry = entryWithCode(scannedCode);
+    if (entry) { snapshot(); entry.name = name; commit(); }
+    renderPad('pointage');
+    setStatus('pointage', name + ' enregistré.');
+    speak(name + ', enregistré.');
+  }
+
   // Ajout direct d'un article (par exemple absent du catalogue), sans passer par le pointage.
   // Un article déjà dans la liste garde sa quantité ; un nouvel article démarre à 1 carton (modifiable avec − / +).
   function addManually() {
@@ -540,13 +563,14 @@
     if (digits.length >= 4) {
       var item = catalog.byCode[digits];
       var entry = entryWithCode(digits);
-      if (item || entry) {
-        preview = escapeHtml((entry && entry.name) || item.name);
-        if (mode === 'pointage' && entry) {
-          preview += '<small>Déjà pointé : ' + escapeHtml(entry.out ? R.formatQty(entry.qty) : 'ne sort pas') + '</small>';
-        }
-      } else if (digits.length >= 5) {
-        preview = '<em>Code inconnu</em>';
+      var name = (entry && entry.name) || (item && item.name) || '';
+      if (name) preview = escapeHtml(name);
+      else if (digits.length >= 5) preview = '<em>Code inconnu</em>';
+      if (mode === 'pointage' && entry) {
+        preview += '<small>Déjà pointé : ' + escapeHtml(entry.out ? R.formatQty(entry.qty) : 'ne sort pas') + '</small>';
+      }
+      if (mode === 'pointage' && !name && digits === scannedCode) {
+        preview += '<button type="button" class="name-btn" data-action="name-scanned">✎ Donner un nom</button>';
       }
     }
     $('pad-preview-' + mode).innerHTML = preview;
@@ -625,6 +649,7 @@
   var scanMode = null;         // écran qui utilise la caméra en ce moment
   var lastScan = { raw: null, at: 0 };
   var scannedCode = null;      // code du pointage venu d'un code-barres (fiable, contrairement à un code tapé ou dicté)
+  var scannedEan = null;       // et le code-barres lu, retenu avec le nom si on nomme l'article
 
   function currentTab() {
     var active = document.querySelector('.tab.active');
@@ -670,9 +695,11 @@
     } else {
       padDigits.pointage = found.code;
       scannedCode = found.code;
+      scannedEan = found.ean;
       renderPad('pointage');
-      setStatus(mode, found.item ? found.item.name : 'Code ' + found.code + ' absent du catalogue');
-      speak(found.item ? found.item.name : 'Code ' + R.spokenCode(found.code) + ' inconnu.');
+      setStatus(mode, found.item ? found.item.name : 'Article absent du catalogue : touche « Donner un nom », ou choisis la quantité.');
+      // Un code-barres d'une autre marque est long : on ne le lit pas chiffre par chiffre.
+      speak(found.item ? found.item.name : (found.code.length > 6 ? 'Article inconnu.' : 'Code ' + R.spokenCode(found.code) + ' inconnu.'));
       vibrate(40);
     }
   }
@@ -743,6 +770,9 @@
         return;
       case 'pad-ask':
         padAsk();
+        return;
+      case 'name-scanned':
+        nameScanned();
         return;
       case 'test-reset':
         testStats = { tries: 0, ok: 0, misses: [] };

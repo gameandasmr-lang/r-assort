@@ -30,7 +30,9 @@ tablette en tapant le code prend du temps. Le but : ne pas créer d'écart entre
 Pointage et Déballage ont un sélecteur **🎤 Voix / 🔢 Pavé / 📷 Scan**. Au scan, la caméra arrière lit le
 code-barres (EAN du produit, ou de son carton) : au déballage la réponse OUI / NON / PAS NOTÉ vient tout de
 suite et le scan continue ; au pointage, l'article s'affiche puis on touche la quantité. La caméra ne tourne que
-dans un écran en mode scan. Au pavé : 5 chiffres puis la quantité
+dans un écran en mode scan. Un code-barres valide mais absent du catalogue (nouveau produit Picard, autre
+marque) devient un article à pointer ; au pointage, « ✎ Donner un nom » le nomme, et le code-barres est retenu
+avec le nom (catalogue perso du téléphone) pour les scans suivants. Au pavé : 5 chiffres puis la quantité
 au pointage ; au déballage la réponse vient dès le 5e chiffre.
 
 Les données restent sur le téléphone (stockage du navigateur). « Nouveau réassort » vide la liste.
@@ -67,7 +69,9 @@ l'adresse des fiches produit (`pizza-margherita-400g-000000000000089431` → 894
 site public (sitemap). Les noms n'y ont pas d'accents : `tools/accents.json` les remet sur les mots
 courants. Les articles vendus en magasin mais absents du site manquent.
 
-Chaque ligne du catalogue est `[code, nom, code-barres, nom complet de la fiche]`. Les deux derniers viennent de `tools/fiches.json`, lu sur les fiches produit du site par `npm run fiches` (environ 26 minutes, une fiche par seconde, reprend où il s'est arrêté) ; `npm run catalogue` les fusionne. 1 556 fiches lues, 27 sans code-barres affiché. La référence du site est le code sur 6 chiffres (`089431`) : notre code est la même chose sans le zéro de tête.
+Chaque ligne du catalogue est `[code, nom, code-barres, nom complet de la fiche, image]`. Les trois derniers viennent de `tools/fiches.json`, lu sur les fiches produit du site par `npm run fiches` (environ 26 minutes, une fiche par seconde, reprend où il s'est arrêté) ; `npm run catalogue` les fusionne. 1 556 fiches lues, 27 sans code-barres affiché, 1 418 avec une image.
+
+**Images** : le nom du fichier image de chaque fiche est dans le catalogue ; l'app affiche une miniature (liste, pointage, déballage) chargée depuis le site de Picard à l'affichage (`?sh=160`, environ 15 Ko), jamais copiée dans ce dépôt. Sans réseau ou si l'image n'existe plus, elle disparaît sans erreur. Le service worker ne met pas ces images en cache (cela gonflerait le stockage du téléphone). La référence du site est le code sur 6 chiffres (`089431`) : notre code est la même chose sans le zéro de tête.
 
 Les codes se suivent de près (89421, 89422, 89423…) : un chiffre mal entendu donne souvent un autre
 article qui existe. C'est pour ça que l'app affiche et lit toujours le nom de l'article.

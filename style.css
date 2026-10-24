@@ -400,3 +400,27 @@ button.choice.secondary { color: var(--muted); font-weight: 400; text-align: cen
 .scan-mode .pad { display: block; }
 .scan-mode .pad-keys { display: none; }
 #view-deballage.scan-mode .pad { display: none; }
+
+.name-btn {
+  display: block;
+  margin: 8px auto 0;
+  padding: 10px 16px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Image du produit (chargée depuis le site de Picard, masquée si elle ne vient pas) */
+.thumb {
+  width: 44px;
+  height: 44px;
+  margin-right: 8px;
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.answer .thumb { display: block; width: 110px; height: 110px; margin: 0 auto 8px; }
+.entries.big .thumb { width: 64px; height: 64px; }

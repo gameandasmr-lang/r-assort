@@ -209,6 +209,9 @@ async function test(name, fn) {
   });
 
   const eanOf = (code) => w.CATALOG.find((row) => row[0] === code)[2];
+  const withCheck = (first12) => first12 + ((10 - [...first12].reduce((s, d, i) => s + Number(d) * (i % 2 ? 3 : 1), 0) % 10) % 10);
+  const NEW_PICARD = withCheck('327016099997');   // référence 99997 : un produit Picard pas encore au catalogue
+  const FOREIGN = '4006381333931';                // EAN valide d'une autre marque
   async function scan(barcode) {
     nextBarcode = barcode;
     await new Promise((r) => setTimeout(r, 450));
@@ -285,6 +288,42 @@ async function test(name, fn) {
     $('#view-deballage [data-input="voice"]').click();
   });
 
+  await test('scan : nommer un nouveau produit Picard, reconnu ensuite au scan', async () => {
+    $('[data-tab="pointage"]').click();
+    await scan(NEW_PICARD);
+    assert.ok($('#pad-preview-pointage .name-btn'), 'bouton pour nommer');
+    promptAnswers = ['Tarte nouveauté test'];
+    $('#pad-preview-pointage .name-btn').click();
+    assert.strictEqual(last(), 'Tarte nouveauté test, enregistré.');
+    assert.ok($('#pad-preview-pointage').textContent.includes('Tarte nouveauté test'));
+    assert.strictEqual($('#pad-preview-pointage .name-btn'), null, 'plus de bouton une fois nommé');
+    $('#pad-pointage [data-qty="2"]').click();
+    assert.strictEqual(last(), 'Tarte nouveauté test, 2 cartons.');
+    // scan suivant : l'article est reconnu par son nom
+    $('[data-tab="deballage"]').click();
+    $('#view-deballage [data-input="scan"]').click();
+    await tick();
+    await scan(NEW_PICARD);
+    assert.ok(last().startsWith('Tarte nouveauté test : oui'), last());
+    $('#view-deballage [data-input="voice"]').click();
+  });
+
+  await test('scan : nommer un produit d\'une autre marque (code-barres inconnu)', async () => {
+    $('[data-tab="pointage"]').click();
+    $('#view-pointage [data-input="scan"]').click();
+    await tick();
+    await scan(FOREIGN);
+    assert.strictEqual(last(), 'Article inconnu.');
+    promptAnswers = ['Chocolat autre marque'];
+    $('#pad-preview-pointage .name-btn').click();
+    $('#pad-pointage [data-qty="1"]').click();
+    assert.strictEqual(last(), 'Chocolat autre marque, un carton.');
+    await scan('0' + FOREIGN);   // même produit lu sur son carton (évite l'anti-doublon de 3 s)
+    assert.strictEqual(last(), 'Chocolat autre marque');
+    $('#pad-pointage [data-key="clear"]').click();
+    $('#view-pointage [data-input="voice"]').click();
+  });
+
   await test('scan : caméra refusée → message clair', async () => {
     const original = w.navigator.mediaDevices.getUserMedia;
     w.navigator.mediaDevices.getUserMedia = () => Promise.reject({ name: 'NotAllowedError' });
@@ -338,6 +377,22 @@ async function test(name, fn) {
     promptAnswers = ['', ''];
     $('#add').click();
     assert.strictEqual(Number($('#count').textContent), before);
+  });
+
+  await test('image du produit affichée dans la liste, au pointage et au déballage', async () => {
+    await say('pointage', '89431 deux cartons');
+    const src = $('#pointage-result .thumb').src;
+    assert.ok(src.startsWith('https://www.picard.fr/') && src.includes('000000000000089431'), src);
+    assert.ok(src.endsWith('?sh=160'), 'image demandée en petite taille');
+    $('[data-tab="liste"]').click();
+    assert.ok($('#list .entry .thumb'));
+    await say('deballage', '89431');
+    assert.ok($('#answer .thumb'));
+    // article hors catalogue : pas d'image, mais rien ne casse
+    promptAnswers = ['', 'Article sans image'];
+    $('#add').click();
+    const rows = $$('#list .entry');
+    assert.ok(rows.some((r) => r.textContent.includes('Article sans image') && !r.querySelector('.thumb')));
   });
 
   await test('annuler et nouveau réassort', async () => {

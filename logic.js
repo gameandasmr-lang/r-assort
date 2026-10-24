@@ -264,12 +264,12 @@
 
   // --- Catalogue -----------------------------------------------------------
 
-  // rows : [[code, nom, code-barres?, nom complet?], ...]. Les dernières lignes remplacent les premières
+  // rows : [[code, nom, code-barres?, nom complet?, image?], ...]. Les dernières lignes remplacent les premières
   // (catalogue perso).
   function createCatalog(rows) {
     var byCode = {};
     (rows || []).forEach(function (row) {
-      byCode[row[0]] = { code: row[0], name: row[1], ean: row[2] || null, keys: nameKeys(row[1]) };
+      byCode[row[0]] = { code: row[0], name: row[1], ean: row[2] || null, image: row[4] || null, keys: nameKeys(row[1]) };
     });
     var items = Object.keys(byCode).map(function (c) { return byCode[c]; });
     var byEan = {};
@@ -301,7 +301,7 @@
   // Ce que la caméra a lu → { code, item, ean } ou null si ce n'est pas un code-barres exploitable.
   //   - EAN du produit : cherché dans le catalogue, sinon déduit si c'est un EAN Picard ;
   //   - carton (ITF-14 : un chiffre en plus devant) et GS1-128 (« 01 » + 14 chiffres) : on en extrait l'EAN.
-  // item vaut null quand le code est déduit mais absent du catalogue.
+  // item vaut null quand le code est déduit (EAN Picard) ou pris tel quel (autre EAN) mais absent du catalogue.
   function codeFromBarcode(raw, catalog) {
     var digits = String(raw || '').replace(/\D/g, '');
     var tries = [];
@@ -312,9 +312,11 @@
       add(digits.slice(2, 16));
       add(digits.slice(3, 16));
     }
+    var valid = [];
     for (var i = 0; i < tries.length; i++) {
       var ean = tries[i];
       if (!validEan(ean)) continue;
+      valid.push(ean);
       var item = catalog && catalog.byEan[ean];
       if (item) return { code: item.code, item: item, ean: ean };
       var code = codeFromPicardEan(ean);
@@ -324,7 +326,10 @@
         return { code: known ? known.code : code, item: known || null, ean: ean };
       }
     }
-    return null;
+    // Code-barres valide mais inconnu (autre marque, produit pas encore au catalogue) : l'EAN sert de code,
+    // pour que l'article puisse être pointé puis nommé.
+    var own = valid.filter(function (e) { return e.length === 13; })[0] || valid[0];
+    return own ? { code: own, item: null, ean: own } : null;
   }
 
   // Codes du catalogue à une faute près (un chiffre changé, ajouté, oublié ou inversé).

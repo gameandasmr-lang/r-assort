@@ -1,5 +1,5 @@
 // Réseau d'abord (pour recevoir les mises à jour), cache en secours si pas de réseau.
-var CACHE = 'reassort-v9';
+var CACHE = 'reassort-v10';
 var FILES = ['./', 'index.html', 'style.css', 'catalog.js', 'logic.js', 'scanner.js', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (event) {
@@ -16,6 +16,7 @@ self.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
+  if (new URL(event.request.url).origin !== location.origin) return;   // images de picard.fr : le navigateur s'en occupe
   event.respondWith(
     fetch(event.request).then(function (response) {
       var copy = response.clone();

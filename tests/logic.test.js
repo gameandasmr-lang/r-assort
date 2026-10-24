@@ -215,6 +215,26 @@ test('code-barres : EAN Picard absent du catalogue → code déduit, sans articl
   assert.strictEqual(r.item, null);
 });
 
+test('le catalogue connaît l\'image des articles', function () {
+  assert.strictEqual(catalog.byCode['89431'].image, '000000000000089431_E_.jpg');
+  var withImage = catalog.items.filter(function (i) { return i.image; }).length;
+  assert.ok(withImage > 1300, withImage + ' articles avec image');
+});
+
+test('code-barres : EAN valide d\'une autre marque → l\'EAN sert de code, sans article', function () {
+  var r = R.codeFromBarcode('4006381333931', catalog);
+  assert.strictEqual(r.code, '4006381333931');
+  assert.strictEqual(r.item, null);
+  assert.strictEqual(R.codeFromBarcode('04006381333931', catalog).code, '4006381333931', 'carton : on garde l\'EAN du produit');
+});
+
+test('code-barres : un article du catalogue perso est retrouvé par son EAN', function () {
+  var perso = R.createCatalog([['45678', 'Gâteau perso', '4006381333931']]);
+  var r = R.codeFromBarcode('4006381333931', perso);
+  assert.strictEqual(r.code, '45678');
+  assert.strictEqual(r.item.name, 'Gâteau perso');
+});
+
 test('code-barres : tous les articles du catalogue se retrouvent par leur EAN', function () {
   var checked = 0;
   catalog.items.forEach(function (item) {
