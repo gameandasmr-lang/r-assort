@@ -44,8 +44,11 @@ w.navigator.mediaDevices = {
   }
 };
 w.BarcodeDetector = function () {
-  this.detect = () => Promise.resolve(nextBarcode ? [{ rawValue: nextBarcode }] : []);
+  // nextBarcode : un texte, ou une liste [{ rawValue, boundingBox }] quand plusieurs codes sont dans l'image
+  this.detect = () => Promise.resolve(Array.isArray(nextBarcode) ? nextBarcode : nextBarcode ? [{ rawValue: nextBarcode }] : []);
 };
+Object.defineProperty(w.HTMLVideoElement.prototype, 'videoWidth', { get: () => 1000 });
+Object.defineProperty(w.HTMLVideoElement.prototype, 'videoHeight', { get: () => 750 });
 w.HTMLMediaElement.prototype.play = () => Promise.resolve();
 Object.defineProperty(w.HTMLMediaElement.prototype, 'readyState', { get: () => 4 });
 
@@ -232,6 +235,15 @@ async function test(name, fn) {
     assert.strictEqual(spoken.length, 1, 'une seule réponse malgré plusieurs lectures du même code');
     assert.ok(last().startsWith('Poêlée sarladaise : oui'), last());
     assert.ok($('#answer').textContent.includes('OUI'));
+  });
+
+  await test('scan : plusieurs codes-barres dans l\'image → celui du centre', async () => {
+    spoken.length = 0;
+    await scan([
+      { rawValue: eanOf('0081'), boundingBox: { x: 400, y: 600, width: 200, height: 100 } },   // en bas
+      { rawValue: eanOf('89431'), boundingBox: { x: 400, y: 330, width: 200, height: 100 } }   // au centre
+    ]);
+    assert.ok(last().startsWith('Pizza margherita 400g'), last());
   });
 
   await test('scan : code-barres inconnu', async () => {

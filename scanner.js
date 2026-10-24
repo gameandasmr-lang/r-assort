@@ -37,12 +37,27 @@
       video = null;
     }
 
+    // Plusieurs codes-barres dans l'image : on garde celui dont le centre est le plus près du centre du cadre.
+    function nearestToCenter(found) {
+      if (found.length === 1 || !video.videoWidth) return found[0];
+      var cx = video.videoWidth / 2;
+      var cy = video.videoHeight / 2;
+      function distance(f) {
+        var b = f.boundingBox;
+        if (!b) return Infinity;
+        var dx = b.x + b.width / 2 - cx;
+        var dy = b.y + b.height / 2 - cy;
+        return dx * dx + dy * dy;
+      }
+      return found.slice().sort(function (a, b) { return distance(a) - distance(b); })[0];
+    }
+
     function scanOnce() {
       if (busy || !video || video.readyState < 2) return;
       busy = true;
       detector.detect(video).then(function (found) {
         busy = false;
-        if (timer && found.length) onCode(found[0].rawValue);
+        if (timer && found.length) onCode(nearestToCenter(found).rawValue);
       }, function () { busy = false; });
     }
 
