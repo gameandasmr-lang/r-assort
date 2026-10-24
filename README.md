@@ -1,49 +1,90 @@
 # Réassort
 
-Petite application web (installable sur le téléphone) pour le réassort :
+Application web (installable sur le téléphone) pour le réassort chez Picard.
 
-1. **Pointage** : en passant en rayon, on dicte ce qu'on sort de la chambre
-   (« nems au poulet, un demi », « croissants, on sort pas », « code 12345, deux cartons »).
-2. **Déballage** : devant le roll, on demande « on sort les nems ? » et l'app répond à voix haute
-   OUI / NON / PAS NOTÉ, avec la quantité et ce qui reste à déballer.
-3. **Liste** : tout ce qui a été pointé, quantités modifiables (− / +), renommer en touchant le nom.
-4. **Test** : l'app affiche un code au hasard, on le lit, elle compte combien sont bien compris.
+**En ligne : https://gameandasmr-lang.github.io/r-assort/**
+(dépôt : https://github.com/gameandasmr-lang/r-assort — GitHub a transformé « réassort » en « r-assort »)
+
+## Le besoin
+
+Au réassort, on regarde sur la tablette le stock de la chambre froide, on passe en rayon, et on
+pointe ce qu'on sort (en cartons pleins ou en demis). Ensuite on sort un roll de cartons en vrac :
+à l'ouverture d'un carton, on doute souvent de ce qui devait sortir, et retrouver l'article sur la
+tablette en tapant le code prend du temps. Le but : ne pas créer d'écart entre la tablette et le réel.
+
+## Ce que fait l'app
+
+1. **Pointage** : on dit (ou on tape au pavé) le code ou le nom de l'article et la quantité :
+   « 89431, deux cartons », « poêlée sarladaise, un demi », « 89431, on sort pas ».
+   L'app affiche **le code et le nom** de l'article et lit le nom à voix haute pour confirmer.
+   S'il y a plusieurs articles possibles, ou un code inconnu, elle propose de choisir à l'écran.
+2. **Déballage** : devant un carton, on dit son code ou son nom. L'app répond à voix haute
+   **OUI** (avec la quantité et ce qui reste à déballer), **NON** ou **PAS NOTÉ**.
+   « Déballé +1 / +½ » compte les cartons déjà sortis : un carton en trop est repéré.
+3. **Liste** : tout le pointage, quantités modifiables (− / +). Toucher un article permet de
+   corriger son code ou son nom ; la correction est retenue sur le téléphone (catalogue perso).
+4. **Test** : un code au hasard s'affiche, on le lit, l'app compte les réussites et garde les ratés
+   (ce qu'elle a entendu), pour améliorer la reconnaissance.
+
+Pointage et Déballage ont un sélecteur **🎤 Voix / 🔢 Pavé**. Au pavé : 5 chiffres puis la quantité
+au pointage ; au déballage la réponse vient dès le 5e chiffre.
 
 Les données restent sur le téléphone (stockage du navigateur). « Nouveau réassort » vide la liste.
 
+## Où on en est (24/10/2026)
+
+- L'app est en ligne et installée sur le Pixel (Chrome → ⋮ → Ajouter à l'écran d'accueil).
+- Reconnaissance vocale « pas folle » : **dire le nom marche mieux que dire le code**.
+  Premier test des codes sur PC : environ 4/8. En disant « 89 431 », la reconnaissance avale
+  parfois un chiffre → l'app propose maintenant les codes à un chiffre près.
+- Certains codes du catalogue semblent faux ou mal nommés (à confirmer avec des exemples).
+
+## Pistes pour la suite
+
+- **Corriger le catalogue** avec des photos d'étiquettes de rayon (code + nom) : les lire, comparer
+  avec `catalog.js`, lister les différences, puis corriger (ajouter un fichier de corrections fusionné
+  par `tools/build-catalog.js`, pour qu'une mise à jour du site ne les écrase pas).
+- **Noms tels qu'on les dit en magasin** : la voix marche mieux par le nom, donc améliorer les noms
+  (abréviations des adresses du site : « chev », « framb »…, voir `tools/accents.json`).
+- Exporter le catalogue perso du téléphone (bouton « copier mes corrections ») pour l'intégrer ici.
+- Si la voix reste trop imprécise : reconnaissance plus puissante via un service payant
+  (Claude ne fait pas de reconnaissance vocale ; ce serait un service dédié, à quelques centimes).
+
 ## Catalogue
 
-`catalog.js` contient les articles du site picard.fr avec leur code article (tiré de l'adresse
-des fiches produit : `pizza-margherita-400g-000000000000089431` → 89431). Pour le mettre à jour :
+`catalog.js` contient les ~1 557 articles du site picard.fr avec leur code article, tiré de
+l'adresse des fiches produit (`pizza-margherita-400g-000000000000089431` → 89431), via le plan du
+site public (sitemap). Les noms n'y ont pas d'accents : `tools/accents.json` les remet sur les mots
+courants. Les articles vendus en magasin mais absents du site manquent.
+
+Les codes se suivent de près (89421, 89422, 89423…) : un chiffre mal entendu donne souvent un autre
+article qui existe. C'est pour ça que l'app affiche et lit toujours le nom de l'article.
+
+## Travailler dessus (sur n'importe quel PC)
+
+Il faut **git**, **Node.js** (pour les tests et le catalogue) et **Python** (pour le serveur local).
 
 ```
-node tools/build-catalog.js
+git clone https://github.com/gameandasmr-lang/r-assort.git
+cd r-assort
+npm install          # installe jsdom pour les tests d'interface
+npm test             # tests de la logique + tests de l'interface simulée
+npm run serve        # puis ouvrir http://localhost:8765 dans Chrome
+npm run catalogue    # régénère catalog.js depuis picard.fr
 ```
 
-Les noms viennent des adresses (sans accents à l'origine) : `tools/accents.json` remet les accents
-sur les mots courants. Un article absent du site peut être ajouté depuis l'app (toucher son nom
-dans la liste) ; il est retenu sur le téléphone.
-
-Les codes se suivent de près (89421, 89422, 89423…) : un chiffre mal entendu donne souvent un
-autre article qui existe. C'est pour ça que l'app affiche et lit toujours le nom de l'article.
+**Mettre en ligne une modification** : `git add -A`, `git commit -m "…"`, `git push`.
+GitHub Pages republie en une minute ; le téléphone récupère la nouvelle version à la prochaine
+ouverture (avec du réseau). Penser à changer le numéro de `CACHE` dans `sw.js` à chaque version.
 
 ## Fichiers
 
-- `catalog.js` : catalogue généré (code, nom).
-- `logic.js` : compréhension des phrases (quantités, négations, codes) et recherche des articles.
-- `app.js` : interface, micro (reconnaissance vocale de Chrome), voix, liste.
-- `index.html`, `style.css`, `manifest.webmanifest`, `sw.js`, icônes : l'application installable.
-- `tests/logic.test.js` : tests de la logique — `node tests/logic.test.js`.
-
-## Essayer sur le PC
-
-```
-python -m http.server 8765
-```
-puis ouvrir http://localhost:8765 dans Chrome.
-
-## Sur le téléphone
-
-Le micro n'est autorisé que sur un site en **https**. Il faut donc héberger le dossier
-(par ex. GitHub Pages), ouvrir l'adresse dans Chrome sur le Pixel, puis
-menu ⋮ → « Ajouter à l'écran d'accueil ».
+- `index.html`, `style.css` : l'interface.
+- `app.js` : onglets, micro (reconnaissance vocale de Chrome), voix, pavé, liste, test.
+- `logic.js` : compréhension des phrases (codes dictés de toutes les façons, quantités, négations),
+  recherche dans le catalogue et dans le pointage. Sans DOM, testable avec Node.
+- `catalog.js` : catalogue généré (code, nom). Ne pas modifier à la main.
+- `manifest.webmanifest`, `sw.js`, `icon-*.png` : application installable, fonctionne hors ligne.
+- `tools/build-catalog.js`, `tools/accents.json` : génération du catalogue.
+- `tests/logic.test.js` : tests de la logique sur le vrai catalogue.
+- `tests/ui.test.js` : tests de l'interface dans un navigateur simulé (micro et voix simulés).

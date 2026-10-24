@@ -1,0 +1,13 @@
+{
+  "name": "reassort",
+  "private": true,
+  "description": "Pointage du réassort à la voix ou au pavé, et réponse au déballage.",
+  "scripts": {
+    "test": "node tests/logic.test.js && node tests/ui.test.js",
+    "catalogue": "node tools/build-catalog.js",
+    "serve": "python -m http.server 8765"
+  },
+  "devDependencies": {
+    "jsdom": "24.1.3"
+  }
+}
