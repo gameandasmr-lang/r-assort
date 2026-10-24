@@ -304,6 +304,42 @@ async function test(name, fn) {
     assert.strictEqual(cameraOn, false);
   });
 
+  await test('ajouter à la main un article inconnu', async () => {
+    $('[data-tab="liste"]').click();
+    const before = Number($('#count').textContent) || 0;
+    promptAnswers = ['45678', 'Gâteau ajouté main'];
+    $('#add').click();
+    assert.strictEqual(Number($('#count').textContent), before + 1);
+    assert.ok($('#list').textContent.includes('Gâteau ajouté main'));
+    assert.ok($('#list').textContent.includes('45678'));
+    // le code est retenu : le pavé le reconnaît ensuite
+    $('[data-tab="pointage"]').click();
+    $('#view-pointage [data-input="pad"]').click();
+    tapCode('pointage', '45678');
+    assert.ok($('#pad-preview-pointage').textContent.includes('Gâteau ajouté main'));
+    $('#pad-pointage [data-key="clear"]').click();
+    $('#view-pointage [data-input="voice"]').click();
+  });
+
+  await test('ajouter à la main : un article déjà pointé garde sa quantité', async () => {
+    $('[data-tab="liste"]').click();
+    await say('pointage', '12866 trois');
+    const before = Number($('#count').textContent);
+    promptAnswers = ['12866', ''];
+    $('#add').click();
+    assert.strictEqual(Number($('#count').textContent), before, 'pas de doublon');
+    assert.ok($('#list').textContent.includes('3 cartons'), 'quantité conservée');
+  });
+
+  await test('ajouter à la main : annuler ne change rien', async () => {
+    const before = Number($('#count').textContent);
+    promptAnswers = [null];
+    $('#add').click();
+    promptAnswers = ['', ''];
+    $('#add').click();
+    assert.strictEqual(Number($('#count').textContent), before);
+  });
+
   await test('annuler et nouveau réassort', async () => {
     const n = Number($('#count').textContent);
     await say('pointage', '12866 trois');

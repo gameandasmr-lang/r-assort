@@ -21,7 +21,8 @@ tablette en tapant le code prend du temps. Le but : ne pas créer d'écart entre
 2. **Déballage** : devant un carton, on dit son code ou son nom. L'app répond à voix haute
    **OUI** (avec la quantité et ce qui reste à déballer), **NON** ou **PAS NOTÉ**.
    « Déballé +1 / +½ » compte les cartons déjà sortis : un carton en trop est repéré.
-3. **Liste** : tout le pointage, quantités modifiables (− / +). Toucher un article permet de
+3. **Liste** : tout le pointage, quantités modifiables (− / +). « + Ajouter un article » ajoute à la main un
+   article absent du catalogue (code et nom ; le code est retenu pour les prochaines fois). Toucher un article permet de
    corriger son code ou son nom ; la correction est retenue sur le téléphone (catalogue perso).
 4. **Test** : un code au hasard s'affiche, on le lit, l'app compte les réussites et garde les ratés
    (ce qu'elle a entendu), pour améliorer la reconnaissance.

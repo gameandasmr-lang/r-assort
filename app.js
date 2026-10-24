@@ -435,6 +435,30 @@
     return true;
   }
 
+  // Ajout direct d'un article (par exemple absent du catalogue), sans passer par le pointage.
+  // Un article déjà dans la liste garde sa quantité ; un nouvel article démarre à 1 carton (modifiable avec − / +).
+  function addManually() {
+    var code = window.prompt('Code article (laisser vide si inconnu)', '');
+    if (code === null) return;
+    code = code.replace(/\D/g, '') || null;
+    var known = code && catalog.byCode[code];
+    var name = window.prompt('Nom de l’article', known ? known.name : '');
+    if (name === null) return;
+    name = name.trim() || (known ? known.name : '');
+    if (!name && !code) return;
+
+    remember(code, name);
+    var existing = R.findSameArticle({ code: code, name: name }, state.entries);
+    if (existing) {
+      snapshot();
+      existing.code = code || existing.code;
+      existing.name = name || existing.name;
+      commit();
+      return;
+    }
+    applyPointage({ code: code, name: name }, { qty: 1, out: true, qtyGuessed: false }, name || code);
+  }
+
   // --- Test des codes --------------------------------------------------------
 
   function newTestCode() {
@@ -779,6 +803,8 @@
   });
 
   $('form-deballage').querySelector('input').addEventListener('input', renderSearch);
+
+  $('add').addEventListener('click', addManually);
 
   $('undo').addEventListener('click', function () {
     if (!undo()) window.alert('Rien à annuler.');
