@@ -541,6 +541,7 @@
     else if (key === 'clear') digits = '';
     else if (digits.length < 6) digits += key;
     padDigits[mode] = digits;
+    if (mode === 'pointage') scannedCode = null;
     renderPad(mode);
     vibrate(10);
     if (mode === 'deballage' && digits.length >= 5 && !longerCodeExists(digits)) padAsk();
@@ -559,7 +560,17 @@
     var code = padDigits.pointage;
     if (code.length < 4) return;
     var item = catalog.byCode[code];
-    var target = item
+    var parsed = { action: 'set', qty: qty, out: qty > 0, qtyGuessed: false };
+    var text = code + ' — ' + (qty ? R.formatQty(qty) : 'ne sort pas');
+    if (!item && code === scannedCode) {
+      // Un code-barres valide n'est pas une faute de frappe : pas de confirmation, l'article est noté tel quel.
+      padDigits.pointage = '';
+      scannedCode = null;
+      renderPad('pointage');
+      applyPointage({ code: code, name: '' }, parsed, text);
+      return;
+    }
+    parsed.target = item
       ? { kind: 'item', item: item }
       : {
         kind: 'unknownCode',
@@ -568,8 +579,7 @@
       };
     padDigits.pointage = '';
     renderPad('pointage');
-    applyParsed({ action: 'set', qty: qty, out: qty > 0, qtyGuessed: false, target: target },
-      code + ' — ' + (qty ? R.formatQty(qty) : 'ne sort pas'));
+    applyParsed(parsed, text);
   }
 
   function applyInputModes() {
@@ -590,6 +600,7 @@
   var scanner = window.ReassortScanner && window.ReassortScanner.create(onBarcode, onScanError);
   var scanMode = null;         // écran qui utilise la caméra en ce moment
   var lastScan = { raw: null, at: 0 };
+  var scannedCode = null;      // code du pointage venu d'un code-barres (fiable, contrairement à un code tapé ou dicté)
 
   function currentTab() {
     var active = document.querySelector('.tab.active');
@@ -603,6 +614,7 @@
     var want = document.visibilityState !== 'hidden' && PAD_MODES.indexOf(tab) >= 0 && inputModes[tab] === 'scan' ? tab : null;
     if (want === scanMode) return;
     scanMode = want;
+    lastScan = { raw: null, at: 0 };
     if (!want) { scanner.stop(); return; }
     setStatus(want, 'Je démarre la caméra…');
     scanner.start($('scan-video-' + want)).then(function (ok) {
@@ -633,6 +645,7 @@
       handleQuestion([found.code]);
     } else {
       padDigits.pointage = found.code;
+      scannedCode = found.code;
       renderPad('pointage');
       setStatus(mode, found.item ? found.item.name : 'Code ' + found.code + ' absent du catalogue');
       speak(found.item ? found.item.name : 'Code ' + R.spokenCode(found.code) + ' inconnu.');

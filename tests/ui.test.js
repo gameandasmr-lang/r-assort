@@ -266,9 +266,29 @@ async function test(name, fn) {
     assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '', 'prêt pour le scan suivant');
   });
 
+  await test('scan : article inconnu du catalogue enregistré tel quel, et rappelé au déballage', async () => {
+    const unknown = '3270160999989';   // EAN Picard valide (référence 99998), absent du catalogue
+    $('[data-tab="pointage"]').click();
+    await scan(unknown);
+    assert.strictEqual(last(), 'Code 9 9 9 9 8 inconnu.');
+    $('#pad-pointage [data-qty="0"]').click();
+    assert.strictEqual($('#pointage-result .pick'), null, 'pas de demande de confirmation : le code vient d\'un code-barres');
+    assert.strictEqual(last(), 'code 9 9 9 9 8, on ne sort pas.');
+    assert.ok($('#pointage-result').textContent.includes('99998'));
+
+    $('[data-tab="deballage"]').click();
+    $('#view-deballage [data-input="scan"]').click();
+    await tick();
+    await scan(unknown);
+    assert.strictEqual(last(), 'code 9 9 9 9 8 : non, on ne sort pas.');
+    assert.ok($('#answer').textContent.includes('NON'));
+    $('#view-deballage [data-input="voice"]').click();
+  });
+
   await test('scan : caméra refusée → message clair', async () => {
     const original = w.navigator.mediaDevices.getUserMedia;
     w.navigator.mediaDevices.getUserMedia = () => Promise.reject({ name: 'NotAllowedError' });
+    $('[data-tab="pointage"]').click();
     $('#view-pointage [data-input="voice"]').click();
     $('#view-pointage [data-input="scan"]').click();
     await tick();
@@ -278,7 +298,7 @@ async function test(name, fn) {
   });
 
   await test('scan : le choix est retenu, retour à la voix coupe la caméra', async () => {
-    assert.strictEqual(JSON.parse(w.localStorage.getItem('reassort.saisie')).deballage, 'scan');
+    assert.strictEqual(JSON.parse(w.localStorage.getItem('reassort.saisie')).pointage, 'scan');
     $('#view-pointage [data-input="voice"]').click();
     $('#view-deballage [data-input="voice"]').click();
     assert.strictEqual(cameraOn, false);
