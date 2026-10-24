@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1652c8">
+  <title>Réassort</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Réassort</h1>
+    <nav class="tabs">
+      <button class="tab" data-tab="pointage">Pointage</button>
+      <button class="tab" data-tab="deballage">Déballage</button>
+      <button class="tab" data-tab="liste">Liste <span id="count" class="count"></span></button>
+      <button class="tab" data-tab="test">Test</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view" id="view-pointage">
+      <div class="input-switch">
+        <button type="button" data-input="voice">🎤 Voix</button>
+        <button type="button" data-input="pad">🔢 Pavé</button>
+      </div>
+      <div class="pad" id="pad-pointage"></div>
+      <button class="mic" data-mic="pointage" aria-label="Parler">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/></svg>
+      </button>
+      <p class="status" id="status-pointage">Appuie et dis : « 89431, deux cartons »</p>
+      <div id="pointage-result"></div>
+      <form class="type" id="form-pointage" autocomplete="off">
+        <input type="text" placeholder="Ou tape : 89431 2 · poêlée sarladaise un demi" enterkeyhint="done">
+        <button type="submit">OK</button>
+      </form>
+      <details class="help">
+        <summary>Ce que je comprends</summary>
+        <ul>
+          <li>« 89431, deux cartons » · « 89431, un demi » · « 89431, on sort pas »</li>
+          <li>Le code peut se dire comme on veut : « quatre-vingt-neuf mille quatre cent trente et un », « huit neuf quatre trois un »…</li>
+          <li>« Poêlée sarladaise, un carton et demi » : s'il y a plusieurs articles proches, je te demande de choisir.</li>
+          <li>« Annule » : efface le dernier pointage.</li>
+          <li>Pas de quantité dite = un carton. Repointer un article remplace sa quantité.</li>
+          <li>Catalogue : <span id="catalog-count"></span> articles du site picard.fr. Un article absent peut être ajouté en touchant son nom dans la liste.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="view" id="view-deballage">
+      <div class="input-switch">
+        <button type="button" data-input="voice">🎤 Voix</button>
+        <button type="button" data-input="pad">🔢 Pavé</button>
+      </div>
+      <div class="pad" id="pad-deballage"></div>
+      <button class="mic" data-mic="deballage" aria-label="Demander">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/></svg>
+      </button>
+      <p class="status" id="status-deballage">Appuie et dis le code du carton, ou demande « on sort les nems ? »</p>
+      <div class="answer" id="answer" hidden></div>
+      <form class="type" id="form-deballage" autocomplete="off">
+        <input type="search" placeholder="Code ou nom" enterkeyhint="search">
+      </form>
+      <ul class="results" id="search-results"></ul>
+    </section>
+
+    <section class="view" id="view-liste">
+      <p class="summary" id="summary"></p>
+      <div class="list-actions">
+        <button type="button" id="undo">Annuler la dernière action</button>
+      </div>
+      <ul class="entries" id="list"></ul>
+      <button type="button" class="danger" id="reset">Nouveau réassort (vider la liste)</button>
+    </section>
+
+    <section class="view" id="view-test">
+      <p class="test-intro">Lis le code à voix haute pour vérifier que le téléphone le comprend bien.</p>
+      <div class="test-target" id="test-target"></div>
+      <button class="mic" data-mic="test" aria-label="Lire le code">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/></svg>
+      </button>
+      <p class="status" id="status-test"></p>
+      <div class="list-actions">
+        <button type="button" data-action="test-next">Autre code</button>
+        <button type="button" data-action="test-reset">Remettre à zéro</button>
+      </div>
+      <p class="summary" id="test-score"></p>
+      <ul class="misses" id="test-misses"></ul>
+    </section>
+  </main>
+
+  <script src="catalog.js"></script>
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
