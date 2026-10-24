@@ -46,7 +46,7 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
 
 ## Pistes pour la suite
 
-- **Tester le mode 📷 Scan en magasin** (écrit le 24/10, jamais essayé sur un vrai téléphone ni sur un vrai carton) : le code-barres d'un carton est-il celui du produit (EAN), ou un code logistique ? Si ce n'est ni l'un ni l'autre, noter ce que la caméra lit (message « Code-barres non reconnu : … ») et adapter `codeFromBarcode` dans `logic.js`. Le lecteur intégré à Chrome (`BarcodeDetector`) n'existe pas sur PC Windows : le scan se teste sur le Pixel.
+- **Tester le mode 📷 Scan en magasin** (testé le 24/10 sur le Pixel avec un code-barres affiché sur un écran de PC : lecture correcte ; pas encore essayé sur un vrai carton) : le code-barres d'un carton est-il celui du produit (EAN), ou un code logistique ? Si ce n'est ni l'un ni l'autre, noter ce que la caméra lit (message « Code-barres non reconnu : … ») et adapter `codeFromBarcode` dans `logic.js`. Le lecteur intégré à Chrome (`BarcodeDetector`) n'existe pas sur PC Windows : le scan se teste sur le Pixel.
 - **Vraie application Android (APK)**, si les demandes d'autorisation (micro, caméra) restent gênantes : le même code emballé avec Capacitor, permission demandée une seule fois, lecteur ML Kit de Google plus fiable. Contrepartie : Android Studio sur le PC, et un nouvel APK à chaque mise à jour (plus de simple `git push`). À décider après le test en magasin.
 - Reconnaître un article sans code-barres à partir de sa photo : bien plus dur (emballages semblables), service payant probable, en réserve.
 - Utiliser le **nom complet de la fiche** comme second nom de recherche à la voix.
