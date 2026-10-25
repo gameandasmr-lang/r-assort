@@ -264,7 +264,7 @@
 
   // --- Catalogue -----------------------------------------------------------
 
-  // rows : [[code, nom, code-barres?, nom complet?, image?], ...]. Les dernières lignes remplacent les premières
+  // rows : [[code, nom, code-barres?, nom complet?, photo de la boîte?], ...]. Les dernières lignes remplacent les premières
   // (catalogue perso).
   function createCatalog(rows) {
     var byCode = {};

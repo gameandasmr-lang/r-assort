@@ -5,7 +5,7 @@
   "scripts": {
     "test": "node tests/logic.test.js && node tests/ui.test.js",
     "catalogue": "node tools/build-catalog.js",
-    "fiches": "node tools/fetch-fiches.js",
+    "fiches": "node tools/fetch-fiches.js && node tools/fetch-packshots.js",
     "serve": "python -m http.server 8765"
   },
   "devDependencies": {

@@ -8,7 +8,8 @@
   var CUSTOM_KEY = 'reassort.catalogue-perso';
   var TEST_KEY = 'reassort.test-codes';
   var IMAGE_BASE = 'https://www.picard.fr/dw/image/v2/AAHV_PRD/on/demandware.static/-/Sites-catalog-picard/default/produits/';
-  var IMAGE_HEIGHT = 160;   // taille demandée au site : l'image arrive légère (~15 Ko) et nette sur écran de téléphone
+  var IMAGE_HEIGHT = 160;        // miniature : légère (~15 Ko) et nette sur écran de téléphone
+  var IMAGE_FULL_HEIGHT = 700;   // image agrandie, chargée seulement quand on touche la miniature
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var MIC_ERRORS = {
     'not-allowed': 'Micro refusé : autorise le micro pour ce site dans Chrome.',
@@ -184,10 +185,30 @@
 
   // --- Affichage d'un article ----------------------------------------------
 
+  function imageUrl(file, height) {
+    return IMAGE_BASE + encodeURI(file) + '?sh=' + height;
+  }
+
+  // --- Image en grand ---
+
+  function openLightbox(thumb) {
+    var img = $('lightbox-img');
+    img.onerror = closeLightbox;   // image introuvable : on referme plutôt que d'afficher un cadre vide
+    img.src = thumb.dataset.full;
+    $('lightbox-caption').textContent = thumb.dataset.caption || '';
+    $('lightbox').hidden = false;
+  }
+
+  function closeLightbox() {
+    $('lightbox').hidden = true;
+    $('lightbox-img').removeAttribute('src');
+  }
+
   function articleHtml(article) {
     var item = article.code && catalog.byCode[article.code];
     var thumb = item && item.image
-      ? '<img class="thumb" src="' + IMAGE_BASE + encodeURI(item.image) + '?sh=' + IMAGE_HEIGHT + '" alt="" loading="lazy" onerror="this.remove()">'
+      ? '<img class="thumb" src="' + imageUrl(item.image, IMAGE_HEIGHT) + '" data-full="' + imageUrl(item.image, IMAGE_FULL_HEIGHT) +
+        '" data-caption="' + escapeHtml(item.name) + '" alt="" loading="lazy" onerror="this.remove()">'
       : '';
     var code = article.code ? '<span class="code">' + escapeHtml(article.code) + '</span>' : '';
     var name = article.name ? escapeHtml(article.name) : (article.code ? '<em>Article inconnu</em>' : '');
@@ -706,6 +727,7 @@
 
   // Sur PC : les touches du clavier alimentent le pavé.
   document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !$('lightbox').hidden) { closeLightbox(); return; }
     if (event.target.closest && event.target.closest('input')) return;
     var view = document.querySelector('.view.active.pad-mode');
     if (!view) return;
@@ -729,6 +751,10 @@
   }
 
   document.addEventListener('click', function (event) {
+    if (event.target.closest('#lightbox')) { closeLightbox(); return; }
+    var thumb = event.target.closest('.thumb');
+    if (thumb) { openLightbox(thumb); return; }   // avant les autres actions : toucher l'image ne renomme pas l'article
+
     var tab = event.target.closest('[data-tab]');
     if (tab) { selectTab(tab.dataset.tab); return; }
 

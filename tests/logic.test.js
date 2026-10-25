@@ -215,10 +215,10 @@ test('code-barres : EAN Picard absent du catalogue → code déduit, sans articl
   assert.strictEqual(r.item, null);
 });
 
-test('le catalogue connaît l\'image des articles', function () {
-  assert.strictEqual(catalog.byCode['89431'].image, '000000000000089431_E_.jpg');
+test('le catalogue connaît la photo de la boîte des articles', function () {
+  assert.strictEqual(catalog.byCode['89431'].image, '000000000000089431_P.png');
   var withImage = catalog.items.filter(function (i) { return i.image; }).length;
-  assert.ok(withImage > 1300, withImage + ' articles avec image');
+  assert.ok(withImage > 1000, withImage + ' articles avec image');
 });
 
 test('code-barres : EAN valide d\'une autre marque → l\'EAN sert de code, sans article', function () {

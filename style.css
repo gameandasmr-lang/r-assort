@@ -424,3 +424,34 @@ button.choice.secondary { color: var(--muted); font-weight: 400; text-align: cen
 }
 .answer .thumb { display: block; width: 110px; height: 110px; margin: 0 auto 8px; }
 .entries.big .thumb { width: 64px; height: 64px; }
+
+/* Image en grand */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.88);
+}
+#lightbox[hidden] { display: none; }
+#lightbox img { max-width: 94vw; max-height: 72vh; border-radius: 10px; background: #fff; }
+#lightbox p { margin: 0; color: #fff; font-size: 18px; font-weight: 600; text-align: center; }
+#lightbox-close {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+}
+.thumb { cursor: zoom-in; }

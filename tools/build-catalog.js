@@ -44,12 +44,12 @@ fetch(SITEMAP, { headers: { 'User-Agent': 'reassort-perso/1.0' } })
     var lengths = {};
     codes.forEach(function (c) { lengths[c.length] = (lengths[c.length] || 0) + 1; });
 
-    // Ligne : [code, nom, code-barres, nom complet de la fiche, image] (les trois derniers si la fiche est connue).
+    // Ligne : [code, nom, code-barres, nom complet de la fiche, photo de la boîte] (les trois derniers si la fiche est connue).
     var fiches = fs.existsSync(FICHES) ? JSON.parse(fs.readFileSync(FICHES, 'utf8')) : {};
     var lines = codes.map(function (c) {
       var row = [c, byCode[c]];
       var f = fiches[c];
-      if (f && (f.ean || f.image)) row.push(f.ean || '', f.name || '', f.image || '');
+      if (f && (f.ean || f.packshot)) row.push(f.ean || '', f.name || '', f.packshot || '');
       return '  [' + row.map(function (v) { return JSON.stringify(v); }).join(', ') + ']';
     });
     fs.writeFileSync(OUT,

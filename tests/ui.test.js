@@ -382,12 +382,30 @@ async function test(name, fn) {
   await test('image du produit affichée dans la liste, au pointage et au déballage', async () => {
     await say('pointage', '89431 deux cartons');
     const src = $('#pointage-result .thumb').src;
-    assert.ok(src.startsWith('https://www.picard.fr/') && src.includes('000000000000089431'), src);
+    assert.ok(src.startsWith('https://www.picard.fr/') && src.includes('000000000000089431_P.png'), src);
     assert.ok(src.endsWith('?sh=160'), 'image demandée en petite taille');
     $('[data-tab="liste"]').click();
     assert.ok($('#list .entry .thumb'));
     await say('deballage', '89431');
     assert.ok($('#answer .thumb'));
+    // toucher l'image l'agrandit (sans renommer l'article), toucher l'écran ou Échap la referme
+    const pizzaThumb = () => $$('#list .entry').find((r) => r.textContent.includes('Pizza margherita')).querySelector('.thumb');
+    const prompts = [];
+    const realPrompt = w.prompt;
+    w.prompt = (...args) => { prompts.push(args); return null; };
+    assert.ok($('#lightbox').hidden);
+    pizzaThumb().click();
+    assert.ok(!$('#lightbox').hidden, 'image agrandie');
+    assert.ok($('#lightbox-img').src.endsWith('?sh=700'), 'grande image demandée au site');
+    assert.ok($('#lightbox-caption').textContent.includes('Pizza margherita 400g'));
+    assert.strictEqual(prompts.length, 0, 'toucher l\'image ne déclenche pas le renommage');
+    $('#lightbox').click();
+    assert.ok($('#lightbox').hidden, 'refermée au toucher');
+    pizzaThumb().click();
+    w.document.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape' }));
+    assert.ok($('#lightbox').hidden, 'refermée par Échap');
+    w.prompt = realPrompt;
+
     // article hors catalogue : pas d'image, mais rien ne casse
     promptAnswers = ['', 'Article sans image'];
     $('#add').click();
