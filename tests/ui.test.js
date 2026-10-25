@@ -413,6 +413,11 @@ async function test(name, fn) {
     assert.ok(rows.some((r) => r.textContent.includes('Article sans image') && !r.querySelector('.thumb')));
   });
 
+  await test('la version affichée correspond à celle du service worker', async () => {
+    const cache = /var CACHE = 'reassort-(v\d+)'/.exec(fs.readFileSync(path.join(APP, 'sw.js'), 'utf8'))[1];
+    assert.strictEqual($('#version').textContent, cache, 'APP_VERSION (app.js) et CACHE (sw.js) à changer ensemble');
+  });
+
   await test('annuler et nouveau réassort', async () => {
     const n = Number($('#count').textContent);
     await say('pointage', '12866 trois');

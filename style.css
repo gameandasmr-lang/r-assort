@@ -455,3 +455,5 @@ button.choice.secondary { color: var(--muted); font-weight: 400; text-align: cen
   line-height: 1;
 }
 .thumb { cursor: zoom-in; }
+
+.version { margin: 24px 0 8px; text-align: center; color: var(--muted); font-size: 13px; }

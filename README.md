@@ -91,7 +91,11 @@ npm run catalogue    # régénère catalog.js depuis picard.fr
 
 **Mettre en ligne une modification** : `git add -A`, `git commit -m "…"`, `git push`.
 GitHub Pages republie en une minute ; le téléphone récupère la nouvelle version à la prochaine
-ouverture (avec du réseau). Penser à changer le numéro de `CACHE` dans `sw.js` à chaque version.
+ouverture (avec du réseau). Penser à changer le numéro de `CACHE` dans `sw.js` **et** `APP_VERSION` dans `app.js`
+à chaque version (un test vérifie qu'ils vont ensemble). La version en cours s'affiche en bas de l'écran du téléphone :
+c'est le moyen de savoir si la mise à jour est arrivée. Depuis la v12, le service worker interroge toujours le
+serveur (GitHub Pages garde sinon les fichiers 10 minutes) et l'app se recharge seule quand une nouvelle version
+s'active ; la v12 elle-même doit d'abord être récupérée (voir ci-dessous si le téléphone reste sur une ancienne version).
 
 ## Fichiers
 

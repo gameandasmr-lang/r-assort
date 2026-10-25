@@ -6,6 +6,7 @@
   var STORAGE_KEY = 'reassort.v1';
   var TAB_KEY = 'reassort.tab';
   var CUSTOM_KEY = 'reassort.catalogue-perso';
+  var APP_VERSION = 'v12';   // à changer en même temps que CACHE dans sw.js
   var TEST_KEY = 'reassort.test-codes';
   var IMAGE_BASE = 'https://www.picard.fr/dw/image/v2/AAHV_PRD/on/demandware.static/-/Sites-catalog-picard/default/produits/';
   var IMAGE_HEIGHT = 160;        // miniature : légère (~15 Ko) et nette sur écran de téléphone
@@ -889,10 +890,19 @@
   if (window.speechSynthesis) speechSynthesis.onvoiceschanged = frenchVoice;
 
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    // Nouvelle version prête : on recharge une fois pour la montrer tout de suite (liste et réglages sont sauvegardés).
+    var hadController = !!navigator.serviceWorker.controller;
+    var reloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (!hadController || reloading) return;
+      reloading = true;
+      location.reload();
+    });
     navigator.serviceWorker.register('sw.js').catch(function () { /* hors ligne indisponible */ });
   }
 
   $('catalog-count').textContent = catalog.items.length;
+  $('version').textContent = APP_VERSION;
   PAD_MODES.forEach(function (mode) {
     $('pad-' + mode).innerHTML = buildPad(mode);
     renderPad(mode);
