@@ -56,8 +56,8 @@ async function main() {
   var re = /<loc>(https:\/\/www\.picard\.fr\/produits\/[a-z0-9-]+-0*(\d{4,6})\.html)<\/loc>/g;
   var todo = [];
   var m;
-  // À visiter : les fiches jamais lues, et celles lues avant l'ajout du rayon.
-  while ((m = re.exec(xml))) if (!cache[m[2]] || cache[m[2]].rayon === undefined) todo.push({ code: m[2], url: m[1] });
+  // À visiter : les fiches jamais lues (pour relire tout le monde après l'ajout d'un champ, tester ce champ ici).
+  while ((m = re.exec(xml))) if (!cache[m[2]]) todo.push({ code: m[2], url: m[1] });
   console.log(todo.length + ' fiches à visiter (' + Object.keys(cache).length + ' déjà en cache)');
 
   var done = 0;
