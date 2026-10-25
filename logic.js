@@ -551,16 +551,13 @@
     return entry.name || 'code ' + spokenCode(entry.code);
   }
 
-  // Réponse au moment du déballage.
+  // Réponse au moment du déballage : une indication (oui avec la quantité, ou non), rien à valider.
   function answer(entry) {
     if (!entry.out || !entry.qty) {
       return { yes: false, short: 'NON', detail: 'On ne sort pas', speech: spokenLabel(entry) + ' : non, on ne sort pas.' };
     }
-    var done = entry.done || 0;
-    var remaining = Math.max(0, entry.qty - done);
     var detail = formatQty(entry.qty);
-    if (done > 0) detail += remaining > 0 ? ' — reste ' + formatQty(remaining) : ' — déjà tout déballé';
-    return { yes: true, short: 'OUI', detail: detail, speech: spokenLabel(entry) + ' : oui, ' + detail.replace(' — ', ', ') + '.' };
+    return { yes: true, short: 'OUI', detail: detail, speech: spokenLabel(entry) + ' : oui, ' + detail + '.' };
   }
 
   var api = {

@@ -1,5 +1,5 @@
 // Visite les fiches produit de picard.fr (celles du plan du site) et garde pour chaque article
-// sa référence officielle, son nom complet, son code-barres (EAN-13) et le nom de son image dans tools/fiches.json.
+// sa référence officielle, son nom complet, son code-barres (EAN-13), le nom de son image et son rayon dans tools/fiches.json.
 // Reprend là où il s'est arrêté (le fichier sert de cache) et attend entre deux fiches.
 // Lancer avec : node tools/fetch-fiches.js [nombre-max-de-fiches]
 'use strict';
@@ -39,6 +39,9 @@ function parseFiche(html) {
   // Image du produit : chemin sous /produits/ (« 000000000000089431_E_.jpg »), '' si la fiche n'en a pas.
   var image = /property="og:image"\s+content="[^"]*\/produits\/([^"?]+)/.exec(html);
   out.image = image ? image[1] : '';
+  // Rayon du site : « Pizzas et tartes/Pizzas/Pizzas traditionnelles » ('' si la fiche n'en donne pas).
+  var rayon = /breadCrumb&quot;:&quot;(.*?)&quot;/.exec(html);
+  out.rayon = rayon ? decode(rayon[1]) : '';
   return out;
 }
 
@@ -53,8 +56,8 @@ async function main() {
   var re = /<loc>(https:\/\/www\.picard\.fr\/produits\/[a-z0-9-]+-0*(\d{4,6})\.html)<\/loc>/g;
   var todo = [];
   var m;
-  // À visiter : les fiches jamais lues, et celles lues avant l'ajout de l'image.
-  while ((m = re.exec(xml))) if (!cache[m[2]] || cache[m[2]].image === undefined) todo.push({ code: m[2], url: m[1] });
+  // À visiter : les fiches jamais lues, et celles lues avant l'ajout du rayon.
+  while ((m = re.exec(xml))) if (!cache[m[2]] || cache[m[2]].rayon === undefined) todo.push({ code: m[2], url: m[1] });
   console.log(todo.length + ' fiches à visiter (' + Object.keys(cache).length + ' déjà en cache)');
 
   var done = 0;
@@ -63,7 +66,8 @@ async function main() {
     try {
       var page = await fetch(todo[i].url, { headers: HEADERS });
       if (!page.ok) throw new Error('HTTP ' + page.status);
-      cache[todo[i].code] = parseFiche(await page.text());
+      // On fusionne : les champs ajoutés par d'autres outils (packshot) ne doivent pas être perdus.
+      cache[todo[i].code] = Object.assign({}, cache[todo[i].code], parseFiche(await page.text()));
       done++;
     } catch (e) {
       failed++;

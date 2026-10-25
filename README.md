@@ -19,8 +19,9 @@ tablette en tapant le code prend du temps. Le but : ne pas créer d'écart entre
    L'app affiche **le code et le nom** de l'article et lit le nom à voix haute pour confirmer.
    S'il y a plusieurs articles possibles, ou un code inconnu, elle propose de choisir à l'écran.
 2. **Déballage** : devant un carton, on dit son code ou son nom. L'app répond à voix haute
-   **OUI** (avec la quantité et ce qui reste à déballer), **NON** ou **PAS NOTÉ**.
-   « Déballé +1 / +½ » compte les cartons déjà sortis : un carton en trop est repéré.
+   **OUI** (avec la quantité pointée), **NON** ou **PAS NOTÉ**. C'est une simple **indication** : aucun
+   bouton d'action, aucun décompte (la tablette Picard garde le stock, l'app ne sert qu'à se souvenir de ce qu'on a
+   sorti de la chambre froide).
 3. **Liste** : tout le pointage, quantités modifiables (− / +). « + Ajouter un article » ajoute à la main un
    article absent du catalogue (code et nom ; le code est retenu pour les prochaines fois). Toucher un article permet de
    corriger son code ou son nom ; la correction est retenue sur le téléphone (catalogue perso).

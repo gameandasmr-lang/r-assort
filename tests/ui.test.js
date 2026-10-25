@@ -127,13 +127,14 @@ async function test(name, fn) {
     }
   });
 
-  await test('compteur de déballage', async () => {
+  await test('déballage : une simple indication, sans bouton d\'action ni décompte', async () => {
     await say('pointage', '89431 deux cartons');
-    await say('deballage', '89431');
-    $('#answer [data-action="unpack"][data-amount="1"]').click();
-    assert.strictEqual(await say('deballage', '89431'), 'Pizza margherita 400g : oui, 2 cartons, reste un carton.');
-    $('#answer [data-action="unpack"][data-amount="1"]').click();
-    assert.strictEqual(await say('deballage', '89431'), 'Pizza margherita 400g : oui, 2 cartons, déjà tout déballé.');
+    assert.strictEqual(await say('deballage', '89431'), 'Pizza margherita 400g : oui, 2 cartons.');
+    assert.strictEqual($$('#answer button').length, 0, 'aucun bouton dans la réponse');
+    assert.strictEqual(await say('deballage', '89431'), 'Pizza margherita 400g : oui, 2 cartons.', 'même réponse à chaque fois');
+    $('[data-tab="liste"]').click();
+    assert.ok(!$('#summary').textContent.includes('déballé'), 'plus de décompte dans la liste');
+    $('[data-tab="deballage"]').click();
   });
 
   await test('recherche tapée par début de code', async () => {
@@ -199,7 +200,7 @@ async function test(name, fn) {
 
   await test('pavé : clavier du PC', async () => {
     for (const k of ['8', '9', '4', '3', '1']) w.document.dispatchEvent(new w.KeyboardEvent('keydown', { key: k }));
-    assert.strictEqual(last(), 'Pizza margherita 400g : oui, 2 cartons, déjà tout déballé.');
+    assert.strictEqual(last(), 'Pizza margherita 400g : oui, 2 cartons.');
   });
 
   await test('le choix voix/pavé est retenu', async () => {

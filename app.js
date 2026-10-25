@@ -6,7 +6,7 @@
   var STORAGE_KEY = 'reassort.v1';
   var TAB_KEY = 'reassort.tab';
   var CUSTOM_KEY = 'reassort.catalogue-perso';
-  var APP_VERSION = 'v12';   // à changer en même temps que CACHE dans sw.js
+  var APP_VERSION = 'v13';   // à changer en même temps que CACHE dans sw.js
   var TEST_KEY = 'reassort.test-codes';
   var IMAGE_BASE = 'https://www.picard.fr/dw/image/v2/AAHV_PRD/on/demandware.static/-/Sites-catalog-picard/default/produits/';
   var IMAGE_HEIGHT = 160;        // miniature : légère (~15 Ko) et nette sur écran de téléphone
@@ -260,14 +260,13 @@
     var entry = R.findSameArticle(article, state.entries);
     var updated = !!entry;
     if (!entry) {
-      entry = { id: state.nextId++, code: article.code, name: article.name, qty: 0, out: true, done: 0 };
+      entry = { id: state.nextId++, code: article.code, name: article.name, qty: 0, out: true };
       state.entries.unshift(entry);
     } else if (article.name && article.code) {
       entry.name = article.name;
     }
     entry.qty = parsed.qty;
     entry.out = parsed.out;
-    entry.done = Math.min(entry.done || 0, entry.qty);
     lastPointageId = entry.id;
     pending = null;
     commit();
@@ -372,16 +371,9 @@
     var a = R.answer(entry);
     box.hidden = false;
     box.className = 'answer ' + (a.yes ? 'yes' : 'no');
-    var buttons = '';
-    if (a.yes && (entry.done || 0) < entry.qty) {
-      buttons = '<div class="choices">' +
-        '<button type="button" data-action="unpack" data-amount="1" data-id="' + entry.id + '">Déballé +1</button>' +
-        '<button type="button" data-action="unpack" data-amount="0.5" data-id="' + entry.id + '">Déballé +½</button>' +
-        '</div>';
-    }
     box.innerHTML = '<div class="answer-big">' + a.short + '</div>' +
       '<div class="answer-name">' + articleHtml(entry) + '</div>' +
-      '<div class="answer-detail">' + escapeHtml(a.detail) + '</div>' + buttons;
+      '<div class="answer-detail">' + escapeHtml(a.detail) + '</div>';
     if (withVoice) {
       speak(a.speech);
       vibrate(a.yes ? 60 : [80, 60, 80]);
@@ -413,11 +405,8 @@
   }
 
   function entryRow(entry) {
-    var done = entry.done || 0;
-    var complete = entry.out && entry.qty > 0 && done >= entry.qty;
     var sub = entry.out && entry.qty ? R.formatQty(entry.qty) : 'Ne sort pas';
-    if (done) sub += ' · déballé ' + R.formatQty(done);
-    var cls = 'entry' + (!entry.out || !entry.qty ? ' off' : '') + (complete ? ' complete' : '');
+    var cls = 'entry' + (!entry.out || !entry.qty ? ' off' : '');
     return '<li class="' + cls + '" data-id="' + entry.id + '">' +
       '<div class="entry-main" data-action="rename"><div class="entry-name">' + articleHtml(entry) + '</div>' +
       '<div class="entry-sub">' + escapeHtml(sub) + '</div></div>' +
@@ -432,10 +421,9 @@
     var entries = state.entries;
     var out = entries.filter(function (e) { return e.out && e.qty > 0; });
     var cartons = out.reduce(function (sum, e) { return sum + e.qty; }, 0);
-    var unpacked = out.reduce(function (sum, e) { return sum + Math.min(e.done || 0, e.qty); }, 0);
     $('count').textContent = entries.length || '';
     $('summary').textContent = entries.length
-      ? entries.length + ' article(s) pointé(s) · ' + out.length + ' à sortir (' + shortQty(cartons) + ' cartons) · déballé ' + shortQty(unpacked) + ' / ' + shortQty(cartons)
+      ? entries.length + ' article(s) pointé(s) · ' + out.length + ' à sortir (' + shortQty(cartons) + ' cartons)'
       : '';
     $('list').innerHTML = entries.length
       ? entries.map(entryRow).join('')
@@ -447,7 +435,6 @@
     qty = Math.max(0, qty + delta);
     entry.qty = qty;
     entry.out = qty > 0;
-    entry.done = Math.min(entry.done || 0, qty);
   }
 
   function rename(entry) {
@@ -816,11 +803,6 @@
       case 'pick':
         showAnswer(entry, true);
         return;
-      case 'unpack':
-        snapshot();
-        entry.done = Math.min(entry.qty, (entry.done || 0) + Number(actionEl.dataset.amount));
-        vibrate(30);
-        break;
       case 'minus':
         snapshot();
         changeQty(entry, -0.5);

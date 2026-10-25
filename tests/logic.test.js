@@ -132,10 +132,10 @@ test('la meilleure transcription gagne', function () {
 });
 
 var entries = [
-  { id: 1, code: '89431', name: 'Pizza margherita 400g', qty: 2, out: true, done: 0 },
-  { id: 2, code: '39691', name: '8 nems poulet avec sauce nuoc mam', qty: 0.5, out: true, done: 0 },
-  { id: 3, code: '39881', name: '8 nems légumes avec sauce aigre douce', qty: 1, out: true, done: 0 },
-  { id: 4, code: null, name: 'Croissants', qty: 0, out: false, done: 0 }
+  { id: 1, code: '89431', name: 'Pizza margherita 400g', qty: 2, out: true },
+  { id: 2, code: '39691', name: '8 nems poulet avec sauce nuoc mam', qty: 0.5, out: true },
+  { id: 3, code: '39881', name: '8 nems légumes avec sauce aigre douce', qty: 1, out: true },
+  { id: 4, code: null, name: 'Croissants', qty: 0, out: false }
 ];
 
 function ask(q) { return R.ask(q, entries, catalog); }
@@ -168,7 +168,8 @@ test('pas noté', function () {
 test('réponses et quantités', function () {
   assert.strictEqual(R.answer(entries[0]).speech, 'Pizza margherita 400g : oui, 2 cartons.');
   assert.strictEqual(R.answer(entries[3]).speech, 'Croissants : non, on ne sort pas.');
-  assert.strictEqual(R.answer({ name: 'Frites', qty: 2, out: true, done: 1 }).speech, 'Frites : oui, 2 cartons, reste un carton.');
+  // un ancien pointage qui garde un compteur « déballé » : il n'a plus aucun effet sur la réponse
+  assert.strictEqual(R.answer({ name: 'Frites', qty: 2, out: true, done: 1 }).speech, 'Frites : oui, 2 cartons.');
   assert.strictEqual(R.formatQty(2.5), '2 cartons et demi');
 });
 
