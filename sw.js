@@ -3,7 +3,7 @@
 // (max-age=600), ce qui retardait l'arrivée d'une nouvelle version. Là, le serveur est toujours interrogé
 // (réponse légère « inchangé » si le fichier n'a pas bougé).
 // À changer à chaque version, avec APP_VERSION dans app.js (un test vérifie qu'ils vont ensemble).
-var CACHE = 'reassort-v13';
+var CACHE = 'reassort-v14';
 var FILES = ['./', 'index.html', 'style.css', 'catalog.js', 'logic.js', 'scanner.js', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (event) {

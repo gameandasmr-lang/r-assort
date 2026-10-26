@@ -48,6 +48,12 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
 - Catalogue enrichi (24/10) : chaque article a maintenant son **code-barres (EAN-13)** et le **nom complet de sa fiche** (`tools/fiches.json`). Pas encore utilisés par l'app.
 - Les 32 codes à 4 chiffres (ex. 2277, référence du site `002277`) sont à vérifier : comment la tablette les affiche-t-elle ? Le pavé attend 5 chiffres.
 
+## Retour du premier réassort (26/10/2026)
+
+- **Déballage : très satisfaisant**, il dit bien quels articles passer.
+- **Pointage : pas terrible.** Le plus simple serait de scanner l'**affiche au-dessus du bac** (plusieurs articles, un code-barres chacun), mais la caméra saute d'un code à l'autre, et il fallait ouvrir le bac pour scanner le produit lui-même.
+- Réponse (v14) : au pointage en mode 📷 Scan, tous les codes lus sont gardés (5 s) dans une **liste** ; on touche l'article voulu, puis la quantité. Les articles pointés y sont marqués ✓. **À vérifier en magasin** : que la caméra lise bien les petits codes-barres de l'affiche (si « non reconnu », noter ce qu'elle lit).
+
 ## Pistes pour la suite
 
 - **Tester le mode 📷 Scan en magasin** (testé le 24/10 sur le Pixel avec un code-barres affiché sur un écran de PC : lecture correcte ; pas encore essayé sur un vrai carton) : le code-barres d'un carton est-il celui du produit (EAN), ou un code logistique ? Si ce n'est ni l'un ni l'autre, noter ce que la caméra lit (message « Code-barres non reconnu : … ») et adapter `codeFromBarcode` dans `logic.js`. Le lecteur intégré à Chrome (`BarcodeDetector`) n'existe pas sur PC Windows : le scan se teste sur le Pixel.

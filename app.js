@@ -6,7 +6,7 @@
   var STORAGE_KEY = 'reassort.v1';
   var TAB_KEY = 'reassort.tab';
   var CUSTOM_KEY = 'reassort.catalogue-perso';
-  var APP_VERSION = 'v13';   // à changer en même temps que CACHE dans sw.js
+  var APP_VERSION = 'v14';   // à changer en même temps que CACHE dans sw.js
   var TEST_KEY = 'reassort.test-codes';
   var IMAGE_BASE = 'https://www.picard.fr/dw/image/v2/AAHV_PRD/on/demandware.static/-/Sites-catalog-picard/default/produits/';
   var IMAGE_HEIGHT = 160;        // miniature : légère (~15 Ko) et nette sur écran de téléphone
@@ -616,6 +616,7 @@
   function padPoint(qty) {
     var code = padDigits.pointage;
     if (code.length < 4) return;
+    if (seen[code]) seen[code].done = true;
     var item = catalog.byCode[code];
     var parsed = { action: 'set', qty: qty, out: qty > 0, qtyGuessed: false };
     var text = code + ' — ' + (qty ? R.formatQty(qty) : 'ne sort pas');
@@ -625,6 +626,7 @@
       scannedCode = null;
       renderPad('pointage');
       applyPointage({ code: code, name: '' }, parsed, text);
+      renderScanList();
       return;
     }
     parsed.target = item
@@ -637,6 +639,7 @@
     padDigits.pointage = '';
     renderPad('pointage');
     applyParsed(parsed, text);
+    renderScanList();
   }
 
   function applyInputModes() {
@@ -673,6 +676,8 @@
     if (want === scanMode) return;
     scanMode = want;
     lastScan = { raw: null, at: 0 };
+    seen = {};
+    renderScanList();
     if (!want) { scanner.stop(); return; }
     setStatus(want, 'Je démarre la caméra…');
     scanner.start($('scan-video-' + want)).then(function (ok) {
@@ -685,9 +690,85 @@
     scanMode = null;
   }
 
-  function onBarcode(raw) {
+  // Affiche de bac : plusieurs codes-barres sur la même feuille. La caméra saute de l'un à l'autre, donc on
+  // les garde tous quelques secondes dans une liste, et c'est l'article touché qui est pointé.
+  var SEEN_KEEP_MS = 5000;    // un code qui n'a plus été vu depuis ce délai quitte la liste
+  var seen = {};              // code → { found, at }
+
+  function renderScanList() {
+    var box = $('scan-list');
+    var codes = Object.keys(seen);
+    box.hidden = codes.length < 2;
+    if (box.hidden) { box.innerHTML = ''; return; }
+    box.innerHTML = codes.map(function (code) {
+      var found = seen[code].found;
+      var entry = entryWithCode(code);
+      var name = (entry && entry.name) || (found.item && found.item.name) || 'Article inconnu';
+      var done = entry ? (entry.out ? '✓ ' + R.formatQty(entry.qty) : '✓ ne sort pas') : '';
+      return '<button type="button" data-action="scan-pick" data-code="' + escapeHtml(code) + '"' +
+        (code === padDigits.pointage ? ' class="selected"' : '') + '><span class="code">' + escapeHtml(code) +
+        '</span><span>' + escapeHtml(name) + '</span><span class="done">' + escapeHtml(done) + '</span></button>';
+    }).join('');
+  }
+
+  function pickScanned(code) {
+    var s = seen[code];
+    if (!s) return;
+    padDigits.pointage = code;
+    scannedCode = code;
+    scannedEan = s.found.ean;
+    renderPad('pointage');
+    renderScanList();
+    setStatus('pointage', s.found.item ? s.found.item.name : 'Article absent du catalogue : touche « Donner un nom », ou choisis la quantité.');
+    vibrate(20);
+  }
+
+  function onPointageCodes(raws) {
+    var now = Date.now();
+    var added = false;
+    Object.keys(seen).forEach(function (c) { if (now - seen[c].at > SEEN_KEEP_MS) delete seen[c]; });
+    var recognized = 0;
+    // Tout ce qui était dans la liste est déjà pointé : on repart de zéro pour le prochain bac.
+    var fresh = raws.some(function (raw) { var f = R.codeFromBarcode(raw, catalog); return f && !seen[f.code]; });
+    if (fresh && Object.keys(seen).every(function (c) { return seen[c].done; })) seen = {};
+    raws.forEach(function (raw) {
+      var found = R.codeFromBarcode(raw, catalog);
+      if (!found) return;
+      recognized++;
+      if (!seen[found.code]) added = true;
+      seen[found.code] = { found: found, at: now, done: seen[found.code] && seen[found.code].done };
+    });
+    if (!recognized) {
+      if (raws[0] === lastScan.raw && now - lastScan.at < SCAN_REPEAT_MS) return;
+      lastScan = { raw: raws[0], at: now };
+      setStatus('pointage', 'Code-barres non reconnu : ' + raws[0], true);
+      speak('Code-barres non reconnu.');
+      vibrate([80, 60, 80]);
+      return;
+    }
+    if (!added) return;
+    var codes = Object.keys(seen);
+    if (codes.length === 1) {
+      pickScanned(codes[0]);
+      var one = seen[codes[0]].found;
+      // Un code-barres d'une autre marque est long : on ne le lit pas chiffre par chiffre.
+      speak(one.item ? one.item.name : (one.code.length > 6 ? 'Article inconnu.' : 'Code ' + R.spokenCode(one.code) + ' inconnu.'));
+      return;
+    }
+    // Plusieurs articles : rien n'est choisi tant qu'on n'a pas touché l'un d'eux.
+    padDigits.pointage = '';
+    scannedCode = null;
+    renderPad('pointage');
+    renderScanList();
+    setStatus('pointage', codes.length + ' articles lus : touche celui à pointer.');
+    speak(codes.length + ' articles lus.');
+    vibrate(40);
+  }
+
+  function onBarcode(raw, all) {
     var mode = scanMode;
     var now = Date.now();
+    if (mode === 'pointage') { onPointageCodes(all && all.length ? all : [raw]); return; }
     if (!mode || (raw === lastScan.raw && now - lastScan.at < SCAN_REPEAT_MS)) return;
     lastScan = { raw: raw, at: now };
 
@@ -762,6 +843,9 @@
     var action = actionEl.dataset.action;
 
     switch (action) {
+      case 'scan-pick':
+        pickScanned(actionEl.dataset.code);
+        return;
       case 'choose':
         if (pending) resolvePending(catalog.byCode[actionEl.dataset.code]);
         return;

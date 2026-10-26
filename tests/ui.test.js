@@ -270,6 +270,27 @@ async function test(name, fn) {
     assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '', 'prêt pour le scan suivant');
   });
 
+  await test('scan : affiche de bac, la liste des codes lus et on touche l\'article à pointer', async () => {
+    // la caméra voit tantôt un code, tantôt un autre : ils s'accumulent dans la liste
+    await scan(eanOf('12866'));
+    await scan(eanOf('0081'));
+    const buttons = $$('#scan-list [data-action="scan-pick"]');
+    assert.strictEqual(buttons.length, 2, 'les deux codes sont listés');
+    assert.ok($('#pad-pointage [data-action="pad-qty"]').disabled, 'rien de choisi tant qu\'on n\'a pas touché un article');
+    buttons.find((b) => b.dataset.code === '12866').click();
+    assert.ok($('#pad-preview-pointage').textContent.includes('Poêlée sarladaise'));
+    $('#pad-pointage [data-qty="2"]').click();
+    assert.ok(last().startsWith('Poêlée sarladaise, 2 cartons'), last());
+    assert.ok($('#scan-list').textContent.includes('✓'), 'article pointé marqué dans la liste');
+    assert.strictEqual($$('#scan-list [data-action="scan-pick"]').length, 2, 'l\'autre article reste à pointer');
+    await scan(eanOf('89431'));   // un autre bac
+    assert.ok($('#scan-list').hidden === false || $('#scan-list').querySelector('[data-code="0081"]'));
+    $('[data-tab="liste"]').click();
+    $('[data-tab="pointage"]').click();
+    await tick();
+    assert.ok($('#scan-list').hidden, 'liste vidée en quittant l\'écran');
+  });
+
   await test('scan : article inconnu du catalogue enregistré tel quel, et rappelé au déballage', async () => {
     const unknown = '3270160999989';   // EAN Picard valide (référence 99998), absent du catalogue
     $('[data-tab="pointage"]').click();
@@ -319,8 +340,9 @@ async function test(name, fn) {
     $('#pad-preview-pointage .name-btn').click();
     $('#pad-pointage [data-qty="1"]').click();
     assert.strictEqual(last(), 'Chocolat autre marque, un carton.');
-    await scan('0' + FOREIGN);   // même produit lu sur son carton (évite l'anti-doublon de 3 s)
-    assert.strictEqual(last(), 'Chocolat autre marque');
+    await scan('0' + FOREIGN);   // même produit lu sur son carton : déjà pointé, la caméra ne le re-propose pas
+    assert.strictEqual(last(), 'Chocolat autre marque, un carton.');
+    assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '');
     $('#pad-pointage [data-key="clear"]').click();
     $('#view-pointage [data-input="voice"]').click();
   });

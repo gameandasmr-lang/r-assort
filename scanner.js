@@ -18,7 +18,8 @@
   }
 
   // create(onCode, onError) → { start(video), stop(), running() }
-  //   onCode(texte) est appelé à chaque lecture (le même code revient tant qu'il reste devant la caméra).
+  //   onCode(texte, tous) est appelé à chaque lecture (le même code revient tant qu'il reste devant la caméra) :
+  //   texte = le code le plus proche du centre, tous = tous les codes vus dans l'image.
   function create(onCode, onError) {
     var stream = null;
     var timer = null;
@@ -57,7 +58,7 @@
       busy = true;
       detector.detect(video).then(function (found) {
         busy = false;
-        if (timer && found.length) onCode(nearestToCenter(found).rawValue);
+        if (timer && found.length) onCode(nearestToCenter(found).rawValue, found.map(function (f) { return f.rawValue; }));
       }, function () { busy = false; });
     }
 
