@@ -52,7 +52,7 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
 
 - **Déballage : très satisfaisant**, il dit bien quels articles passer.
 - **Pointage : pas terrible.** Le plus simple serait de scanner l'**affiche au-dessus du bac** (plusieurs articles, un code-barres chacun), mais la caméra saute d'un code à l'autre, et il fallait ouvrir le bac pour scanner le produit lui-même.
-- Réponse (v14) : au pointage en mode 📷 Scan, tous les codes lus sont gardés (5 s) dans une **liste** ; on touche l'article voulu, puis la quantité. Dès qu'une quantité est choisie, la fiche est close : la liste se vide et l'app est prête pour la fiche suivante (les codes de la fiche pointée, encore devant la caméra, sont ignorés tant qu'elle y reste). **À vérifier en magasin** : que la caméra lise bien les petits codes-barres de l'affiche (si « non reconnu », noter ce qu'elle lit).
+- Réponse (v14, complétée en v15, **testée et validée par Arnaud le 26/10** : les codes de l'affiche sont bien lus) : au pointage en mode 📷 Scan, tous les codes lus sont gardés (5 s) dans une **liste** ; on touche l'article voulu, puis la quantité. Dès qu'une quantité est choisie, la fiche est close : la liste se vide et l'app est prête pour la fiche suivante (les codes de la fiche pointée, encore devant la caméra, sont ignorés tant qu'elle y reste). Si un code n'est pas lu (« non reconnu »), noter ce que la caméra indique et adapter `codeFromBarcode` dans `logic.js`.
 
 ## Pistes pour la suite
 
