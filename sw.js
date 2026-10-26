@@ -1,9 +1,9 @@
-// Réseau d'abord (pour recevoir les mises à jour), cache en secours si pas de réseau.
+﻿// Réseau d'abord (pour recevoir les mises à jour), cache en secours si pas de réseau.
 // Les demandes passent par `cache: 'no-cache'` : GitHub Pages permet au navigateur de garder un fichier 10 minutes
 // (max-age=600), ce qui retardait l'arrivée d'une nouvelle version. Là, le serveur est toujours interrogé
 // (réponse légère « inchangé » si le fichier n'a pas bougé).
 // À changer à chaque version, avec APP_VERSION dans app.js (un test vérifie qu'ils vont ensemble).
-var CACHE = 'reassort-v14';
+var CACHE = 'reassort-v15';
 var FILES = ['./', 'index.html', 'style.css', 'catalog.js', 'logic.js', 'scanner.js', 'app.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (event) {

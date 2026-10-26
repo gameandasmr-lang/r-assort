@@ -1,4 +1,4 @@
-# Réassort
+﻿# Réassort
 
 Application web (installable sur le téléphone) pour le réassort chez Picard.
 
@@ -52,7 +52,7 @@ Les données restent sur le téléphone (stockage du navigateur). « Nouveau ré
 
 - **Déballage : très satisfaisant**, il dit bien quels articles passer.
 - **Pointage : pas terrible.** Le plus simple serait de scanner l'**affiche au-dessus du bac** (plusieurs articles, un code-barres chacun), mais la caméra saute d'un code à l'autre, et il fallait ouvrir le bac pour scanner le produit lui-même.
-- Réponse (v14) : au pointage en mode 📷 Scan, tous les codes lus sont gardés (5 s) dans une **liste** ; on touche l'article voulu, puis la quantité. Les articles pointés y sont marqués ✓. **À vérifier en magasin** : que la caméra lise bien les petits codes-barres de l'affiche (si « non reconnu », noter ce qu'elle lit).
+- Réponse (v14) : au pointage en mode 📷 Scan, tous les codes lus sont gardés (5 s) dans une **liste** ; on touche l'article voulu, puis la quantité. Dès qu'une quantité est choisie, la fiche est close : la liste se vide et l'app est prête pour la fiche suivante (les codes de la fiche pointée, encore devant la caméra, sont ignorés tant qu'elle y reste). **À vérifier en magasin** : que la caméra lise bien les petits codes-barres de l'affiche (si « non reconnu », noter ce qu'elle lit).
 
 ## Pistes pour la suite
 

@@ -281,10 +281,14 @@ async function test(name, fn) {
     assert.ok($('#pad-preview-pointage').textContent.includes('Poêlée sarladaise'));
     $('#pad-pointage [data-qty="2"]').click();
     assert.ok(last().startsWith('Poêlée sarladaise, 2 cartons'), last());
-    assert.ok($('#scan-list').textContent.includes('✓'), 'article pointé marqué dans la liste');
-    assert.strictEqual($$('#scan-list [data-action="scan-pick"]').length, 2, 'l\'autre article reste à pointer');
-    await scan(eanOf('89431'));   // un autre bac
-    assert.ok($('#scan-list').hidden === false || $('#scan-list').querySelector('[data-code="0081"]'));
+    assert.ok($('#scan-list').hidden, 'la fiche est close : liste vidée');
+    assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '');
+    await scan(eanOf('0081'));   // la même fiche est encore devant la caméra : ignorée
+    assert.ok($('#scan-list').hidden);
+    assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '', 'rien de re-sélectionné');
+    await scan(eanOf('39691'));   // une autre fiche : lue tout de suite
+    assert.strictEqual($('#pad-digits-pointage').textContent.trim(), '39691');
+    $('#pad-pointage [data-key="clear"]').click();
     $('[data-tab="liste"]').click();
     $('[data-tab="pointage"]').click();
     await tick();

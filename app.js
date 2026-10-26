@@ -1,4 +1,4 @@
-// Interface : onglets, micro, voix, liste. La compréhension des phrases est dans logic.js.
+﻿// Interface : onglets, micro, voix, liste. La compréhension des phrases est dans logic.js.
 (function () {
   'use strict';
 
@@ -6,7 +6,7 @@
   var STORAGE_KEY = 'reassort.v1';
   var TAB_KEY = 'reassort.tab';
   var CUSTOM_KEY = 'reassort.catalogue-perso';
-  var APP_VERSION = 'v14';   // à changer en même temps que CACHE dans sw.js
+  var APP_VERSION = 'v15';   // à changer en même temps que CACHE dans sw.js
   var TEST_KEY = 'reassort.test-codes';
   var IMAGE_BASE = 'https://www.picard.fr/dw/image/v2/AAHV_PRD/on/demandware.static/-/Sites-catalog-picard/default/produits/';
   var IMAGE_HEIGHT = 160;        // miniature : légère (~15 Ko) et nette sur écran de téléphone
@@ -616,7 +616,7 @@
   function padPoint(qty) {
     var code = padDigits.pointage;
     if (code.length < 4) return;
-    if (seen[code]) seen[code].done = true;
+    retireScanned(code);
     var item = catalog.byCode[code];
     var parsed = { action: 'set', qty: qty, out: qty > 0, qtyGuessed: false };
     var text = code + ' — ' + (qty ? R.formatQty(qty) : 'ne sort pas');
@@ -677,6 +677,7 @@
     scanMode = want;
     lastScan = { raw: null, at: 0 };
     seen = {};
+    retired = {};
     renderScanList();
     if (!want) { scanner.stop(); return; }
     setStatus(want, 'Je démarre la caméra…');
@@ -694,6 +695,16 @@
   // les garde tous quelques secondes dans une liste, et c'est l'article touché qui est pointé.
   var SEEN_KEEP_MS = 5000;    // un code qui n'a plus été vu depuis ce délai quitte la liste
   var seen = {};              // code → { found, at }
+  var RETIRED_KEEP_MS = 2500; // une fiche pointée n'est relue qu'après être sortie du cadre pendant ce délai
+  var retired = {};           // code → dernière fois vu : les codes de la fiche qu'on vient de pointer
+
+  // Une quantité choisie clôt la fiche : la liste est vidée, prête pour la suivante.
+  function retireScanned(code) {
+    var now = Date.now();
+    Object.keys(seen).forEach(function (c) { retired[c] = now; });
+    retired[code] = now;
+    seen = {};
+  }
 
   function renderScanList() {
     var box = $('scan-list');
@@ -728,15 +739,15 @@
     var added = false;
     Object.keys(seen).forEach(function (c) { if (now - seen[c].at > SEEN_KEEP_MS) delete seen[c]; });
     var recognized = 0;
-    // Tout ce qui était dans la liste est déjà pointé : on repart de zéro pour le prochain bac.
-    var fresh = raws.some(function (raw) { var f = R.codeFromBarcode(raw, catalog); return f && !seen[f.code]; });
-    if (fresh && Object.keys(seen).every(function (c) { return seen[c].done; })) seen = {};
+    Object.keys(retired).forEach(function (c) { if (now - retired[c] > RETIRED_KEEP_MS) delete retired[c]; });
     raws.forEach(function (raw) {
       var found = R.codeFromBarcode(raw, catalog);
       if (!found) return;
       recognized++;
+      // Fiche déjà traitée et encore devant la caméra : on l'ignore tant qu'elle y reste.
+      if (retired[found.code]) { retired[found.code] = now; return; }
       if (!seen[found.code]) added = true;
-      seen[found.code] = { found: found, at: now, done: seen[found.code] && seen[found.code].done };
+      seen[found.code] = { found: found, at: now };
     });
     if (!recognized) {
       if (raws[0] === lastScan.raw && now - lastScan.at < SCAN_REPEAT_MS) return;
